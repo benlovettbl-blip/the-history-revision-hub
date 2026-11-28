@@ -19,6 +19,13 @@ import {
   bindNativeFullscreenSync,
 } from './story_lab_engine.js';
 import { saveArcadePersonalBest } from '../arcade/arcade_audio.js';
+import {
+  renderEscapeBrandBarHTML,
+  renderEscapeCoverSealHTML,
+  renderAtmosphericCinemaHTML,
+  renderWorkbookCodeCardHTML,
+  createEscapeCinemaVoicePlayer,
+} from './escape_room_brand.js';
 
 const SESSION_KEY = 'hh_ks2_tutankhamun_lab_v1';
 const UNIT_ID = 'ks2_ancient_egypt';
@@ -45,11 +52,59 @@ const preloadStageAssets = createStageAssetPreloader({
 
 const STEPS = [
   { id: 'cover', short: '🕯️ Cover', mob: 'Cover • Tomb KV62' },
+  { id: 'prologue', short: '🎬 Opening', mob: '🎬 Opening' },
   { id: 'stage1', short: '1. Sixteen Steps', mob: '1/5 Buried Steps' },
   { id: 'stage2', short: '2. Peephole', mob: '2/5 Candle Peephole' },
   { id: 'stage3', short: '3. Conservation', mob: '3/5 Conservation' },
   { id: 'stage4', short: '4. Shrines & Name', mob: '4/5 Shrines & Name' },
   { id: 'stage5', short: '5. Field Journal', mob: '5/5 Field Journal' },
+  { id: 'epilogue', short: '🎬 Ending', mob: '🎬 Ending' },
+];
+
+const KV62_PROLOGUE = [
+  {
+    voClip: 'kv62_pro_1',
+    credit: 'THE HISTORY REVISION HUB PRESENTS • VALLEY OF THE KINGS, 4 NOV 1922',
+    heading: 'A Step Under the Desert Rubble',
+    img: ASSETS.valleyCliffs,
+    alt: 'Limestone cliffs of the Valley of the Kings near Luxor',
+    caption: 'Valley of the Kings, Egypt • Hidden beneath ancient workmen’s huts for over three thousand years',
+    narration:
+      'On 4 November 1922, beneath ancient stone huts and limestone chippings, Egyptian excavators strike a single smooth step cut straight into the white desert rock.',
+  },
+  {
+    voClip: 'kv62_pro_2',
+    credit: '26 NOVEMBER 1922 • “WONDERFUL THINGS”',
+    heading: 'Intact Royal Necropolis Seals',
+    img: ASSETS.chariotChest,
+    alt: 'Painted wooden chest discovered inside Tutankhamun tomb KV62',
+    caption: 'Tomb KV62 Antechamber • Over 5,000 fragile objects requiring ten years of scientific conservation',
+    narration:
+      'Sixteen steps down stands a plastered doorway stamped with intact jackal-and-captives seals! Hold up a flickering candle and discover how real archaeology preserved Tutankhamun’s tomb.',
+  },
+];
+
+const KV62_EPILOGUE = [
+  {
+    voClip: 'kv62_end_1',
+    credit: 'FINALE SCENE 1 OF 2 • TEN YEARS OF PATIENT SCIENCE',
+    heading: 'Over 5,000 Fragile Wonders Saved',
+    img: ASSETS.carterShrine,
+    alt: 'Howard Carter examining the gilded shrines inside Tomb KV62 in 1923',
+    caption: 'KV62 Laboratory (1922–1932) • Photographed, numbered, waxed, and conserved before anything was moved',
+    narration:
+      'Had excavators grabbed treasures in a hurry, wood, linen, and leather would have crumbled to dust. Instead, Egyptian foremen, Howard Carter, photographer Harry Burton, and chemist Alfred Lucas worked for ten careful years!',
+  },
+  {
+    voClip: 'kv62_end_2',
+    credit: 'FINALE SCENE 2 OF 2 • JOURNEY THROUGH THE DUAT',
+    heading: 'Living Image of Amun',
+    img: ASSETS.deathMask,
+    alt: 'Solid gold funerary mask of Pharaoh Tutankhamun inlaid with lapis lazuli and glass',
+    caption: 'Tutankhamun’s Funerary Mask • Protecting the young pharaoh on his eternal journey into the afterlife',
+    narration:
+      'Nested inside four gilded shrines and three coffins rested the iconic gold mask—guiding teenage Pharaoh Tutankhamun safely into eternal life!',
+  },
 ];
 
 const EXCAVATION_CLUES = [
@@ -967,25 +1022,90 @@ export function mountKs2TutankhamunLab(container, opts = {}, legacyCtx = {}) {
 
           <div class="ks2lab-cover-info">
             <div>
-              <div class="ks2lab-kicker">🕯️ KS2 INTERACTIVE STORYBOOK LAB • VALLEY OF THE KINGS (NOVEMBER 1922)</div>
+              ${renderEscapeCoverSealHTML('THE HISTORY REVISION HUB • OFFICIAL ESCAPE LAB')}
+              <div class="ks2lab-kicker">🕯️ VOICED KS2 EGYPTOLOGY ESCAPE LAB • NOVEMBER 1922</div>
               <h2 class="ks2lab-hero-title">Candlelight in the Valley: Opening Tomb KV62</h2>
               <p class="ks2lab-hero-sub">
-                Join Hussein Abdel Rassoul, Egyptian foremen, and Howard Carter in November 1922! Uncover sixteen buried limestone steps, hold a flickering candle to the dark Antechamber peephole, stabilise fragile 3,300-year-old treasures over ten patient years, and open four golden shrines!
+                Watch the <strong>Studio-voiced November 1922 opening</strong>, uncover sixteen buried limestone steps, pan a flickering candle across the dark Antechamber, conserve fragile 3,300-year-old treasures, and open four golden shrines!
               </p>
               <div class="ks2lab-badge-row">
-                <span class="ks2lab-badge">1. Sixteen Buried Steps</span>
-                <span class="ks2lab-badge">2. Candlelight Peephole</span>
-                <span class="ks2lab-badge">3. 10-Year Conservation</span>
-                <span class="ks2lab-badge">4. Nested Shrines & Name</span>
-                <span class="ks2lab-badge">5. Egyptologist Journal</span>
+                <span class="ks2lab-badge">🎬 Voiced 1922 Cinema</span>
+                <span class="ks2lab-badge">🔒 Lock 1: Sixteen Steps</span>
+                <span class="ks2lab-badge">🔒 Lock 2: Candle Peephole</span>
+                <span class="ks2lab-badge">🔒 Lock 3: Conservation</span>
+                <span class="ks2lab-badge">🔒 Lock 4: Shrines &amp; Name</span>
               </div>
             </div>
-            <button type="button" class="ks2lab-cta-primary" data-step-go="stage1">
-              <span>🕯️ Enter Valley Dig (Stage 1)</span>
-            </button>
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <button type="button" class="ks2lab-cta-primary" data-cinema-start="prologue">
+                <span>🎬 Watch Voiced 1922 Opening &amp; Enter Valley</span>
+              </button>
+              <button type="button" class="hh-er-cover-secondary-cta" data-step-go="stage1">
+                ⚡ Skip Opening → Jump Straight to Stage 1 (Sixteen Steps)
+              </button>
+            </div>
           </div>
         </div>
       `;
+    }
+
+    if (state.step === 'prologue') {
+      const idx = state.cinemaIdx || 0;
+      const slide = KV62_PROLOGUE[idx] || KV62_PROLOGUE[0];
+      const isLast = idx >= KV62_PROLOGUE.length - 1;
+      return renderAtmosphericCinemaHTML({
+        topLeftLabel: 'THE HISTORY REVISION HUB • VALLEY OF THE KINGS ARCHIVE CINEMA',
+        topRightLabel: `SCENE ${idx + 1} OF ${KV62_PROLOGUE.length} • 🎙️ STUDIO VOICEOVER`,
+        slideIndex: idx,
+        totalSlides: KV62_PROLOGUE.length,
+        vignetteTone: 'gold',
+        imgSrc: slide.img,
+        imgAlt: slide.alt,
+        caption: slide.caption,
+        credit: slide.credit,
+        heading: slide.heading,
+        narrationHTML: `<p style="margin:0;">${slide.narration}</p>`,
+        actionsHTML: `
+          ${
+            !isLast
+              ? `<button type="button" class="ks2lab-cta-primary" style="width:auto;padding:10px 20px;" data-cinema-next="prologue">Next Scene →</button>`
+              : `<button type="button" class="ks2lab-cta-primary" style="width:auto;padding:11px 22px;" data-step-go="stage1">🕯️ Enter Stage 1: Sixteen Steps →</button>`
+          }
+          <button type="button" class="hh-er-cover-secondary-cta" style="width:auto;padding:10px 14px;" data-cinema-replay="1">🔊 Replay Voiceover</button>
+          <button type="button" class="hh-er-cover-secondary-cta" style="width:auto;padding:10px 14px;" data-step-go="stage1">Skip Prologue →</button>
+        `,
+        dotAttr: 'data-cinema-dot',
+        bottomRightLabel: 'British Studio Narration • Tomb KV62 Archaeological Archive',
+      });
+    }
+
+    if (state.step === 'epilogue') {
+      const idx = state.cinemaIdx || 0;
+      const slide = KV62_EPILOGUE[idx] || KV62_EPILOGUE[0];
+      const isLast = idx >= KV62_EPILOGUE.length - 1;
+      return renderAtmosphericCinemaHTML({
+        topLeftLabel: 'THE HISTORY REVISION HUB • TOMB KV62 CINEMATIC ENDING',
+        topRightLabel: `FINALE ${idx + 1} OF ${KV62_EPILOGUE.length} • 🎙️ STUDIO VOICEOVER`,
+        slideIndex: idx,
+        totalSlides: KV62_EPILOGUE.length,
+        vignetteTone: 'emerald',
+        imgSrc: slide.img,
+        imgAlt: slide.alt,
+        caption: slide.caption,
+        credit: slide.credit,
+        heading: slide.heading,
+        narrationHTML: `<p style="margin:0;">${slide.narration}</p>`,
+        actionsHTML: `
+          ${
+            !isLast
+              ? `<button type="button" class="ks2lab-cta-primary" style="width:auto;padding:10px 20px;" data-cinema-next="epilogue">Next Finale Scene →</button>`
+              : `<button type="button" class="ks2lab-cta-primary" style="width:auto;padding:11px 22px;" data-step-go="stage5">🏅 Return to Certificate &amp; Workbook Code →</button>`
+          }
+          <button type="button" class="hh-er-cover-secondary-cta" style="width:auto;padding:10px 14px;" data-cinema-replay="1">🔊 Replay Voiceover</button>
+        `,
+        dotAttr: 'data-cinema-dot',
+        bottomRightLabel: 'KV62 Epilogue • Ten Years of Scientific Conservation',
+      });
     }
 
     if (state.step === 'stage1') {
@@ -1256,6 +1376,19 @@ export function mountKs2TutankhamunLab(container, opts = {}, legacyCtx = {}) {
           }).join('')}
         </div>
 
+        ${renderWorkbookCodeCardHTML({
+          slotLabel: 'ENQUIRY 6 BACK-COVER LEDGER',
+          phrase: 'TEN YEARS OF SCIENCE CONSERVED TUTANKHAMUN’S TOMB',
+          instruction:
+            'Copy this unlocked phrase into the Escape Room Ledger on the Back Cover of your Ancient Egypt Pupil Workbook!',
+        })}
+
+        <div style="margin:10px 0;display:flex;gap:8px;flex-wrap:wrap;">
+          <button type="button" class="ks2lab-cta-primary" style="width:auto;padding:10px 18px;" data-cinema-start="epilogue">
+            🎬 Watch 2-Scene Voiced Tomb KV62 Cinematic Ending
+          </button>
+        </div>
+
         ${
           allSolved
             ? `
@@ -1327,17 +1460,34 @@ export function mountKs2TutankhamunLab(container, opts = {}, legacyCtx = {}) {
     `;
   }
 
+  const cinemaVoice = createEscapeCinemaVoicePlayer();
+
+  function renderBrandBarHTML() {
+    const locks = ['stage1', 'stage2', 'stage3', 'stage4'].filter((id) => isStageComplete(id)).length;
+    return renderEscapeBrandBarHTML({
+      eraTag: 'KS2 • VALLEY OF THE KINGS (NOV 1922)',
+      locksCracked: locks,
+      totalLocks: 4,
+    });
+  }
+
   function render(scrollToTop = false) {
     if (unmounted || !shellEl) return;
     shellEl.classList.toggle('ks2lab-is-fullscreen', state.isFullscreen);
 
     const mutate = () => {
+      const brandEl = shellEl.querySelector('#ks2-tut-brand');
       const topEl = shellEl.querySelector('#ks2-tut-topbar');
       const speechEl = shellEl.querySelector('#ks2-tut-speech');
       const bodyEl = shellEl.querySelector('#ks2-tut-body');
       const navEl = shellEl.querySelector('#ks2-tut-bottom');
+      if (brandEl) brandEl.innerHTML = renderBrandBarHTML();
       if (topEl) topEl.innerHTML = renderTopBarHTML();
-      if (speechEl) speechEl.innerHTML = renderSpeechBarHTML();
+      if (speechEl) {
+        const hideSpeech = state.step === 'cover' || state.step === 'prologue' || state.step === 'epilogue';
+        speechEl.style.display = hideSpeech ? 'none' : '';
+        if (!hideSpeech) speechEl.innerHTML = renderSpeechBarHTML();
+      }
       if (bodyEl) bodyEl.innerHTML = renderStageBodyHTML();
       if (navEl) navEl.innerHTML = renderBottomNavHTML();
     };
@@ -1352,6 +1502,7 @@ export function mountKs2TutankhamunLab(container, opts = {}, legacyCtx = {}) {
 
   container.innerHTML = `
     <div class="ks2lab-shell theme-tutankhamun ${state.isFullscreen ? 'ks2lab-is-fullscreen' : ''}">
+      <div id="ks2-tut-brand"></div>
       <div class="ks2lab-topbar" id="ks2-tut-topbar"></div>
       <div class="ks2lab-speech-bar" id="ks2-tut-speech" aria-live="polite"></div>
       <div class="ks2lab-stage-slot" id="ks2-tut-body"></div>
@@ -1405,10 +1556,45 @@ export function mountKs2TutankhamunLab(container, opts = {}, legacyCtx = {}) {
   });
 
   shellEl.addEventListener('click', (e) => {
+    const cStart = e.target.closest('[data-cinema-start]');
+    if (cStart) {
+      const mode = cStart.getAttribute('data-cinema-start');
+      state.cinemaIdx = 0;
+      sound.stopSpeech();
+      goToStep(mode);
+      cinemaVoice.play(mode === 'epilogue' ? 'kv62_end_1' : 'kv62_pro_1');
+      return;
+    }
+
+    const cNext = e.target.closest('[data-cinema-next]');
+    if (cNext) {
+      const mode = cNext.getAttribute('data-cinema-next');
+      const arr = mode === 'epilogue' ? KV62_EPILOGUE : KV62_PROLOGUE;
+      state.cinemaIdx = Math.min(arr.length - 1, (state.cinemaIdx || 0) + 1);
+      sound.click();
+      render(false);
+      cinemaVoice.play(`${mode === 'epilogue' ? 'kv62_end' : 'kv62_pro'}_${state.cinemaIdx + 1}`);
+      return;
+    }
+
+    const cDot = e.target.closest('[data-cinema-dot]');
+    if (cDot) {
+      state.cinemaIdx = Number(cDot.getAttribute('data-cinema-dot')) || 0;
+      render(false);
+      cinemaVoice.play(`${state.step === 'epilogue' ? 'kv62_end' : 'kv62_pro'}_${state.cinemaIdx + 1}`);
+      return;
+    }
+
+    if (e.target.closest('[data-cinema-replay]')) {
+      cinemaVoice.replay();
+      return;
+    }
+
     const stepBtn = e.target.closest('[data-step-go]');
     if (stepBtn) {
       const target = stepBtn.getAttribute('data-step-go');
       if (target) {
+        cinemaVoice.stop();
         sound.click();
         goToStep(target);
       }
@@ -1611,6 +1797,7 @@ export function mountKs2TutankhamunLab(container, opts = {}, legacyCtx = {}) {
     }
     scrollLock.dispose();
     fsSync.dispose();
+    cinemaVoice.destroy();
     sound.destroy();
   };
 }

@@ -1178,8 +1178,36 @@ function renderStandardBackCover({
   qrLessons = [],
   footerQuip = '',
   totalPageCount = 16,
+  escapeRoomLedger = null,
   renderFooterStrip = null,
 }) {
+  const gcseLedgerHtml =
+    escapeRoomLedger && Array.isArray(escapeRoomLedger.slots) && escapeRoomLedger.slots.length > 0
+      ? `
+      <div style="border: 1.4px solid #000000; border-radius: 3px; overflow: hidden; background: #f8fafc; margin-top: 3px; margin-bottom: 2px; font-family: 'Inter', sans-serif; flex-shrink: 0;">
+        <div style="background: #0f172a; color: #ffffff; padding: 2px 7px; display: flex; justify-content: space-between; align-items: center;">
+          <strong style="font-size: 6.6pt; text-transform: uppercase; letter-spacing: 0.35px;">
+            🔑 ${escapeRoomLedger.title || 'Official Escape Room Homework Verdict Ledger'}
+          </strong>
+          <span style="font-size: 5.7pt; font-weight: 800; background: #ffffff; color: #0f172a; padding: 0.5px 4px; border-radius: 2px; text-transform: uppercase;">
+            ${escapeRoomLedger.badge || 'Zero-Marking Homework Chain'}
+          </span>
+        </div>
+        <div style="padding: 2.5px 7px 3.5px 7px; display: grid; grid-template-columns: 1fr 1fr; gap: 2px 8px;">
+          ${escapeRoomLedger.slots
+            .map((sl, sIdx) => {
+              const spanFull = escapeRoomLedger.slots.length % 2 === 1 && sIdx === escapeRoomLedger.slots.length - 1;
+              return `
+            <div style="${spanFull ? 'grid-column: span 2;' : ''} display: flex; align-items: baseline; gap: 4px;">
+              <span style="font-size: 5.9pt; font-weight: 900; color: #000000; white-space: nowrap;">${sl.code || `Slot ${sIdx + 1}`}:</span>
+              <div style="flex: 1; border-bottom: 1px solid #000000; height: 4.1mm;"></div>
+              <span style="display: inline-block; width: 3.1mm; height: 3.1mm; border: 1px solid #000000; border-radius: 1px; background: #ffffff; flex-shrink: 0;"></span>
+            </div>`;
+            })
+            .join('')}
+        </div>
+      </div>`
+      : '';
   const isPaper3 = unitId === 'weimar_nazi_germany' || unitId === 'usa';
   const isWeimar = isPaper3;
   const isMedicine = unitId === 'edexcel_medicine';
@@ -1395,6 +1423,7 @@ function renderStandardBackCover({
         </div>
       </div>
 
+      ${gcseLedgerHtml}
       ${cmeFooterHtml}
     </div>
   </div>`;
@@ -1814,9 +1843,7 @@ function renderStandardBackCover({
           </tbody>
         </table>
       </div>
-
-
-
+      ${gcseLedgerHtml}
       ${footerHtml}
     </div>
   </div>`;

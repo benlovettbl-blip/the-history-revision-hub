@@ -31,7 +31,13 @@ import {
   renderBletchleyEvidenceDeskHTML,
 } from './ww2_archival_desk.js';
 import { saveArcadePersonalBest } from '../arcade/arcade_audio.js';
-import { renderEscapeBrandBarHTML, renderEscapeCoverSealHTML } from './escape_room_brand.js';
+import {
+  renderEscapeBrandBarHTML,
+  renderEscapeCoverSealHTML,
+  renderAtmosphericCinemaHTML,
+  renderWorkbookCodeCardHTML,
+  createEscapeCinemaVoicePlayer,
+} from './escape_room_brand.js';
 
 const SESSION_SAVE_KEY = 'hh_ww2_homefront_session_v2';
 
@@ -65,12 +71,90 @@ const preloadNextStage = createStageAssetPreloader({
 
 const STEPS = [
   { id: 'cover', short: '🚂 Cover', mob: '🚂 Cover' },
+  { id: 'prologue', short: '🎬 Opening', mob: '🎬 Opening' },
   { id: 'beat0', short: '1. Platform & Map', mob: '1/6 Station' },
   { id: 'beat1', short: '2. Two Suitcases', mob: '2/6 Billet' },
   { id: 'beat2', short: '3. Blitz Shelter', mob: '3/6 Blitz' },
   { id: 'beat3', short: '4. Ration Shop', mob: '4/6 Rations' },
   { id: 'beat4', short: '5. Bletchley Code', mob: '5/6 Code' },
   { id: 'beat5', short: '6. VE Day & IWM', mob: '6/6 VE Day' },
+  { id: 'epilogue', short: '🎬 Ending', mob: '🎬 Ending' },
+];
+
+const WW2_PROLOGUE_SLIDES = [
+  {
+    voClip: 'ww2_pro_1',
+    credit: 'THE HISTORY REVISION HUB PRESENTS • 1 SEPTEMBER 1939',
+    heading: 'Operation Pied Piper',
+    img: '/units/ks2_ww2/assets/evacuees_railway_1939.jpg',
+    alt: 'Imperial War Museums photograph of British evacuee children carrying suitcases and gas-mask boxes on a railway platform in September 1939',
+    caption: 'Imperial War Museums • 1.5 million children, mothers, and teachers evacuated in the first three days',
+    narration:
+      'As war looms over Europe, special steam trains roll out from Britain’s big cities. Every child wears a brown luggage label on their coat and carries a small suitcase into the unknown countryside.',
+  },
+  {
+    voClip: 'ww2_pro_2',
+    credit: 'AUTUMN 1940 • BRITAIN GOES DARK',
+    heading: 'Blackout & The Blitz',
+    img: '/units/ks2_ww2/assets/anderson_shelter_family.jpg',
+    alt: 'Imperial War Museums photograph of a British family outside their corrugated-steel garden Anderson air-raid shelter',
+    caption: 'Imperial War Museums • Six bolted corrugated-steel sheets covered in garden soil saved thousands of lives',
+    narration:
+      'Thirty-eight million gas masks are issued across Britain. After sunset, ARP Wardens patrol pitch-dark streets while families shelter inside corrugated-steel Anderson shelters in their back gardens.',
+  },
+  {
+    voClip: 'ww2_pro_3',
+    credit: '1940–1945 • THE BATTLE OF THE ATLANTIC',
+    heading: 'Fair Shares & Weekly Rations',
+    img: '/units/ks2_ww2/assets/housewife_ration_book_grocer_1941.jpg',
+    alt: 'Imperial War Museums 1941 photograph of a British shopper handing her ration book across the village grocer counter',
+    caption: 'Imperial War Museums (1941) • Ration books ensured rich and poor shared scarce imported food fairly',
+    narration:
+      'Out in the Atlantic, U-boats hunt merchant ships bringing food to Britain. Every citizen registers at a local shop—sharing 1 egg, 2 oz butter, 4 oz bacon, and 8 oz sugar per week, while growing unrationed vegetables!',
+  },
+  {
+    voClip: 'ww2_pro_4',
+    credit: 'STATION X • BLETCHLEY PARK, BUCKINGHAMSHIRE',
+    heading: 'The Secret Listeners',
+    img: '/units/ks2_ww2/assets/bletchley_park_wrens.jpg',
+    alt: 'Imperial War Museums photograph of Women’s Royal Naval Service (WRNS) operators working codebreaking machines at Bletchley Park',
+    caption: 'Imperial War Museums • Over 75% of Bletchley Park’s staff were women bound by the Official Secrets Act',
+    narration:
+      'Inside quiet country huts, thousands of women and codebreakers race each morning to unlock German Enigma rotors and protect Allied convoys. Crack all four wartime locks to reach Victory in Europe Day!',
+  },
+];
+
+const WW2_EPILOGUE_SLIDES = [
+  {
+    voClip: 'ww2_end_1',
+    credit: 'FINALE SCENE 1 OF 3 • 8 MAY 1945, WHITEHALL',
+    heading: 'Church Bells Ring Again',
+    img: '/images/upgraded/ks2-ww2/l10_banner_ve_day_whitehall_colour_tr2876.jpg',
+    alt: 'Imperial War Museums colour photograph (TR 2876) of VE Day crowds waving flags in Whitehall on 8 May 1945',
+    caption: 'Imperial War Museums (TR 2876) • Rare 1945 colour photograph of VE Day crowds in Whitehall, London',
+    narration:
+      'At 3:00 PM on 8 May 1945, Prime Minister Winston Churchill broadcasts that the war in Europe is over. After nearly six years of silence, church bells ring out across every town and village in Britain.',
+  },
+  {
+    voClip: 'ww2_end_2',
+    credit: 'FINALE SCENE 2 OF 3 • AFTER THE STREET PARTIES',
+    heading: 'Nine More Years of Ration Books',
+    img: '/units/ks2_ww2/assets/ration_book_coupons_1940.jpg',
+    alt: 'Authentic wartime Ministry of Food ration book coupons',
+    caption: 'Ministry of Food Archive • Food rationing did not end completely until July 1954',
+    narration:
+      'Neighbours hung red, white, and blue bunting across bombed streets—yet peace did not bring plenty overnight. War in Asia continued until August 1945, and British families used ration books until July 1954!',
+  },
+  {
+    voClip: 'ww2_end_3',
+    credit: 'FINALE SCENE 3 OF 3 • THIRTY YEARS OF SILENCE',
+    heading: 'The Secret Kept Until the 1970s',
+    img: '/units/ks2_ww2/assets/bombe_bletchley_park.jpg',
+    alt: 'Electromechanical Bombe codebreaking machine operated at Bletchley Park',
+    caption: 'Bletchley Park Archive • Codebreakers kept their Official Secrets Act vow for three decades after 1945',
+    narration:
+      'When Bletchley Park’s Wrens and codebreakers went home in 1945, they never breathed a word to their families for thirty years. You have mastered every lock of The Home Front Escape!',
+  },
 ];
 
 const ROTOR_WHEELS = [
@@ -119,6 +203,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
   if (!stageEl) return () => {};
 
   const audio = new Ww2HomeFrontAudioDirector();
+  const cinemaVoice = createEscapeCinemaVoicePlayer();
   const persistence = createSessionPersistence(SESSION_SAVE_KEY);
   const instanceSvgUid = `uk${Math.random().toString(36).slice(2, 7)}`;
 
@@ -147,6 +232,8 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     lastVoClipId: 'cover_clara_welcome',
 
     coverSpotsFound: new Set(),
+    prologueIdx: 0,
+    epilogueIdx: 0,
 
     // Beat 0: Platform Suitcase Packing + 7-Region All-UK Evacuation Map
     beat0Tab: 'pack', // 'pack' | 'map'
@@ -535,6 +622,8 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
 
   function getSceneSignature() {
     if (!data) return 'loading';
+    if (state.step === 'prologue') return `prologue:${state.prologueIdx}`;
+    if (state.step === 'epilogue') return `epilogue:${state.epilogueIdx}`;
     if (state.step === 'beat0') return `beat0:${state.beat0Tab}`;
     return state.step;
   }
@@ -659,50 +748,101 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       <div class="ww2-cover-wrap">
         <div class="ww2-cover-launchpad">
           <div class="ww2-cover-visual-col">
-            <div class="ww2-cover-art-box" id="ww2-fx-stage">
+            <div class="ww2-cover-art-box" id="ww2-fx-stage" style="background:#060911;">
               <img src="/units/ks2_ww2/assets/banner_unit_hero.jpg"
                    alt="Imperial War Museums archival photograph of British evacuee children carrying cardboard gas-mask boxes and suitcases on a 1939 railway platform"
                    class="ww2-diorama-img" />
               <div class="ww2-cover-plate-badge">📷 Imperial War Museums • Operation Pied Piper Evacuees (September 1939)</div>
-            </div>
-
-            <div class="ww2-cast-strip-wrap">
-              <div class="ww2-cast-strip-label">🎙️ Tap to Hear Voices on Platform Four:</div>
-              <div class="ww2-cast-strip-grid" id="ww2-cover-cast-slot">
-                ${renderCoverCastChipsHTML()}
-              </div>
             </div>
           </div>
 
           <div class="ww2-cover-info-col">
             <div>
               ${renderEscapeCoverSealHTML('THE HISTORY REVISION HUB • OFFICIAL ESCAPE ROOM')}
-              <div class="ww2-cover-kicker">🔐 4-LOCK HOME FRONT ESCAPE ROOM • BRITAIN 1939–1945</div>
+              <div class="ww2-cover-kicker">🔐 VOICED 4-LOCK HOME FRONT ESCAPE ROOM • BRITAIN 1939–1945</div>
               <h2 class="ww2-cover-title">THE HOME FRONT ESCAPE (1939–1945)</h2>
               <p class="ww2-cover-sub">
-                Step back to Platform Four in September 1939 and crack <strong>four real historical locks</strong> to reach VE Day 1945! Pack an official evacuee suitcase, pass the Blitz Blackout &amp; Shelter inspection, dial the <strong>1941 Ministry of Food Ration Vault (1–2–4–8)</strong>, and crack the <strong>Bletchley Park Enigma Rotors (B–R–K)</strong>.
+                Watch the <strong>Studio-voiced 1939–1945 archival opening</strong>, then step onto Platform Four and crack <strong>four real historical locks</strong>: pack an official evacuee suitcase, pass the Blitz shelter inspection, dial the <strong>1941 Ration Vault (1–2–4–8)</strong>, and unlock <strong>Bletchley Park’s Enigma Rotors (B–R–K)</strong>!
               </p>
               <div class="ww2-cover-pills-row">
-                <span class="ww2-cover-pill">🔒 Lock 1: Platform &amp; UK Map</span>
-                <span class="ww2-cover-pill">🕊️ Kindertransport</span>
+                <span class="ww2-cover-pill">🎬 Voiced 1939 Cinema</span>
+                <span class="ww2-cover-pill">🔒 Lock 1: Platform &amp; Map</span>
                 <span class="ww2-cover-pill">🔒 Lock 2: Blitz Shelter</span>
                 <span class="ww2-cover-pill">🔒 Lock 3: Ration Vault</span>
                 <span class="ww2-cover-pill">🔒 Lock 4: Enigma B–R–K</span>
-                <span class="ww2-cover-pill">🎉 VE Day 1945</span>
+                <span class="ww2-cover-pill">🎊 Voiced VE Day Ending</span>
               </div>
             </div>
 
-            <button type="button" class="ww2-start-cta" id="ww2-start-btn" style="width:100%;">
-              🔐 ENTER 1939 HOME FRONT ESCAPE (LOCK #1)
-            </button>
-
-            <div class="ww2-cover-quote-wrap" id="ww2-cover-quote-slot">
-              ${renderCoverQuoteInnerHTML()}
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <button type="button" class="ww2-start-cta" id="ww2-start-cinema-btn" style="width:100%;">
+                🎬 WATCH VOICED 1939 CINEMATIC OPENING &amp; ENTER ROOM 1
+              </button>
+              <button type="button" class="hh-er-cover-secondary-cta" id="ww2-start-btn">
+                ⚡ Skip Opening Credits → Jump Straight to Room 1 (Platform Four)
+              </button>
             </div>
           </div>
         </div>
       </div>
     `;
+  }
+
+  function renderWw2PrologueHTML() {
+    const slide = WW2_PROLOGUE_SLIDES[state.prologueIdx] || WW2_PROLOGUE_SLIDES[0];
+    const isLast = state.prologueIdx >= WW2_PROLOGUE_SLIDES.length - 1;
+    return renderAtmosphericCinemaHTML({
+      topLeftLabel: 'THE HISTORY REVISION HUB • 1939 HOME FRONT ARCHIVE CINEMA',
+      topRightLabel: `SCENE ${state.prologueIdx + 1} OF ${WW2_PROLOGUE_SLIDES.length} • 🎙️ STUDIO VOICEOVER`,
+      slideIndex: state.prologueIdx,
+      totalSlides: WW2_PROLOGUE_SLIDES.length,
+      vignetteTone: 'gold',
+      imgSrc: slide.img,
+      imgAlt: slide.alt,
+      caption: slide.caption,
+      credit: slide.credit,
+      heading: slide.heading,
+      narrationHTML: `<p style="margin:0;">${slide.narration}</p>`,
+      actionsHTML: `
+        ${
+          !isLast
+            ? `<button type="button" class="ww2-start-cta" style="width:auto;padding:10px 20px;" id="ww2-prologue-next">Next Scene →</button>`
+            : `<button type="button" class="ww2-start-cta" style="width:auto;padding:11px 22px;" id="ww2-start-btn">🚂 ENTER ROOM 1: PLATFORM FOUR →</button>`
+        }
+        <button type="button" class="hh-er-cover-secondary-cta" style="width:auto;padding:10px 14px;" id="ww2-cinema-replay-vo">🔊 Replay Voiceover</button>
+        <button type="button" class="hh-er-cover-secondary-cta" style="width:auto;padding:10px 16px;" id="ww2-start-btn">Skip Prologue →</button>
+      `,
+      dotAttr: 'data-ww2-prologue-idx',
+      bottomRightLabel: 'British Studio Narration • Imperial War Museums Archival Plates',
+    });
+  }
+
+  function renderWw2EpilogueHTML() {
+    const slide = WW2_EPILOGUE_SLIDES[state.epilogueIdx] || WW2_EPILOGUE_SLIDES[0];
+    const isLast = state.epilogueIdx >= WW2_EPILOGUE_SLIDES.length - 1;
+    return renderAtmosphericCinemaHTML({
+      topLeftLabel: 'THE HISTORY REVISION HUB • 8 MAY 1945 VE DAY CINEMATIC ENDING',
+      topRightLabel: `FINALE ${state.epilogueIdx + 1} OF ${WW2_EPILOGUE_SLIDES.length} • 🎙️ STUDIO VOICEOVER`,
+      slideIndex: state.epilogueIdx,
+      totalSlides: WW2_EPILOGUE_SLIDES.length,
+      vignetteTone: 'emerald',
+      imgSrc: slide.img,
+      imgAlt: slide.alt,
+      caption: slide.caption,
+      credit: slide.credit,
+      heading: slide.heading,
+      narrationHTML: `<p style="margin:0;">${slide.narration}</p>`,
+      actionsHTML: `
+        ${
+          !isLast
+            ? `<button type="button" class="ww2-start-cta" style="width:auto;padding:10px 20px;" id="ww2-epilogue-next">Next Finale Scene →</button>`
+            : `<button type="button" class="ww2-start-cta" style="width:auto;padding:11px 22px;" data-step-jump="beat5">🏅 Return to Home Front Medal &amp; Workbook Code →</button>`
+        }
+        <button type="button" class="hh-er-cover-secondary-cta" style="width:auto;padding:10px 14px;" id="ww2-cinema-replay-vo">🔊 Replay Voiceover</button>
+      `,
+      dotAttr: 'data-ww2-epilogue-idx',
+      bottomRightLabel: 'VE Day 1945 Epilogue • Imperial War Museums Archive',
+    });
   }
 
   function renderCoverQuoteInnerHTML(fallbackHint = '') {
@@ -1304,6 +1444,19 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
           </div>
         </div>
 
+        ${renderWorkbookCodeCardHTML({
+          slotLabel: 'KS2 WW2 BACK-COVER LEDGER',
+          phrase: 'MILLIONS EVACUATED SHARED RATIONS AND BROKE ENIGMA',
+          instruction:
+            'Copy this unlocked phrase into the Escape Room Ledger on the Back Cover of your KS2 World War II Pupil Workbook!',
+        })}
+
+        <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;">
+          <button type="button" class="ww2-start-cta" id="ww2-watch-ending-btn" style="flex:1;">
+            🎬 Watch 3-Scene Voiced VE Day Cinematic Ending
+          </button>
+        </div>
+
         ${
           medalUnlocked
             ? `<div class="ww2-cert-card">
@@ -1364,6 +1517,12 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
   function renderStageSceneHTML(sig) {
     if (sig === 'cover') {
       return renderCoverSceneHTML();
+    }
+    if (sig.startsWith('prologue:')) {
+      return renderWw2PrologueHTML();
+    }
+    if (sig.startsWith('epilogue:')) {
+      return renderWw2EpilogueHTML();
     }
 
     if (sig === 'beat5') {
@@ -1777,7 +1936,65 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       return;
     }
 
+    if (e.target.closest('#ww2-cinema-replay-vo')) {
+      cinemaVoice.replay();
+      return;
+    }
+
+    if (e.target.closest('#ww2-start-cinema-btn')) {
+      state.prologueIdx = 0;
+      audio.stopVoice();
+      setStep('prologue');
+      cinemaVoice.play('ww2_pro_1');
+      return;
+    }
+
+    if (e.target.closest('#ww2-prologue-next')) {
+      if (state.prologueIdx < WW2_PROLOGUE_SLIDES.length - 1) {
+        state.prologueIdx += 1;
+        audio.suitcaseClick();
+        updateLab(false);
+        cinemaVoice.play(`ww2_pro_${state.prologueIdx + 1}`);
+      }
+      return;
+    }
+
+    const ww2ProDot = e.target.closest('[data-ww2-prologue-idx]');
+    if (ww2ProDot) {
+      state.prologueIdx = Number(ww2ProDot.getAttribute('data-ww2-prologue-idx')) || 0;
+      updateLab(false);
+      cinemaVoice.play(`ww2_pro_${state.prologueIdx + 1}`);
+      return;
+    }
+
+    if (e.target.closest('#ww2-watch-ending-btn')) {
+      state.epilogueIdx = 0;
+      audio.stopVoice();
+      setStep('epilogue');
+      cinemaVoice.play('ww2_end_1');
+      return;
+    }
+
+    if (e.target.closest('#ww2-epilogue-next')) {
+      if (state.epilogueIdx < WW2_EPILOGUE_SLIDES.length - 1) {
+        state.epilogueIdx += 1;
+        audio.chimeSuccess();
+        updateLab(false);
+        cinemaVoice.play(`ww2_end_${state.epilogueIdx + 1}`);
+      }
+      return;
+    }
+
+    const ww2EpDot = e.target.closest('[data-ww2-epilogue-idx]');
+    if (ww2EpDot) {
+      state.epilogueIdx = Number(ww2EpDot.getAttribute('data-ww2-epilogue-idx')) || 0;
+      updateLab(false);
+      cinemaVoice.play(`ww2_end_${state.epilogueIdx + 1}`);
+      return;
+    }
+
     if (e.target.closest('#ww2-start-btn')) {
+      cinemaVoice.stop();
       audio.trainWhistle();
       setStep('beat0');
       return;
@@ -2507,6 +2724,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     scrollLock.dispose();
     fsController.dispose();
     destroyFx();
+    cinemaVoice.destroy();
     audio.destroy();
   };
 }

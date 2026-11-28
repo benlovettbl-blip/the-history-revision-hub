@@ -8,6 +8,15 @@ const { renderKs2Ks3BackCover } = require('./components/render_ks2_ks3_back_cove
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
+function esc(s) {
+  return String(s ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 function getBase64Image(relPath) {
   if (!relPath) return null;
   const clean = relPath.replace(/^\//, '');
@@ -617,12 +626,21 @@ function renderFooterStrip(pageNum, quip, totalPages = 16) {
 // LEFT PAGE RENDERER: 5-STAGE CHRONOLOGICAL INQUIRY SPINE (HIGH-CONTRAST MONO)
 // ============================================================================
 function renderSpinePage(cfg, pageNum) {
+  const isThematic = cfg.spineMode === 'thematic';
   const stagesHtml = cfg.stages
     .map((st, sIdx) => {
       const stageNum = st.step || sIdx + 1;
       const questionText = (st.questionHeading || st.focusClue || st.title || '').replace(/^\[[\d\.]+\]\s*/, '').trim();
-      const combinedLen = questionText.length + (st.date ? String(st.date).length : 0);
+      const pillText = isThematic
+        ? st.theme || st.date || st.dates || ''
+        : st.date || st.dates || '';
+      const combinedLen = questionText.length + (pillText ? String(pillText).length : 0);
       const qFontSize = combinedLen > 105 ? '7.8pt' : combinedLen > 95 ? '8.2pt' : combinedLen > 85 ? '8.5pt' : '8.8pt';
+      const badgeHtml = pillText
+        ? isThematic
+          ? `<span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 800; color: #000000; background: #ffffff; border: 1.2px solid #000000; padding: 0.4px 5px; border-radius: 2px; text-transform: uppercase; white-space: nowrap; flex-shrink: 0;">${esc(pillText)}</span>`
+          : `<span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">${esc(pillText)}</span>`
+        : '';
 
       return `
         <!-- STAGE ${stageNum} CONTAINER (FULL-WIDTH CME/EEE GOLDEN STANDARD — ZERO TRIGGER COLUMN) -->
@@ -634,10 +652,8 @@ function renderSpinePage(cfg, pageNum) {
               <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 900; padding: 0.8px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 Stage ${stageNum}
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
-                ${st.date ? `${st.date}` : ''}
-              </span>
-              <span style="color: #000000; font-size: 8.2pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              ${badgeHtml}
+              ${pillText ? '<span style="color: #000000; font-size: 8.2pt; font-weight: 900; flex-shrink: 0;">&bull;</span>' : ''}
               <span class="stage-question-text" data-base-size="${qFontSize}" style="font-family: 'Playfair Display', Georgia, serif; font-size: ${qFontSize}; font-weight: 800; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 ${questionText}
               </span>
@@ -667,7 +683,7 @@ function renderSpinePage(cfg, pageNum) {
         <div style="flex: 1; min-width: 0;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
             <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #ffffff; color: #000000; border: 1.5px solid #000000; padding: 2px 8px; border-radius: 2px;">
-              ENQUIRY ${cfg.lessonNum} &bull; LESSON NOTEBOOK
+              ENQUIRY ${cfg.lessonNum} &bull; ${isThematic ? `${cfg.stages.length}-STAGE ENQUIRY ROADMAP` : 'LESSON NOTEBOOK'}
             </span>
             <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; text-transform: uppercase; color: #000000; white-space: nowrap;">
               YEAR 7 &bull; MEDIEVAL ENGLAND: 1066–1485
@@ -1623,14 +1639,23 @@ function compileMedievalWorkbook() {
                 "focus": "Evaluative Essay: Causes of Feudal Breakdown"
           },
           {
-                "title": "Independent Study & Notes Portfolio",
-                "focus": "Pages 14–15 Enquiry Notes, Reflection & Revision Tasks"
-          },
-          {
                 "title": "Teacher-Designated Assessment Task",
                 "focus": "Synoptic Medieval History Assessment & Vocabulary Mastery"
           }
     ],
+    escapeRoomLedger: {
+      title: 'Official Escape Room Homework Verdict Ledger (1066–1381)',
+      badge: '15-Sec Homework Check',
+      instruction:
+        'Scan the Revision Arcade QR below after each enquiry, crack every historical lock, and write your unlocked Verification Phrase on its line to build the Medieval England Verdict Chain:',
+      slots: [
+        { code: 'E1 (1066 Hastings)' },
+        { code: 'E2 (1086 Domesday)' },
+        { code: 'E3 (1170 Becket)' },
+        { code: 'E4 (1215 Magna Carta)' },
+        { code: 'E5 (1348–81 Revolt & Unit Verdict)' },
+      ],
+    },
     footerQuip: "The History Revision Hub • KS3 Medieval England Pupil Workbook • Independent Curriculum Resource",
     renderFooterStrip,
   });

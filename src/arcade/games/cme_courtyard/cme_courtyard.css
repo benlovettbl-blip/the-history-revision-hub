@@ -79,6 +79,10 @@
 /* --------------------------------------------------------------------------
    ZONE 1: Single Streamlined Top Bar (Chapter Picker · Two-World Switch · Tools)
    -------------------------------------------------------------------------- */
+.cme-ct-viewport.is-cover-viewport .cme-ct-scene-img {
+  animation: hhErCamPush 16s ease-in-out infinite alternate;
+}
+
 .cme-ct-topbar {
   display: flex;
   justify-content: space-between;
@@ -1743,7 +1747,11 @@
   .cme-ct-stage-frame {
     padding: 5px 9px !important;
   }
-  .cme-ct-topbar {
+  .cme-ct-viewport.is-cover-viewport .cme-ct-scene-img {
+  animation: hhErCamPush 16s ease-in-out infinite alternate;
+}
+
+.cme-ct-topbar {
     padding: 3px 8px;
     margin-bottom: 3px;
     gap: 5px;

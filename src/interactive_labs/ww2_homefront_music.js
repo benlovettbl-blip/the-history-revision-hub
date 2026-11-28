@@ -883,6 +883,24 @@ export class Ww2HomeFrontAudioDirector {
   // =========================================================================
   // STUDIO VOICEOVER PLAYBACK WITH SMOOTH AUTO-DUCKING
   // =========================================================================
+  stopVoice() {
+    if (this.unduckTimer) {
+      clearTimeout(this.unduckTimer);
+      this.unduckTimer = null;
+    }
+    if (this.activeVoAudio) {
+      try {
+        this.activeVoAudio.onended = null;
+        this.activeVoAudio.onerror = null;
+        this.activeVoAudio.pause();
+        this.activeVoAudio.currentTime = 0;
+      } catch (_) {}
+      this.activeVoAudio = null;
+    }
+    this.isDucked = false;
+    this.syncGains();
+  }
+
   playVoice(clipId) {
     this.wake();
     if (this.muted || !clipId || !WW2_HOMEFRONT_VO_CLIPS.has(clipId)) return;

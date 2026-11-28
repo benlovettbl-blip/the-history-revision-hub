@@ -19,6 +19,13 @@ import {
   bindNativeFullscreenSync,
 } from './story_lab_engine.js';
 import { saveArcadePersonalBest } from '../arcade/arcade_audio.js';
+import {
+  renderEscapeBrandBarHTML,
+  renderEscapeCoverSealHTML,
+  renderAtmosphericCinemaHTML,
+  renderWorkbookCodeCardHTML,
+  createEscapeCinemaVoicePlayer,
+} from './escape_room_brand.js';
 
 const SESSION_KEY = 'hh_ks2_vindolanda_lab_v1';
 const UNIT_ID = 'ks2_romans';
@@ -45,11 +52,59 @@ const preloadStageAssets = createStageAssetPreloader({
 
 const STEPS = [
   { id: 'cover', short: '🪶 Cover', mob: 'Cover • Vindolanda' },
+  { id: 'prologue', short: '🎬 Opening', mob: '🎬 Opening' },
   { id: 'stage1', short: '1. Frontier Fort', mob: '1/5 Frontier Fort' },
   { id: 'stage2', short: '2. Birthday Tablet', mob: '2/5 Tablet 291' },
   { id: 'stage3', short: '3. Soldier’s Kit', mob: '3/5 Soldier’s Kit' },
   { id: 'stage4', short: '4. Empire Voices', mob: '4/5 Empire Voices' },
   { id: 'stage5', short: '5. Dispatch', mob: '5/5 Dispatch' },
+  { id: 'epilogue', short: '🎬 Ending', mob: '🎬 Ending' },
+];
+
+const VINDOLANDA_PROLOGUE = [
+  {
+    voClip: 'vindolanda_pro_1',
+    credit: 'THE HISTORY REVISION HUB PRESENTS • NORTHERN BRITAIN, c. AD 100',
+    heading: 'The Windy Roman Frontier',
+    img: ASSETS.fortRuins,
+    alt: 'Stone wall foundations of Vindolanda Roman Fort in Northumberland',
+    caption: 'Vindolanda Fort, Northumberland • Guarding the Stanegate road even before stone Hadrian’s Wall was built',
+    narration:
+      'Along the windswept northern edge of the Roman Empire stands Vindolanda—guarded by auxiliary troops from Belgium, Gaul, Syria, and North Africa.',
+  },
+  {
+    voClip: 'vindolanda_pro_2',
+    credit: 'SEALED IN OXYGEN-FREE CLAY • TAB. VINDOL. 291',
+    heading: 'Voices Written in Real Roman Ink',
+    img: ASSETS.tablet291,
+    alt: 'Claudia Severa wooden ink birthday invitation tablet Tab. Vindol. 291',
+    caption: 'British Museum (Tab. Vindol. 291) • The oldest surviving Latin handwriting by a woman in Britain',
+    narration:
+      'Beneath the wet clay fort ditches lie wafer-thin birch-wood postcards written in carbon ink—from chilly soldiers asking for woollen socks to Claudia Severa’s warm birthday invitation!',
+  },
+];
+
+const VINDOLANDA_EPILOGUE = [
+  {
+    voClip: 'vindolanda_end_1',
+    credit: 'FINALE SCENE 1 OF 2 • 1,900 YEARS UNDER THE MUD',
+    heading: 'Everyday Voices Rescued From Time',
+    img: ASSETS.tablet291,
+    alt: 'Claudia Severa wooden ink birthday invitation tablet',
+    caption: 'Vindolanda Ink Tablets • Preserved without oxygen in wet Northumberland soil for nearly nineteen centuries',
+    narration:
+      'Stone temples record emperors and generals—yet Vindolanda’s wooden ink tablets rescued the warm friendships, birthday parties, and chilly toes of real families!',
+  },
+  {
+    voClip: 'vindolanda_end_2',
+    credit: 'FINALE SCENE 2 OF 2 • AN EMPIRE OF MANY PEOPLES',
+    heading: 'From Syria & North Africa to Tyneside',
+    img: ASSETS.reginaStone,
+    alt: 'Tombstone of Regina at Arbeia South Shields Roman Fort carved with Latin and Palmyrene script',
+    caption: 'Arbeia Roman Fort (South Shields) • Tombstone of British-born Regina erected by Barates of Palmyra (Syria)',
+    narration:
+      'Together with carved frontier stones along Hadrian’s Wall, Vindolanda proves Roman Britain’s northern border was a vibrant, multicultural community spanning three continents!',
+  },
 ];
 
 const FORT_ZONES = [
@@ -978,25 +1033,90 @@ export function mountKs2VindolandaLab(container, opts = {}, legacyCtx = {}) {
 
           <div class="ks2lab-cover-info">
             <div>
-              <div class="ks2lab-kicker">🪶 KS2 INTERACTIVE STORYBOOK LAB • ROMAN FRONTIER BRITAIN (c. AD 100)</div>
+              ${renderEscapeCoverSealHTML('THE HISTORY REVISION HUB • OFFICIAL ESCAPE LAB')}
+              <div class="ks2lab-kicker">🪶 VOICED KS2 FRONTIER ESCAPE LAB • ROMAN BRITAIN (c. AD 100)</div>
               <h2 class="ks2lab-hero-title">Ink on the Frontier: The Vindolanda Postbag Lab</h2>
               <p class="ks2lab-hero-sub">
-                Step onto the windy northern frontier near Hadrian’s Wall! Inspect Vindolanda’s raised stone granaries and waterlogged fort ditch, decode Claudia Severa’s birthday party invitation, pack a chilly soldier’s woollen socks, and meet families from Syria, North Africa, and Europe!
+                Watch the <strong>Studio-voiced AD 100 frontier opening</strong>, inspect Vindolanda’s granaries and wet ditch, decode Claudia Severa’s birthday invitation, pack a soldier’s winter socks, and meet families from across the Roman Empire!
               </p>
               <div class="ks2lab-badge-row">
-                <span class="ks2lab-badge">1. Frontier Fort Map</span>
-                <span class="ks2lab-badge">2. Birthday Tablet 291</span>
-                <span class="ks2lab-badge">3. Winter Kit Parcel</span>
-                <span class="ks2lab-badge">4. Empire-Wide Voices</span>
-                <span class="ks2lab-badge">5. Epigrapher Dispatch</span>
+                <span class="ks2lab-badge">🎬 Voiced AD 100 Cinema</span>
+                <span class="ks2lab-badge">🔒 Lock 1: Fort Map</span>
+                <span class="ks2lab-badge">🔒 Lock 2: Tablet 291</span>
+                <span class="ks2lab-badge">🔒 Lock 3: Winter Parcel</span>
+                <span class="ks2lab-badge">🔒 Lock 4: Empire Voices</span>
               </div>
             </div>
-            <button type="button" class="ks2lab-cta-primary" data-step-go="stage1">
-              <span>📜 Open Roman Postbag (Stage 1)</span>
-            </button>
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <button type="button" class="ks2lab-cta-primary" data-cinema-start="prologue">
+                <span>🎬 Watch Voiced AD 100 Opening &amp; Open Postbag</span>
+              </button>
+              <button type="button" class="hh-er-cover-secondary-cta" data-step-go="stage1">
+                ⚡ Skip Opening → Jump Straight to Stage 1 (Vindolanda Fort)
+              </button>
+            </div>
           </div>
         </div>
       `;
+    }
+
+    if (state.step === 'prologue') {
+      const idx = state.cinemaIdx || 0;
+      const slide = VINDOLANDA_PROLOGUE[idx] || VINDOLANDA_PROLOGUE[0];
+      const isLast = idx >= VINDOLANDA_PROLOGUE.length - 1;
+      return renderAtmosphericCinemaHTML({
+        topLeftLabel: 'THE HISTORY REVISION HUB • ROMAN FRONTIER ARCHIVE CINEMA',
+        topRightLabel: `SCENE ${idx + 1} OF ${VINDOLANDA_PROLOGUE.length} • 🎙️ STUDIO VOICEOVER`,
+        slideIndex: idx,
+        totalSlides: VINDOLANDA_PROLOGUE.length,
+        vignetteTone: 'gold',
+        imgSrc: slide.img,
+        imgAlt: slide.alt,
+        caption: slide.caption,
+        credit: slide.credit,
+        heading: slide.heading,
+        narrationHTML: `<p style="margin:0;">${slide.narration}</p>`,
+        actionsHTML: `
+          ${
+            !isLast
+              ? `<button type="button" class="ks2lab-cta-primary" style="width:auto;padding:10px 20px;" data-cinema-next="prologue">Next Scene →</button>`
+              : `<button type="button" class="ks2lab-cta-primary" style="width:auto;padding:11px 22px;" data-step-go="stage1">🏛️ Enter Stage 1: Vindolanda Fort →</button>`
+          }
+          <button type="button" class="hh-er-cover-secondary-cta" style="width:auto;padding:10px 14px;" data-cinema-replay="1">🔊 Replay Voiceover</button>
+          <button type="button" class="hh-er-cover-secondary-cta" style="width:auto;padding:10px 14px;" data-step-go="stage1">Skip Prologue →</button>
+        `,
+        dotAttr: 'data-cinema-dot',
+        bottomRightLabel: 'British Studio Narration • Vindolanda Trust & British Museum Plates',
+      });
+    }
+
+    if (state.step === 'epilogue') {
+      const idx = state.cinemaIdx || 0;
+      const slide = VINDOLANDA_EPILOGUE[idx] || VINDOLANDA_EPILOGUE[0];
+      const isLast = idx >= VINDOLANDA_EPILOGUE.length - 1;
+      return renderAtmosphericCinemaHTML({
+        topLeftLabel: 'THE HISTORY REVISION HUB • VINDOLANDA CINEMATIC ENDING',
+        topRightLabel: `FINALE ${idx + 1} OF ${VINDOLANDA_EPILOGUE.length} • 🎙️ STUDIO VOICEOVER`,
+        slideIndex: idx,
+        totalSlides: VINDOLANDA_EPILOGUE.length,
+        vignetteTone: 'emerald',
+        imgSrc: slide.img,
+        imgAlt: slide.alt,
+        caption: slide.caption,
+        credit: slide.credit,
+        heading: slide.heading,
+        narrationHTML: `<p style="margin:0;">${slide.narration}</p>`,
+        actionsHTML: `
+          ${
+            !isLast
+              ? `<button type="button" class="ks2lab-cta-primary" style="width:auto;padding:10px 20px;" data-cinema-next="epilogue">Next Finale Scene →</button>`
+              : `<button type="button" class="ks2lab-cta-primary" style="width:auto;padding:11px 22px;" data-step-go="stage5">🏅 Return to Certificate &amp; Workbook Code →</button>`
+          }
+          <button type="button" class="hh-er-cover-secondary-cta" style="width:auto;padding:10px 14px;" data-cinema-replay="1">🔊 Replay Voiceover</button>
+        `,
+        dotAttr: 'data-cinema-dot',
+        bottomRightLabel: 'Vindolanda Epilogue • Verified Roman Britain Finds',
+      });
     }
 
     if (state.step === 'stage1') {
@@ -1283,6 +1403,19 @@ export function mountKs2VindolandaLab(container, opts = {}, legacyCtx = {}) {
           }).join('')}
         </div>
 
+        ${renderWorkbookCodeCardHTML({
+          slotLabel: 'ENQUIRY 4 BACK-COVER LEDGER',
+          phrase: 'INK TABLETS REVEALED MULTICULTURAL ROMAN BRITAIN',
+          instruction:
+            'Copy this unlocked phrase into the Escape Room Ledger on the Back Cover of your Romans in Britain Pupil Workbook!',
+        })}
+
+        <div style="margin:10px 0;display:flex;gap:8px;flex-wrap:wrap;">
+          <button type="button" class="ks2lab-cta-primary" style="width:auto;padding:10px 18px;" data-cinema-start="epilogue">
+            🎬 Watch 2-Scene Voiced Vindolanda Cinematic Ending
+          </button>
+        </div>
+
         ${
           allSolved
             ? `
@@ -1354,17 +1487,34 @@ export function mountKs2VindolandaLab(container, opts = {}, legacyCtx = {}) {
     `;
   }
 
+  const cinemaVoice = createEscapeCinemaVoicePlayer();
+
+  function renderBrandBarHTML() {
+    const locks = ['stage1', 'stage2', 'stage3', 'stage4'].filter((id) => isStageComplete(id)).length;
+    return renderEscapeBrandBarHTML({
+      eraTag: 'KS2 • ROMAN FRONTIER (c. AD 100)',
+      locksCracked: locks,
+      totalLocks: 4,
+    });
+  }
+
   function render(scrollToTop = false) {
     if (unmounted || !shellEl) return;
     shellEl.classList.toggle('ks2lab-is-fullscreen', state.isFullscreen);
 
     const mutate = () => {
+      const brandEl = shellEl.querySelector('#ks2-vin-brand');
       const topEl = shellEl.querySelector('#ks2-vin-topbar');
       const speechEl = shellEl.querySelector('#ks2-vin-speech');
       const bodyEl = shellEl.querySelector('#ks2-vin-body');
       const navEl = shellEl.querySelector('#ks2-vin-bottom');
+      if (brandEl) brandEl.innerHTML = renderBrandBarHTML();
       if (topEl) topEl.innerHTML = renderTopBarHTML();
-      if (speechEl) speechEl.innerHTML = renderSpeechBarHTML();
+      if (speechEl) {
+        const hideSpeech = state.step === 'cover' || state.step === 'prologue' || state.step === 'epilogue';
+        speechEl.style.display = hideSpeech ? 'none' : '';
+        if (!hideSpeech) speechEl.innerHTML = renderSpeechBarHTML();
+      }
       if (bodyEl) bodyEl.innerHTML = renderStageBodyHTML();
       if (navEl) navEl.innerHTML = renderBottomNavHTML();
     };
@@ -1379,6 +1529,7 @@ export function mountKs2VindolandaLab(container, opts = {}, legacyCtx = {}) {
 
   container.innerHTML = `
     <div class="ks2lab-shell theme-vindolanda ${state.isFullscreen ? 'ks2lab-is-fullscreen' : ''}">
+      <div id="ks2-vin-brand"></div>
       <div class="ks2lab-topbar" id="ks2-vin-topbar"></div>
       <div class="ks2lab-speech-bar" id="ks2-vin-speech" aria-live="polite"></div>
       <div class="ks2lab-stage-slot" id="ks2-vin-body"></div>
@@ -1398,10 +1549,45 @@ export function mountKs2VindolandaLab(container, opts = {}, legacyCtx = {}) {
   });
 
   shellEl.addEventListener('click', (e) => {
+    const cStart = e.target.closest('[data-cinema-start]');
+    if (cStart) {
+      const mode = cStart.getAttribute('data-cinema-start');
+      state.cinemaIdx = 0;
+      sound.stopSpeech();
+      goToStep(mode);
+      cinemaVoice.play(mode === 'epilogue' ? 'vindolanda_end_1' : 'vindolanda_pro_1');
+      return;
+    }
+
+    const cNext = e.target.closest('[data-cinema-next]');
+    if (cNext) {
+      const mode = cNext.getAttribute('data-cinema-next');
+      const arr = mode === 'epilogue' ? VINDOLANDA_EPILOGUE : VINDOLANDA_PROLOGUE;
+      state.cinemaIdx = Math.min(arr.length - 1, (state.cinemaIdx || 0) + 1);
+      sound.click();
+      render(false);
+      cinemaVoice.play(`${mode === 'epilogue' ? 'vindolanda_end' : 'vindolanda_pro'}_${state.cinemaIdx + 1}`);
+      return;
+    }
+
+    const cDot = e.target.closest('[data-cinema-dot]');
+    if (cDot) {
+      state.cinemaIdx = Number(cDot.getAttribute('data-cinema-dot')) || 0;
+      render(false);
+      cinemaVoice.play(`${state.step === 'epilogue' ? 'vindolanda_end' : 'vindolanda_pro'}_${state.cinemaIdx + 1}`);
+      return;
+    }
+
+    if (e.target.closest('[data-cinema-replay]')) {
+      cinemaVoice.replay();
+      return;
+    }
+
     const stepBtn = e.target.closest('[data-step-go]');
     if (stepBtn) {
       const target = stepBtn.getAttribute('data-step-go');
       if (target) {
+        cinemaVoice.stop();
         sound.click();
         goToStep(target);
       }
@@ -1637,6 +1823,7 @@ export function mountKs2VindolandaLab(container, opts = {}, legacyCtx = {}) {
     if (resetArmTimer) clearTimeout(resetArmTimer);
     scrollLock.dispose();
     fsSync.dispose();
+    cinemaVoice.destroy();
     sound.destroy();
   };
 }

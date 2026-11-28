@@ -13,6 +13,11 @@
  */
 
 import './cme_courtyard.css';
+import {
+  renderEscapeBrandBarHTML,
+  renderEscapeCoverSealHTML,
+  renderWorkbookCodeCardHTML,
+} from '../../../interactive_labs/escape_room_brand.js';
 import { KT1_EPISODES } from './episodes_kt1.js';
 import { KT2_EPISODES } from './episodes_kt2.js';
 import { KT3_EPISODES } from './episodes_kt3.js';
@@ -1764,9 +1769,16 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
               .join('')}
           </div>
 
-          <div style="padding:8px 12px;border-radius:8px;background:#241d17;border-left:4px solid #f5ca7b;font-family:Georgia,serif;font-style:italic;font-size:0.82rem;color:#fef3c7;">
+          <div style="padding:8px 12px;border-radius:8px;background:#241d17;border-left:4px solid #f5ca7b;font-family:Georgia,serif;font-style:italic;font-size:0.82rem;color:#fef3c7;margin-bottom:8px;">
             “Fifty years under these arches have taught this old woman one truth: neither of our peoples is going anywhere. Either we learn to share light here, or we share only graves.” — Grandmother Miriam Aloni, 4 November 1995
           </div>
+
+          ${renderWorkbookCodeCardHTML({
+            slotLabel: 'CONFLICT IN THE MIDDLE EAST WORKBOOK • BACK COVER VERDICT LEDGER',
+            phrase: 'TWO PEOPLES CLAIMED ONE LAND FROM MANDATE TO OSLO',
+            instruction:
+              'Write this exact unlocked 1914–1995 verdict phrase into the Escape Room Verdict Ledger on the Back Cover of your Conflict in the Middle East Pupil Workbook!',
+          })}
         </div>
       </div>
     `;
@@ -1800,6 +1812,11 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
     stageEl.innerHTML = `
       <div class="cme-ct-root ${showCoverScreen ? 'is-cover-screen' : ''} ${isFullscreen ? 'is-fullscreen cc-mobile-fullscreen' : ''}">
         <div class="cme-ct-stage-frame">
+          ${renderEscapeBrandBarHTML({
+            eraTag: 'GCSE • MIDDLE EAST ARCHIVAL ESCAPE ATLAS (1914–1995)',
+            locksCracked: totalStamped,
+            totalLocks: 12,
+          })}
           <!-- ZONE 1: Clean Two-Row Top Command HUD (Zero Horizontal Overflow + Prominent Full Screen!) -->
           <div class="cme-ct-topbar cc-hud">
             <button type="button" class="cme-ct-chapter-btn" id="ct-open-chapters-btn" title="Open 12-Chapter Story Campaign Map">
@@ -2011,6 +2028,7 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
                 ? `
                 <!-- Archival Documentary Cover Screen -->
                 <div class="cme-ct-cover-overlay cc-cover">
+                  ${renderEscapeCoverSealHTML('THE HISTORY REVISION HUB • 12-CHAPTER ARCHIVAL ESCAPE ATLAS')}
                   <div class="cme-ct-cover-kicker">🗝️ Archival Documentary Roleplay · 1914–1995</div>
                   <h2 class="cme-ct-cover-title">Courtyard of Two Keys:<br/>Two Families, One Land</h2>
                   <p class="cme-ct-cover-blurb">

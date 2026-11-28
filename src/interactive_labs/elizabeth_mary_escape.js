@@ -1,23 +1,28 @@
 /**
  * THE CIPHER OF FOTHERINGHAY: ESCAPE OF MARY, QUEEN OF SCOTS (1568–1587)
- * Flagship KS3 & GCSE Cinematic History Escape Room — The History Revision Hub
+ * Gold Standard v3 — Flagship KS3 & GCSE Cinematic History Escape Room
  *
- * Upgraded v2:
- *  - 7 Real British Studio Voiceovers (4-Scene Cinematic Opening + 3-Scene Fotheringhay Finale)
- *    with automatic music ducking & Replay Narration button.
- *  - Working Full-Screen Mode (native Fullscreen API + fixed-viewport fallback for Arcade & Lesson Modal).
- *  - Challenging, Logically Deducible Visual-Source Puzzles Across ALL 4 Chambers:
- *      Room 1 (1568 Lochleven): Visual Evidence Inspection + 3-Stage Escape Sequence Lock
- *      Room 2 (1569–71 Ridolfi): Hans Eworth Portrait Clues + Undated Chronicle → 3-Dial Year Vault
- *      Room 3 (1583–84 Throckmorton): Saxton 1579 Map Coastline Deduction + Plausible Dispatch Sort + 1584 Bond
- *      Room 4 (1586 Babington): Real 1586 Cipher with "Nullos" Decoys (10-tile scrambled key → strip 2 Nulls → SIXMEN)
- *      Room 5 (8 Feb 1587 Fotheringhay): Crimson Wax-Seal Trap + Voiced 3-Beat Cinematic Finale
+ * Features:
+ *  - 11 Acted Studio Voiceovers (BBC English Narrator + Scottish Royal Mary + Spymaster Finale)
+ *  - Full-Bleed Atmospheric Cinema on BOTH the 4-Scene Opening AND 3-Scene Ending
+ *  - Interactive 2.4x Brass Archival Magnifying Loupe directly over Lochleven Island,
+ *    Hans Eworth's Norfolk Portrait, Christopher Saxton's 1579 Map, and the 1586 Babington Cipher
+ *  - Crystal-clear "YOUR ESCAPE TASK & HISTORICAL CONTEXT" banners on every room
+ *  - Historically Grounded 4-Document Trial Case File (incl. the 1568 Silver Casket Letters Inquiry
+ *    explaining WHY Elizabeth held Mary in custody without trial!)
+ *  - Spymaster Suspicion Pressure (+10% per mistake; Gold Cryptographer Seal for low suspicion)
+ *  - Official Workbook Back-Cover Homework Verification Code Card
  */
 
 import './elizabeth_mary_escape.css';
 import {
   renderEscapeBrandBarHTML,
   renderEscapeCoverSealHTML,
+  renderTaskDirectiveBannerHTML,
+  renderArchivalLoupeFrameHTML,
+  bindArchivalLoupeDelegation,
+  renderHistoricalCaseFileHTML,
+  renderAtmosphericCinemaHTML,
   renderWorkbookCodeCardHTML,
 } from './escape_room_brand.js';
 import { ElizabethEscapeAudio } from './elizabeth_escape_audio.js';
@@ -62,17 +67,17 @@ const PROLOGUE_SLIDES = [
     alt: 'National Portrait Gallery portrait of Sir Francis Walsingham in black cloak holding a folded letter',
     caption: 'National Portrait Gallery • Sir Francis Walsingham, Principal Secretary & Spymaster',
     narration:
-      'Elizabeth’s spymaster never sleeps. His codebreakers, double agents, and informants watch every port, every tavern, and every sealed letter crossing the Channel.',
+      'Elizabeth’s spymaster never sleeps. His codebreakers, double agents, and informants watch every port, every tavern, and every wax-sealed letter crossing the sea.',
   },
   {
     voClip: 'prologue_4',
-    credit: 'MAY 1568 • LOCHLEVEN CASTLE, SCOTLAND',
+    credit: 'MAY 1568 • LOCHLEVEN CASTLE, SCOTLAND (SCOTTISH ROYAL VOICE)',
     heading: 'Your Escape Begins Tonight',
     img: '/images/eee/kt1/banner_l4_lochleven_castle_panorama.jpg',
     alt: 'Aerial photograph of Lochleven Castle standing on its wooded island in the middle of Loch Leven',
     caption: 'Lochleven Castle Island, Kinross-shire • Where Mary was imprisoned from June 1567 to May 1568',
     narration:
-      'You are Mary, Queen of Scots. Escape this island fortress, navigate four dangerous Catholic plots using secret letters, and outwit Walsingham—before the net closes forever.',
+      '“Tonight, you are Mary, Queen of Scots. Help me escape this island tower, navigate four dangerous Catholic plots through secret letters, and outwit Walsingham—before his net closes forever.”',
   },
 ];
 
@@ -97,17 +102,17 @@ const ROOM1_STEPS = [
 const NORFOLK_VISUAL_CLUES = [
   {
     id: 'letter',
-    label: '🔍 Inspect His Left Hand',
-    note: 'Look at the bottom-right corner of the portrait: Norfolk grips a rolled secret letter—foreshadowing the coded letters smuggled between him, Roberto Ridolfi, and Mary.',
+    label: '🔍 Magnify Rolled Letter',
+    note: 'Look at Norfolk’s left hand (bottom-right): he grips a folded secret dispatch—symbolising the coded letters smuggled between him, Italian banker Roberto Ridolfi, and Mary.',
   },
   {
     id: 'arms',
-    label: '🛡️ Inspect the Royal Arms',
+    label: '🛡️ Inspect Royal Lions',
     note: 'Top-right: the Howard coat of arms displays the royal English lions. As England’s senior duke, marrying Mary would give Catholic rebels a royal English figurehead.',
   },
   {
     id: 'timeline',
-    label: '📜 Read the Undated Chronicle',
+    label: '📜 Read Chronicle Dates Clue',
     note: 'Chronicle Clue: The Northern Earls marched 1 year AFTER Mary fled Lochleven (1568). Pope Pius V excommunicated Elizabeth the VERY NEXT YEAR, and Ridolfi’s plot was exposed 1 year after the Papal Bull!',
   },
 ];
@@ -142,7 +147,6 @@ const ROOM3_DISPATCHES = [
   },
 ];
 
-// 10-tile SCRAMBLED Tudor Cipher Key including 2 REAL "Nullos" (decoy symbols, just like Mary's 1586 sheet!)
 const SCRAMBLED_CIPHER_KEY = [
   { sym: '❖', let: 'E', isNull: false },
   { sym: '†', let: 'NULL', isNull: true },
@@ -156,7 +160,6 @@ const SCRAMBLED_CIPHER_KEY = [
   { sym: '⚚', let: 'R', isNull: false },
 ];
 
-// Intercepted 8-symbol beer-barrel code containing 2 NULL decoys († and ¤)
 const INTERCEPTED_CODE_WITH_NULLS = ['⚔', '†', '✦', '☩', '♛', '¤', '❖', '☾'];
 const CIPHER_TARGET = ['S', 'I', 'X', 'M', 'E', 'N'];
 
@@ -172,17 +175,19 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
     isFullscreen: Boolean(ctx.autoFullscreen),
     muted: false,
     score: 0,
+    mistakes: 0,
     prologueIdx: 0,
+    loupeFound: new Set(),
 
-    // Room 1: Visual Evidence Deduction + 3-Step Sequence
-    r1PlateMode: 'aerial', // start on aerial island so they see the water barrier first!
-    r1VisualAnswer: null, // 'water' | 'guards'
+    // Room 1: Lochleven + 1568 Casket Letters Grounding
+    r1PlateMode: 'aerial',
+    r1VisualAnswer: null,
     r1Sequence: [],
     r1Solved: false,
     r1Feedback: '',
     r1FeedbackType: '',
 
-    // Room 2: Norfolk Portrait Visual Clues + 3-Dial Year Vault (1569 - 1570 - 1571)
+    // Room 2: Norfolk Portrait Loupe + 3-Dial Year Vault (1569 - 1570 - 1571)
     r2InspectedClues: new Set(),
     r2ActiveClueNote: '',
     r2Dials: [1568, 1572, 1574],
@@ -190,25 +195,25 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
     r2Feedback: '',
     r2FeedbackType: '',
 
-    // Room 3: Saxton 1579 Map Coastline Clue + Plausible Dispatch Sort + 1584 Bond
-    r3PlateMode: 'map', // start on Saxton 1579 map so pupils inspect it directly!
-    r3MapAnswer: null, // 'south' | 'north'
+    // Room 3: Saxton 1579 Map Loupe + Plausible Dispatches + 1584 Bond
+    r3PlateMode: 'map',
+    r3MapAnswer: null,
     r3Answers: {},
     r3BondAnswer: null,
     r3Solved: false,
     r3Feedback: '',
     r3FeedbackType: '',
 
-    // Room 4: Babington Real Cipher with Nullos + Archival Signature Question
+    // Room 4: Real 1586 Babington Nullos Cipher + Written Proof
     r4PlateMode: 'cipher',
     r4Inputs: ['', '', '', '', '', ''],
     r4CipherUnlocked: false,
-    r4WaitAnswer: null, // 'written_proof' | 'forgot'
+    r4WaitAnswer: null,
     r4Solved: false,
     r4Feedback: '',
     r4FeedbackType: '',
 
-    // Room 5: Fotheringhay Trap & Voiced 3-Beat Cinematic Finale
+    // Room 5: 4-Stage Cinematic Ending (0: Trap, 1: Fotheringhay Execution, 2: Armada & 1603 Cinema, 3: Mastery & Workbook Code)
     r5Beat: 0,
     r5TrapSlammed: false,
   };
@@ -224,16 +229,55 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
 
   function getWalsinghamThreatPct() {
     if (state.step === 'room5') return 100;
-    if (state.r4Solved) return 94;
-    if (state.r3Solved) return 75;
-    if (state.r2Solved) return 50;
-    if (state.r1Solved) return 28;
-    return 15;
+    const base = 15 + countLocksCracked() * 16 + state.mistakes * 10;
+    return Math.min(96, base);
+  }
+
+  function recordMistake() {
+    state.mistakes += 1;
+    audio.wrongBuzzer();
   }
 
   function addScore(pts) {
     state.score += pts;
     saveArcadePersonalBest('monarchy_religion_power', 'elizabeth_mary_escape', 'all', state.score);
+  }
+
+  function getHistoricalCaseFileItems() {
+    return [
+      {
+        title: '1568 Silver Casket Letters (York Inquiry)',
+        lockedLabel: '1568 Custody Record',
+        lockedHint: 'Escape Lochleven in Room 1 to learn why Elizabeth locked Mary up.',
+        collected: state.r1Solved,
+        summary:
+          'Scottish lords produced letters accusing Mary of plotting Lord Darnley’s murder—giving Elizabeth an excuse to hold her indefinitely without trial.',
+      },
+      {
+        title: '1571 Ridolfi Cipher & Norfolk’s Arrest',
+        lockedLabel: '1571 Conspiracy Record',
+        lockedHint: 'Crack the 3-Dial Year Vault in Room 2 to unseal Ridolfi’s plot.',
+        collected: state.r2Solved,
+        summary:
+          'Proved Roberto Ridolfi, Philip II, and the Duke of Norfolk plotted to put Mary on the throne. Norfolk was executed (1572), yet Mary was spared.',
+      },
+      {
+        title: '1584 Bond of Association Act',
+        lockedLabel: '1584 Parliamentary Trap',
+        lockedHint: 'Solve Saxton’s Map & dispatches in Room 3 to reveal the legal trap.',
+        collected: state.r3Solved,
+        summary:
+          'After the 1583 Throckmorton Plot, Parliament passed a law stating Mary could be executed if ANY plot threatened Elizabeth’s life.',
+      },
+      {
+        title: '17 July 1586 Decoded Beer-Barrel Reply',
+        lockedLabel: '1586 Chartley Cipher Proof',
+        lockedHint: 'Decode the Nullos cipher in Room 4 to seal the final evidence.',
+        collected: state.r4Solved,
+        summary:
+          'Deciphered by Thomas Phelippes: Mary’s written consent (“set the six gentlemen to work”) gave Elizabeth legal proof to sign her death warrant.',
+      },
+    ];
   }
 
   function playPrologueSceneVoice(idx) {
@@ -303,23 +347,21 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
     render();
   }
 
-  const onFsChange = () => {
-    if (!document.fullscreenElement && state.isFullscreen && typeof ctx.onFullscreenChange !== 'function') {
-      // Keep CSS fullscreen active if user didn't press Esc; only sync if native FS exited via browser chrome
-    }
-  };
   const onEscKey = (e) => {
     if (e.key === 'Escape' && state.isFullscreen && typeof ctx.onFullscreenChange !== 'function') {
       state.isFullscreen = false;
       render();
     }
   };
-  if (typeof document !== 'undefined') {
-    document.addEventListener('fullscreenchange', onFsChange);
+  if (typeof window !== 'undefined') {
     window.addEventListener('keydown', onEscKey);
   }
 
   function openPrintableCertificate() {
+    const rank =
+      state.mistakes <= 1
+        ? 'Gold Seal — Master Tudor Cryptographer'
+        : 'Silver Seal — Tudor Archive Investigator';
     const win = window.open('', '_blank', 'width=860,height=640');
     if (!win) return;
     win.document.write(`<!doctype html>
@@ -332,10 +374,11 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
     .cert { max-width: 740px; margin: 0 auto; background: #fffbeb; border: 8px double #b45309; padding: 34px 40px; }
     .kicker { font-family: sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #991b1b; text-align: center; }
     h1 { text-align: center; font-size: 30px; color: #0f172a; margin: 10px 0 4px; }
-    .sub { text-align: center; font-style: italic; color: #475569; margin-bottom: 22px; }
-    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; font-family: sans-serif; font-size: 13px; }
+    .sub { text-align: center; font-style: italic; color: #475569; margin-bottom: 18px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 18px 0; font-family: sans-serif; font-size: 13px; }
     .box { background: #fef3c7; border: 1px solid #d97706; border-radius: 8px; padding: 10px 12px; }
-    .footer { display: flex; justify-content: space-between; margin-top: 28px; padding-top: 14px; border-top: 1px solid #cbd5e1; font-family: sans-serif; font-size: 12px; color: #475569; }
+    .code { background: #0f172a; color: #fef08a; padding: 10px; text-align: center; font-weight: bold; border-radius: 6px; margin-top: 12px; font-family: sans-serif; }
+    .footer { display: flex; justify-content: space-between; margin-top: 22px; padding-top: 12px; border-top: 1px solid #cbd5e1; font-family: sans-serif; font-size: 12px; color: #475569; }
     @media print { body { background: #fff; padding: 0; } }
   </style>
 </head>
@@ -343,15 +386,15 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
   <div class="cert">
     <div class="kicker">THE HISTORY REVISION HUB • OFFICIAL HISTORY ESCAPE ROOMS</div>
     <h1>The Cipher of Fotheringhay</h1>
-    <div class="sub">Mary, Queen of Scots &amp; The Elizabethan Plots (1568–1587)</div>
-    <p style="text-align:center;font-size:15px;">This certifies that the Tudor Historian below cracked all four archival escape locks and mastered the story of Mary, Queen of Scots, Sir Francis Walsingham, and the Catholic plots against Elizabeth I.</p>
-    <p style="text-align:center;font-size:18px;font-weight:bold;margin:18px 0;">Pupil Name: ______________________________ &nbsp;&nbsp; Score: ${state.score} pts</p>
+    <div class="sub">${rank}</div>
+    <p style="text-align:center;font-size:17px;font-weight:bold;margin:14px 0;">Pupil Name: ______________________________ &nbsp;&nbsp; Score: ${state.score} pts</p>
     <div class="grid">
-      <div class="box"><strong>1568 • Lochleven Escape:</strong> Escaped island tower to seek Elizabeth’s protection in England.</div>
+      <div class="box"><strong>1568 • Lochleven &amp; Casket Letters:</strong> Escaped island fortress; held in England after the York Casket Letters inquiry.</div>
       <div class="box"><strong>1569–71 • Northern Earls &amp; Ridolfi:</strong> Northern rebellion, 1570 Papal Bull, and Duke of Norfolk’s arrest.</div>
       <div class="box"><strong>1583–84 • Throckmorton &amp; Bond:</strong> Saxton’s southern coast threat exposed &amp; 1584 Bond of Association.</div>
       <div class="box"><strong>1586–87 • Babington &amp; Fotheringhay:</strong> Stripped Nullos to crack SIXMEN; executed 8 Feb 1587.</div>
     </div>
+    <div class="code">WORKBOOK BACK-COVER CODE: “WALSINGHAM’S CIPHER TRAP SEALED FOTHERINGHAY”</div>
     <div class="footer">
       <span>The History Revision Hub (historyrevisionhub.co.uk)</span>
       <span>Locks Cracked: ${countLocksCracked()}/4 • Verified Tudor Archive Edition</span>
@@ -371,8 +414,8 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
         locksCracked: countLocksCracked(),
         totalLocks: 4,
         extraBadge: `
-          <div class="elz-threat-pill" title="Sir Francis Walsingham's Spymaster Net">
-            <span>🕵️ WALSINGHAM: ${threatPct}%</span>
+          <div class="elz-threat-pill" title="Sir Francis Walsingham's Spymaster Alert (+10% on wrong guesses!)">
+            <span>🕵️ WALSINGHAM ALERT: ${threatPct}%</span>
             <span class="elz-threat-bar-track"><span class="elz-threat-bar-fill" style="width:${threatPct}%"></span></span>
           </div>
         `,
@@ -391,7 +434,7 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
         </div>
         <div class="elz-controls">
           <span style="font-size:0.75rem;font-weight:900;color:#fde047;margin-right:4px;">⭐ ${state.score} pts</span>
-          <button type="button" class="elz-ctrl-btn" id="elz-replay-vo-btn" title="Replay current scene narration">🔊 Replay Briefing</button>
+          <button type="button" class="elz-ctrl-btn" id="elz-replay-vo-btn" title="Replay current voiceover">🔊 Replay Briefing</button>
           <button type="button" class="elz-ctrl-btn" id="elz-mute-btn">${state.muted ? '🔇 Muted' : '🔊 Audio On'}</button>
           <button type="button" class="elz-ctrl-btn" id="elz-fs-btn">${state.isFullscreen ? '⤢ Exit Full' : '⛶ Full Screen'}</button>
           ${ctx.onCloseModal ? `<button type="button" class="elz-ctrl-btn" id="elz-close-btn">✕ Close</button>` : ''}
@@ -402,11 +445,11 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
 
   function renderEscapeTrailStripHTML() {
     const nodes = [
-      { step: 'room1', year: '1568 • Lock #1', name: 'Lochleven Island', sub: 'Aerial source & boat escape', done: state.r1Solved },
-      { step: 'room2', year: '1569–71 • Lock #2', name: 'Northern Earls & Ridolfi', sub: 'Norfolk portrait & year vault', done: state.r2Solved },
+      { step: 'room1', year: '1568 • Lock #1', name: 'Lochleven & Casket', sub: 'Island escape & York inquiry', done: state.r1Solved },
+      { step: 'room2', year: '1569–71 • Lock #2', name: 'Northern Earls & Ridolfi', sub: 'Norfolk loupe & year vault', done: state.r2Solved },
       { step: 'room3', year: '1583–84 • Lock #3', name: 'Throckmorton Plot', sub: 'Saxton 1579 map & 1584 Bond', done: state.r3Solved },
       { step: 'room4', year: 'July 1586 • Lock #4', name: 'Babington Cipher', sub: 'Strip Nullos → SIXMEN', done: state.r4Solved },
-      { step: 'room5', year: '8 Feb 1587 • Finale', name: 'Fotheringhay Hall', sub: 'Walsingham’s trap & Armada', done: state.r5TrapSlammed },
+      { step: 'room5', year: '1587–1603 • Finale', name: 'Fotheringhay & James I', sub: '3-Beat Voiced Cinema Ending', done: state.r5TrapSlammed },
     ];
     return `
       <div class="elz-trail-strip" aria-label="Mary Queen of Scots Escape Trail">
@@ -444,15 +487,14 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
               <div class="elz-kicker">🎬 VOICED CINEMATIC TUDOR ESCAPE ROOM • ELIZABETH I &amp; THE PLOTS</div>
               <h2 class="elz-title">THE CIPHER OF FOTHERINGHAY</h2>
               <p class="elz-sub">
-                Step into the shoes of <strong>Mary, Queen of Scots (1568–1587)</strong>. Watch the <strong>Studio-voiced Tudor opening</strong>, inspect authentic portraits, maps, and 1586 cipher sheets to crack four challenging historical locks—while <strong>Sir Francis Walsingham</strong> quietly closes the spymaster’s net.
+                Play as <strong>Mary, Queen of Scots (1568–1587)</strong>—voiced in an authentic Scottish royal accent. Use your <strong>2.4× Brass Magnifying Loupe</strong> on Tudor portraits, Saxton’s 1579 map, and the real 1586 Babington cipher while keeping <strong>Walsingham’s Spymaster Alert</strong> low!
               </p>
               <div class="elz-pills-row">
-                <span class="elz-pill">🎙️ Voiced Tudor Cinema</span>
-                <span class="elz-pill">🗝️ Room 1: Lochleven</span>
-                <span class="elz-pill">🔐 Room 2: 1569–71 Vault</span>
-                <span class="elz-pill">🗺️ Room 3: Saxton Map</span>
-                <span class="elz-pill">🍺 Room 4: Nullos Cipher</span>
-                <span class="elz-pill">🪓 Room 5: Fotheringhay</span>
+                <span class="elz-pill">🎙️ Scottish &amp; BBC Voices</span>
+                <span class="elz-pill">🔍 2.4× Source Loupe</span>
+                <span class="elz-pill">📂 1568–86 Trial Case File</span>
+                <span class="elz-pill">🍺 Real Nullos Cipher</span>
+                <span class="elz-pill">🎬 3-Scene Cinema Ending</span>
               </div>
             </div>
 
@@ -474,81 +516,62 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
   function renderPrologueHTML() {
     const slide = PROLOGUE_SLIDES[state.prologueIdx] || PROLOGUE_SLIDES[0];
     const isLast = state.prologueIdx >= PROLOGUE_SLIDES.length - 1;
-    const camClasses = ['cam-push', 'cam-pan-right', 'cam-pull', 'cam-pan-left'];
-    const camCls = camClasses[state.prologueIdx % camClasses.length];
-    return `
-      <div class="elz-prologue-stage">
-        <div class="elz-letterbox-bar">
-          <span>THE HISTORY REVISION HUB • TUDOR ARCHIVE CINEMA</span>
-          <span>SCENE ${state.prologueIdx + 1} OF ${PROLOGUE_SLIDES.length} • 🎙️ STUDIO VOICEOVER</span>
-        </div>
-
-        <div class="elz-cinema-canvas">
-          <div class="elz-cinema-bg-blur" style="background-image:url('${slide.img}')" aria-hidden="true"></div>
-          <div class="elz-cinema-vignette" aria-hidden="true"></div>
-          <div class="elz-cinema-embers" aria-hidden="true"></div>
-
-          <div class="elz-cinema-plate-box">
-            <img src="${slide.img}" alt="${slide.alt}" class="elz-cinema-img ${camCls}" />
-            <div class="elz-plate-caption">${slide.caption}</div>
-          </div>
-
-          <div class="elz-cinema-copy">
-            <div class="elz-cinema-credit">${slide.credit}</div>
-            <h2 class="elz-cinema-heading">${slide.heading}</h2>
-            <p class="elz-cinema-narration">${slide.narration}</p>
-            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px;">
-              ${
-                !isLast
-                  ? `<button type="button" class="elz-primary-cta" style="width:auto;padding:10px 20px;" id="elz-prologue-next">Next Scene →</button>`
-                  : `<button type="button" class="elz-primary-cta" style="width:auto;padding:11px 22px;" data-elz-step="room1">🗝️ ENTER ROOM 1: LOCHLEVEN CASTLE →</button>`
-              }
-              <button type="button" class="elz-secondary-cta" style="width:auto;padding:10px 14px;" id="elz-replay-vo-btn">🔊 Replay Voiceover</button>
-              <button type="button" class="elz-secondary-cta" style="width:auto;padding:10px 14px;" data-elz-step="room1">Skip Prologue →</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="elz-letterbox-bar is-bottom">
-          <div class="elz-cinema-dots">
-            ${PROLOGUE_SLIDES.map(
-              (_, i) =>
-                `<button type="button" class="elz-cinema-dot ${i === state.prologueIdx ? 'is-active' : ''}" data-prologue-idx="${i}" aria-label="Prologue Scene ${i + 1}"></button>`,
-            ).join('')}
-          </div>
-          <span style="color:#94a3b8;font-size:0.68rem;">British Studio Narration + Tudor Lute Score • 100% Authentic Archival Plates</span>
-        </div>
-        ${renderEscapeTrailStripHTML()}
-      </div>
-    `;
+    return renderAtmosphericCinemaHTML({
+      topLeftLabel: 'THE HISTORY REVISION HUB • TUDOR ARCHIVE CINEMA',
+      topRightLabel: `SCENE ${state.prologueIdx + 1} OF ${PROLOGUE_SLIDES.length} • 🎙️ STUDIO VOICEOVER`,
+      slideIndex: state.prologueIdx,
+      totalSlides: PROLOGUE_SLIDES.length,
+      vignetteTone: 'gold',
+      imgSrc: slide.img,
+      imgAlt: slide.alt,
+      caption: slide.caption,
+      credit: slide.credit,
+      heading: slide.heading,
+      narrationHTML: `<p style="margin:0;">${slide.narration}</p>`,
+      actionsHTML: `
+        ${
+          !isLast
+            ? `<button type="button" class="elz-primary-cta" style="width:auto;padding:10px 20px;" id="elz-prologue-next">Next Scene →</button>`
+            : `<button type="button" class="elz-primary-cta" style="width:auto;padding:11px 22px;" data-elz-step="room1">🗝️ ENTER ROOM 1: LOCHLEVEN CASTLE →</button>`
+        }
+        <button type="button" class="elz-secondary-cta" style="width:auto;padding:10px 14px;" id="elz-replay-vo-btn">🔊 Replay Voiceover</button>
+        <button type="button" class="elz-secondary-cta" style="width:auto;padding:10px 14px;" data-elz-step="room1">Skip Prologue →</button>
+      `,
+      dotAttr: 'data-prologue-idx',
+      bottomRightLabel: 'Scottish Royal & British Studio Narration • 100% Authentic Archival Plates',
+      extraFooterHTML: renderEscapeTrailStripHTML(),
+    });
   }
 
   function renderRoom1HTML() {
-    const img =
-      state.r1PlateMode === 'aerial'
-        ? '/images/eee/kt1/banner_l4_lochleven_castle_panorama.jpg'
-        : '/images/eee/kt1/mary_escaping_lochleven_shirreff.jpg';
-    const caption =
-      state.r1PlateMode === 'aerial'
-        ? 'Visual Clue A • Lochleven Castle Island, Kinross-shire — inspect the geography around the stone tower.'
-        : 'Visual Clue B • Historical Painting of Mary stepping onto the wooden boat plank at dusk (2 May 1568) guided by inside accomplices.';
+    const isAerial = state.r1PlateMode === 'aerial';
+    const img = isAerial
+      ? '/images/eee/kt1/banner_l4_lochleven_castle_panorama.jpg'
+      : '/images/eee/kt1/mary_escaping_lochleven_shirreff.jpg';
+    const caption = isAerial
+      ? 'Lochleven Castle Island, Kinross-shire • Magnify the stone tower on the island to see why Mary was cut off from horsemen.'
+      : 'Historical Painting (2 May 1568) • Mary stepping onto the wooden boat plank at dusk guided by Willie Douglas.';
 
     const displayOrder = [ROOM1_STEPS[1], ROOM1_STEPS[2], ROOM1_STEPS[0]];
 
     return `
       <div class="elz-room-wrap">
         <div class="elz-room-grid">
-          <div class="elz-plate-frame">
-            <img src="${img}" alt="${caption}" class="elz-archival-img" />
-            <div class="elz-plate-caption">
-              <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;">
-                <span>${caption}</span>
-                <button type="button" class="elz-ctrl-btn" id="elz-r1-toggle-plate">
-                  ${state.r1PlateMode === 'aerial' ? '🎨 Switch to 1568 Escape Painting' : '🗺️ Switch to Island Fortress'}
-                </button>
-              </div>
-            </div>
-          </div>
+          ${renderArchivalLoupeFrameHTML({
+            loupeId: 'elz-r1-loupe',
+            imgSrc: img,
+            imgAlt: caption,
+            caption,
+            clueX: isAerial ? 26 : 58,
+            clueY: isAerial ? 42 : 55,
+            clueButtonLabel: isAerial ? '🔍 Magnify Island Tower' : '🔍 Magnify Boat Gangplank',
+            clueFound: state.loupeFound.has('elz-r1-loupe'),
+            extraToolbarRightHTML: `
+              <button type="button" class="elz-ctrl-btn" id="elz-r1-toggle-plate">
+                ${isAerial ? '🎨 View 1568 Boat Escape' : '🗺️ View Island Fortress'}
+              </button>
+            `,
+          })}
 
           <div class="elz-puzzle-card">
             <div class="elz-room-header">
@@ -559,18 +582,22 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
               <span class="elz-pill">${state.r1Solved ? '🔓 UNLOCKED' : '🔒 SEALED'}</span>
             </div>
 
-            <div class="elz-story-box">
-              <strong>Step A — Inspect the Visual Source:</strong> Look closely at the aerial photograph of Lochleven Castle on the left. Why was a direct cavalry rescue impossible, forcing Mary to rely on an inside accomplice?
-            </div>
+            ${renderTaskDirectiveBannerHTML({
+              whatToDo:
+                'Step 1: Magnify the Lochleven photograph on the left and answer why horses could not rescue Mary. Step 2: Tap the 3 escape moves in exact chronological order (1 → 2 → 3).',
+              whyItMatters:
+                'After Protestant Scottish lords forced Mary to abdicate in favour of her baby son James VI, she fled south hoping her cousin Queen Elizabeth I would restore her crown.',
+              solved: state.r1Solved,
+            })}
 
             <div style="display:flex;flex-direction:column;gap:6px;">
               <button type="button" class="elz-option-btn ${state.r1VisualAnswer === 'water' ? 'is-correct' : ''}" data-r1-vis="water">
                 <span>🌊</span>
-                <span>The tower stands on a forested island surrounded by deep loch water—escape required stolen gate keys and a waiting rowing boat.</span>
+                <span>The tower stands on an island surrounded by deep loch water—requiring stolen keys and a secret rowing boat.</span>
               </button>
               <button type="button" class="elz-option-btn ${state.r1VisualAnswer === 'guards' ? 'is-wrong' : ''}" data-r1-vis="guards">
                 <span>🏔️</span>
-                <span>The castle sat atop an inland mountain cliff connected by a narrow stone bridge guarded by English archers.</span>
+                <span>The castle sat atop an inland mountain cliff connected to England by a stone drawbridge.</span>
               </button>
             </div>
 
@@ -579,7 +606,7 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
                 ? `
               <div style="border-top:1px solid rgba(148,163,184,0.25);padding-top:10px;">
                 <div style="font-size:0.8rem;font-weight:900;color:#fef3c7;margin-bottom:6px;">
-                  Step B — Sequence Your 2 May 1568 Escape (Tap in exact logical order 1 → 2 → 3):
+                  Step 2 — Tap Your 3 Escape Actions in Exact Order (1 → 2 → 3):
                 </div>
                 <div style="display:flex;flex-direction:column;gap:7px;">
                   ${displayOrder
@@ -608,54 +635,51 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
 
             ${
               state.r1Solved
-                ? `<button type="button" class="elz-next-btn" data-elz-step="room2">
-                     🐎 Ride South Into England → Enter Room 2 (1569–1571)
-                   </button>`
+                ? `
+              <div class="elz-story-box" style="border-left-color:#34d399;">
+                <strong>📂 Case File Unlocked — Why Did Elizabeth Lock Mary Up? (The 1568 Casket Letters):</strong> When Mary arrived in Carlisle, Elizabeth faced a dilemma: helping a Catholic rival was dangerous, yet executing a queen set a terrible precedent. At the <strong>October 1568 York Inquiry</strong>, Scottish lords produced a silver casket of letters accusing Mary of plotting her husband Lord Darnley’s murder—giving Elizabeth the exact excuse to keep Mary locked in English castles without declaring her guilty or innocent!
+              </div>
+              <button type="button" class="elz-next-btn" data-elz-step="room2">
+                🐎 Enter English Custody → Room 2: Northern Earls &amp; Ridolfi (1569–1571)
+              </button>
+            `
                 : ''
             }
           </div>
         </div>
+        ${renderHistoricalCaseFileHTML({ items: getHistoricalCaseFileItems() })}
       </div>
     `;
   }
 
   function renderRoom2HTML() {
     const dials = [
-      {
-        idx: 0,
-        label: 'Northern Earls Revolt',
-        clue: '1 year after Lochleven',
-      },
-      {
-        idx: 1,
-        label: 'Pope’s Papal Bull',
-        clue: '1 year after Northern Earls',
-      },
-      {
-        idx: 2,
-        label: 'Ridolfi Plot Exposed',
-        clue: '1 year after Papal Bull',
-      },
+      { idx: 0, label: 'Northern Earls Revolt', clue: '1 year after 1568 Lochleven' },
+      { idx: 1, label: 'Pope’s Papal Bull', clue: '1 year after Northern Earls' },
+      { idx: 2, label: 'Ridolfi Plot Exposed', clue: '1 year after Papal Bull' },
     ];
 
     return `
       <div class="elz-room-wrap">
         <div class="elz-room-grid">
-          <div class="elz-plate-frame">
-            <img src="/images/upgraded/gcse-med-eee/eee_thomas_howard_norfolk_eworth.jpg"
-                 alt="Hans Eworth portrait of Thomas Howard, 4th Duke of Norfolk holding a rolled letter"
-                 class="elz-archival-img" />
+          <div>
+            ${renderArchivalLoupeFrameHTML({
+              loupeId: 'elz-r2-loupe',
+              imgSrc: '/images/upgraded/gcse-med-eee/eee_thomas_howard_norfolk_eworth.jpg',
+              imgAlt: 'Hans Eworth portrait of Thomas Howard, 4th Duke of Norfolk holding a rolled letter',
+              caption:
+                state.r2ActiveClueNote ||
+                '🏛️ Hans Eworth (1563) • Thomas Howard, 4th Duke of Norfolk — magnify his left hand (bottom-right) and tap the 3 clues below!',
+              clueX: 86,
+              clueY: 91,
+              clueButtonLabel: '🔍 Magnify Norfolk’s Secret Letter',
+              clueFound: state.loupeFound.has('elz-r2-loupe'),
+            })}
             <div class="elz-clue-strip">
               ${NORFOLK_VISUAL_CLUES.map(
                 (c) =>
                   `<button type="button" class="elz-clue-chip ${state.r2InspectedClues.has(c.id) ? 'is-inspected' : ''}" data-r2-clue="${c.id}">${state.r2InspectedClues.has(c.id) ? '✓ ' : ''}${c.label}</button>`,
               ).join('')}
-            </div>
-            <div class="elz-plate-caption">
-              ${
-                state.r2ActiveClueNote ||
-                '🏛️ Hans Eworth (1563) • Thomas Howard, 4th Duke of Norfolk — tap the 3 clue buttons above to inspect the portrait & deduce the vault years!'
-              }
             </div>
           </div>
 
@@ -668,15 +692,19 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
               <span class="elz-pill">${state.r2Solved ? '🔓 UNLOCKED' : '🔒 SEALED'}</span>
             </div>
 
-            <div class="elz-story-box">
-              <strong>Deduce the Combination:</strong> Elizabeth placed you under house arrest! Inspect the <strong>3 Visual &amp; Chronicle Clues</strong> beneath the Duke of Norfolk’s portrait on the left to calculate the exact three consecutive years that open the conspiracy dispatch box.
-            </div>
+            ${renderTaskDirectiveBannerHTML({
+              whatToDo:
+                'Step 1: Magnify Norfolk’s portrait & tap "📜 Read Chronicle Dates Clue" on the left. Step 2: Set the 3 brass dials to the exact three consecutive years and test the lock.',
+              whyItMatters:
+                'Held prisoner after the Casket Letters inquiry, Mary became the figurehead for Catholic earls in northern England and Italian banker Roberto Ridolfi, who plotted to marry her to England’s senior nobleman, the Duke of Norfolk.',
+              solved: state.r2Solved,
+            })}
 
             <div class="hh-er-dial-vault">
               <div class="hh-er-dial-vault-head">
                 <span class="hh-er-dial-title">🔐 3-DIAL CONSPIRACY YEAR VAULT</span>
                 <span style="font-size:0.72rem;font-weight:800;color:${state.r2Solved ? '#86efac' : '#fde68a'};">
-                  ${state.r2Solved ? '🔓 1569 • 1570 • 1571 UNLOCKED!' : 'Use Chronicle Clue on left to calculate each year'}
+                  ${state.r2Solved ? '🔓 1569 • 1570 • 1571 UNLOCKED!' : 'Count forward from Mary’s 1568 arrival'}
                 </span>
               </div>
               <div class="hh-er-dial-grid">
@@ -718,36 +746,40 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
             }
           </div>
         </div>
+        ${renderHistoricalCaseFileHTML({ items: getHistoricalCaseFileItems() })}
       </div>
     `;
   }
 
   function renderRoom3HTML() {
-    const img =
-      state.r3PlateMode === 'map'
-        ? '/images/elizabethan_england_saxton_1579_map_auth.jpg'
-        : '/images/eee/kt2/sir_francis_walsingham_npg.jpg';
-    const caption =
-      state.r3PlateMode === 'map'
-        ? 'Christopher Saxton’s 1579 Atlas of England & Wales • Look at the bottom-right corner: "GALLIAE PARS" (France) across "OCEANVS BRITANNICVS"!'
-        : 'National Portrait Gallery • Sir Francis Walsingham holding an intercepted letter as his spy ring closes in at Sheffield Manor.';
+    const isMap = state.r3PlateMode === 'map';
+    const img = isMap
+      ? '/images/elizabethan_england_saxton_1579_map_auth.jpg'
+      : '/images/eee/kt2/sir_francis_walsingham_npg.jpg';
+    const caption = isMap
+      ? 'Christopher Saxton’s 1579 Atlas of England & Wales • Magnify the bottom-right corner ("GALLIAE PARS" = France) across the Channel!'
+      : 'National Portrait Gallery • Sir Francis Walsingham holding an intercepted letter as his spy network closes in.';
 
     const allDispatchesCorrect = ROOM3_DISPATCHES.every((d) => state.r3Answers[d.id] === d.correct);
 
     return `
       <div class="elz-room-wrap">
         <div class="elz-room-grid">
-          <div class="elz-plate-frame">
-            <img src="${img}" alt="${caption}" class="elz-archival-img" />
-            <div class="elz-plate-caption">
-              <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;">
-                <span>${caption}</span>
-                <button type="button" class="elz-ctrl-btn" id="elz-r3-toggle-plate">
-                  ${state.r3PlateMode === 'map' ? '🕵️ View Walsingham Portrait' : '🗺️ View 1579 Saxton Map'}
-                </button>
-              </div>
-            </div>
-          </div>
+          ${renderArchivalLoupeFrameHTML({
+            loupeId: 'elz-r3-loupe',
+            imgSrc: img,
+            imgAlt: caption,
+            caption,
+            clueX: isMap ? 88 : 25,
+            clueY: isMap ? 87 : 84,
+            clueButtonLabel: isMap ? '🔍 Magnify GALLIAE PARS (France)' : '🔍 Magnify Walsingham’s Letter',
+            clueFound: state.loupeFound.has('elz-r3-loupe'),
+            extraToolbarRightHTML: `
+              <button type="button" class="elz-ctrl-btn" id="elz-r3-toggle-plate">
+                ${isMap ? '🕵️ View Walsingham' : '🗺️ View 1579 Saxton Map'}
+              </button>
+            `,
+          })}
 
           <div class="elz-puzzle-card">
             <div class="elz-room-header">
@@ -758,9 +790,13 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
               <span class="elz-pill">${state.r3Solved ? '🔓 UNLOCKED' : '🔒 SEALED'}</span>
             </div>
 
-            <div class="elz-story-box">
-              <strong>Clue 1 — Inspect Saxton’s 1579 Map:</strong> Find <em>GALLIAE PARS</em> (France) at the bottom-right of the authentic 1579 map. Which English coastline sat directly opposite France for the Duke of Guise’s planned 1583 landing?
-            </div>
+            ${renderTaskDirectiveBannerHTML({
+              whatToDo:
+                '1. Magnify GALLIAE PARS (bottom-right of Saxton’s 1579 map) & pick the invasion coast. 2. Mark each intercepted dispatch Authentic or Decoy. 3. Identify Parliament’s 1584 law.',
+              whyItMatters:
+                'In 1583, Walsingham’s spies caught courier Francis Throckmorton carrying French invasion plans—prompting Parliament to pass a deadly legal trap aimed directly at Mary.',
+              solved: state.r3Solved,
+            })}
 
             <div style="display:flex;gap:8px;flex-wrap:wrap;">
               <button type="button" class="elz-ctrl-btn" style="flex:1;padding:8px 10px;${state.r3MapAnswer === 'south' ? 'border-color:#34d399;color:#a7f3d0;background:rgba(6,78,59,0.45);' : ''}" data-r3-map="south">⚓ Southern Channel Coast (Sussex)</button>
@@ -816,34 +852,38 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
             }
           </div>
         </div>
+        ${renderHistoricalCaseFileHTML({ items: getHistoricalCaseFileItems() })}
       </div>
     `;
   }
 
   function renderRoom4HTML() {
-    const img =
-      state.r4PlateMode === 'babington'
-        ? '/images/upgraded/gcse-med-eee/eee_anthony_babington_portrait.jpg'
-        : '/images/babington_cipher.jpg';
-    const caption =
-      state.r4PlateMode === 'babington'
-        ? 'Anthony Babington (1561–1586) • Young Catholic gentleman who promised six assassins to rescue Mary.'
-        : 'The National Archives (1586) • Real Babington Cipher: notice the row labelled "Nullos" (decoy symbols) and Babington’s signed confession at the bottom ("Primo Sept: 1586")!';
+    const isCipher = state.r4PlateMode === 'cipher';
+    const img = isCipher
+      ? '/images/babington_cipher.jpg'
+      : '/images/upgraded/gcse-med-eee/eee_anthony_babington_portrait.jpg';
+    const caption = isCipher
+      ? 'The National Archives (1586) • Magnify the middle-left row labelled "Nullos" (decoy symbols) and Babington’s signed confession ("Primo Sept: 1586")!'
+      : 'Anthony Babington (1561–1586) • Young Catholic gentleman who promised six assassins to rescue Mary.';
 
     return `
       <div class="elz-room-wrap">
         <div class="elz-room-grid">
-          <div class="elz-plate-frame">
-            <img src="${img}" alt="${caption}" class="elz-archival-img" />
-            <div class="elz-plate-caption">
-              <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;">
-                <span>${caption}</span>
-                <button type="button" class="elz-ctrl-btn" id="elz-r4-toggle-plate">
-                  ${state.r4PlateMode === 'babington' ? '🔐 View Real 1586 Cipher Sheet' : '🧑 View Anthony Babington'}
-                </button>
-              </div>
-            </div>
-          </div>
+          ${renderArchivalLoupeFrameHTML({
+            loupeId: 'elz-r4-loupe',
+            imgSrc: img,
+            imgAlt: caption,
+            caption,
+            clueX: isCipher ? 22 : 48,
+            clueY: isCipher ? 56 : 36,
+            clueButtonLabel: isCipher ? '🔍 Magnify "Nullos" Row on 1586 Key' : '🔍 Magnify Babington',
+            clueFound: state.loupeFound.has('elz-r4-loupe'),
+            extraToolbarRightHTML: `
+              <button type="button" class="elz-ctrl-btn" id="elz-r4-toggle-plate">
+                ${isCipher ? '🧑 View Babington' : '🔐 View 1586 Cipher Sheet'}
+              </button>
+            `,
+          })}
 
           <div class="elz-puzzle-card">
             <div class="elz-room-header">
@@ -854,13 +894,17 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
               <span class="elz-pill">${state.r4Solved ? '🔓 FREEDOM IN SIGHT!' : '🔒 CIPHER SEALED'}</span>
             </div>
 
-            <div class="elz-story-box">
-              <strong>Real Tudor Cryptanalysis:</strong> Look at the authentic 1586 cipher sheet on the left—Mary and Babington hid <strong>“Nullos” (meaningless decoy symbols)</strong> inside their messages to fool codebreakers! Strip out the <strong>2 NULL symbols</strong> from the 8-symbol intercepted beer-barrel code below, then type the <strong>6 real letters</strong>!
-            </div>
+            ${renderTaskDirectiveBannerHTML({
+              whatToDo:
+                'Step 1: Magnify the "Nullos" row on the 1586 cipher sheet. Step 2: Cross out the 2 NULL symbols († and ¤) in the 8-symbol message below, type the 6 real letters, and answer the final proof check.',
+              whyItMatters:
+                'Mary’s letters were smuggled inside beer-barrel bungs at Chartley Hall. Elizabethan ciphers mixed real symbol letters with "Nullos" (meaningless decoys) to defeat codebreakers.',
+              solved: state.r4Solved,
+            })}
 
             <div>
               <div style="font-size:0.72rem;font-weight:900;color:#fca5a5;text-transform:uppercase;margin-bottom:4px;">
-                🍺 Intercepted 8-Symbol Beer-Barrel Message (Discard the 2 NULLs!):
+                🍺 Intercepted 8-Symbol Beer-Barrel Message (Skip the 2 NULLs!):
               </div>
               <div class="elz-intercept-strip">
                 ${INTERCEPTED_CODE_WITH_NULLS.map((s) => `<span>${s}</span>`).join('')}
@@ -869,7 +913,7 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
 
             <div>
               <div style="font-size:0.72rem;font-weight:900;color:#fbbf24;text-transform:uppercase;margin-bottom:5px;">
-                🔑 Scrambled Tudor Cipher Key (Look carefully — 2 symbols are NULL decoys!):
+                🔑 Scrambled Tudor Cipher Key (2 symbols are NULL decoys):
               </div>
               <div class="elz-cipher-key-grid" style="grid-template-columns:repeat(5, minmax(0, 1fr));">
                 ${SCRAMBLED_CIPHER_KEY.map(
@@ -885,7 +929,7 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
 
             <div>
               <div style="font-size:0.74rem;font-weight:800;color:#cbd5e1;margin-bottom:6px;text-align:center;">
-                Enter the 6 Real Decoded Letters (in order, skipping the 2 NULLs):
+                Enter the 6 Real Decoded Letters (in order, skipping † and ¤):
               </div>
               <div class="elz-cipher-slots">
                 ${[0, 1, 2, 3, 4, 5]
@@ -918,11 +962,11 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
                 <div style="display:flex;flex-direction:column;gap:6px;">
                   <button type="button" class="elz-option-btn ${state.r4WaitAnswer === 'written_proof' ? 'is-correct' : ''}" data-r4-wait="written_proof">
                     <span>🪶</span>
-                    <span>He needed <strong>Mary’s own written approval of Elizabeth’s assassination</strong> to satisfy the 1584 Bond of Association and convince Elizabeth to sign her death warrant.</span>
+                    <span>He needed <strong>Mary’s own written approval of Elizabeth’s assassination</strong> to trigger the 1584 Bond of Association and force Elizabeth to sign her death warrant.</span>
                   </button>
                   <button type="button" class="elz-option-btn ${state.r4WaitAnswer === 'forgot' ? 'is-wrong' : ''}" data-r4-wait="forgot">
                     <span>⏳</span>
-                    <span>Walsingham had not yet recruited any codebreakers in London and could not read Tudor ciphers until September.</span>
+                    <span>Walsingham had no codebreakers in London and could not read Tudor ciphers until September.</span>
                   </button>
                 </div>
               </div>
@@ -950,90 +994,100 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
             }
           </div>
         </div>
+        ${renderHistoricalCaseFileHTML({ items: getHistoricalCaseFileItems() })}
       </div>
     `;
   }
 
   function renderRoom5FinaleHTML() {
     if (state.r5Beat === 0) {
-      return `
-        <div class="elz-prologue-stage">
-          <div class="elz-letterbox-bar">
-            <span style="color:#f87171;">⚠️ DISASTER STRIKES • WALSINGHAM’S TRAP SPRUNG</span>
-            <span>AUGUST 1586 • 🎙️ STUDIO VOICEOVER</span>
+      return renderAtmosphericCinemaHTML({
+        topLeftLabel: '⚠️ FINALE SCENE 1 OF 3 • WALSINGHAM’S TRAP SPRUNG',
+        topRightLabel: 'AUGUST–OCTOBER 1586 • 🎙️ STUDIO VOICEOVER',
+        slideIndex: 0,
+        totalSlides: 3,
+        vignetteTone: 'crimson',
+        imgSrc: '/images/eee/kt2/sir_francis_walsingham_npg.jpg',
+        imgAlt: 'Sir Francis Walsingham holding an intercepted letter',
+        caption: 'Sir Francis Walsingham • Every beer-barrel letter went straight to codebreaker Thomas Phelippes.',
+        credit: 'CRIMSON WAX SEAL • THE DOOR SLAMS SHUT',
+        heading: 'There Was Never an Escape.',
+        narrationHTML: `
+          <div class="elz-trap-banner" style="margin-bottom:8px;">
+            <div style="font-size:0.78rem;font-weight:900;letter-spacing:0.12em;color:#fca5a5;">DOUBLE AGENT REVEALED • GILBERT GIFFORD</div>
           </div>
-          <div class="elz-cinema-canvas">
-            <div class="elz-cinema-bg-blur" style="background-image:url('/images/eee/kt2/sir_francis_walsingham_npg.jpg')" aria-hidden="true"></div>
-            <div class="elz-cinema-vignette is-crimson" aria-hidden="true"></div>
-            <div class="elz-cinema-embers" aria-hidden="true"></div>
-
-            <div class="elz-cinema-plate-box">
-              <img src="/images/eee/kt2/sir_francis_walsingham_npg.jpg"
-                   alt="Sir Francis Walsingham holding an intercepted letter"
-                   class="elz-cinema-img cam-push" />
-              <div class="elz-plate-caption">Sir Francis Walsingham • Master of the Double-Agent Beer-Barrel Trap</div>
-            </div>
-            <div class="elz-cinema-copy">
-              <div class="elz-trap-banner">
-                <div style="font-size:0.78rem;font-weight:900;letter-spacing:0.14em;color:#fca5a5;">CRIMSON WAX SEAL • THE DOOR SLAMS SHUT</div>
-                <div style="font-family:'Playfair Display',Georgia,serif;font-size:1.5rem;font-weight:900;color:#fef3c7;margin-top:4px;">THERE WAS NEVER AN ESCAPE.</div>
-              </div>
-              <p class="elz-cinema-narration">
-                The “sympathetic” courier <strong>Gilbert Gifford</strong> was a double agent working for Walsingham from the very first day. Every single beer-barrel letter went straight to master codebreaker <strong>Thomas Phelippes</strong>—who even forged a gallows-marked postscript asking for the six assassins’ names!
-              </p>
-              <div style="display:flex;gap:10px;flex-wrap:wrap;">
-                <button type="button" class="elz-primary-cta" style="width:auto;padding:11px 22px;" id="elz-r5-next-beat">
-                  🔔 Enter the Great Hall of Fotheringhay (8 February 1587) →
-                </button>
-                <button type="button" class="elz-secondary-cta" style="width:auto;padding:10px 14px;" id="elz-replay-vo-btn">🔊 Replay Voiceover</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
+          <p style="margin:0 0 8px;">The “sympathetic” brewer courier <strong>Gilbert Gifford</strong> worked for Walsingham from day one. Master codebreaker <strong>Thomas Phelippes</strong> decoded your 17 July reply and forged a gallows postscript asking for the assassins’ names.</p>
+          <p style="margin:0;font-size:0.9rem;color:#fde68a;">Presented with all four documents in your Case File under the <strong>1584 Bond of Association</strong>, Mary was convicted of treason—and on 1 February 1587, Elizabeth I signed her death warrant.</p>
+        `,
+        actionsHTML: `
+          <button type="button" class="elz-primary-cta" style="width:auto;padding:11px 22px;" id="elz-r5-next-beat">
+            🔔 Scene 2: Enter Fotheringhay Hall (8 Feb 1587) →
+          </button>
+          <button type="button" class="elz-secondary-cta" style="width:auto;padding:10px 14px;" id="elz-replay-vo-btn">🔊 Replay Voiceover</button>
+        `,
+        dotAttr: 'data-r5-dot',
+        extraFooterHTML: renderHistoricalCaseFileHTML({
+          heading: '⚖️ PROSECUTION EVIDENCE LAID ON THE FOTHERINGHAY TRIAL TABLE (OCT 1586)',
+          items: getHistoricalCaseFileItems().map((it) => ({ ...it, collected: true })),
+        }),
+      });
     }
 
     if (state.r5Beat === 1) {
-      return `
-        <div class="elz-prologue-stage">
-          <div class="elz-letterbox-bar">
-            <span>FOTHERINGHAY CASTLE • NORTHAMPTONSHIRE</span>
-            <span>8 FEBRUARY 1587 • 🎙️ STUDIO VOICEOVER</span>
-          </div>
-          <div class="elz-cinema-canvas">
-            <div class="elz-cinema-bg-blur" style="background-image:url('/images/mary_queen_of_scots_execution_fotheringhay_1587.jpg')" aria-hidden="true"></div>
-            <div class="elz-cinema-vignette is-crimson" aria-hidden="true"></div>
-            <div class="elz-cinema-embers" aria-hidden="true"></div>
-
-            <div class="elz-cinema-plate-box">
-              <img src="/images/mary_queen_of_scots_execution_fotheringhay_1587.jpg"
-                   alt="Contemporary 1587 engraving of the execution of Mary, Queen of Scots in the Great Hall of Fotheringhay Castle"
-                   class="elz-cinema-img cam-pull" />
-              <div class="elz-plate-caption">
-                🏛️ Contemporary 1587 Dutch Engraving • The Great Hall at Fotheringhay (left: Mary’s bloodstained clothes being burned in the hearth so Catholics could not keep relics).
-              </div>
-            </div>
-            <div class="elz-cinema-copy">
-              <div class="elz-cinema-credit">THE GREAT HALL • ONE OF THE MOST FAMOUS EXECUTIONS IN HISTORY</div>
-              <h2 class="elz-cinema-heading">Crimson Beneath the Black</h2>
-              <p class="elz-cinema-narration">
-                Three hundred witnesses fill the candlelit hall. Mary mounts the black-draped scaffold calmly. When her ladies-in-waiting unfasten her black satin outer gown, the crowd gasps: underneath, she wears a bodice and petticoat of <strong>bright crimson velvet</strong>—the liturgical colour of a Catholic martyr.
-              </p>
-              <p class="elz-cinema-narration" style="font-size:0.95rem;color:#cbd5e1;">
-                Whispering in Latin, <em>“In manus tuas, Domine”</em> (“Into thy hands, O Lord”), she lays her head upon the oak block. After three heavy blows of the axe, her long captivity ends—and the executioner’s cry rings out: <em>“So perish all the Queen’s enemies!”</em>
-              </p>
-              <div style="display:flex;gap:10px;flex-wrap:wrap;">
-                <button type="button" class="elz-primary-cta" style="width:auto;padding:11px 22px;" id="elz-r5-next-beat">
-                  ⛵ See the Historical Aftermath (1588 Armada &amp; 1603) →
-                </button>
-                <button type="button" class="elz-secondary-cta" style="width:auto;padding:10px 14px;" id="elz-replay-vo-btn">🔊 Replay Voiceover</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
+      return renderAtmosphericCinemaHTML({
+        topLeftLabel: 'FINALE SCENE 2 OF 3 • FOTHERINGHAY CASTLE, NORTHAMPTONSHIRE',
+        topRightLabel: '8 FEBRUARY 1587 • 8:00 AM • 🎙️ STUDIO VOICEOVER',
+        slideIndex: 1,
+        totalSlides: 3,
+        vignetteTone: 'crimson',
+        imgSrc: '/images/mary_queen_of_scots_execution_fotheringhay_1587.jpg',
+        imgAlt: 'Contemporary 1587 engraving of the execution of Mary, Queen of Scots in the Great Hall of Fotheringhay Castle',
+        caption:
+          '🏛️ Contemporary 1587 Dutch Engraving • Left: Mary’s bloodstained clothes burned in the hearth so Catholics could keep no relics.',
+        credit: 'THE GREAT HALL • ONE OF HISTORY’S MOST FAMOUS EXECUTIONS',
+        heading: 'Crimson Beneath the Black',
+        narrationHTML: `
+          <p style="margin:0 0 8px;">Three hundred witnesses fill the candlelit hall. When Mary’s ladies-in-waiting unfasten her black satin outer gown, the hall gasps: underneath, she wears <strong>bright crimson velvet</strong>—the liturgical colour of a Catholic martyr.</p>
+          <p style="margin:0;font-size:0.94rem;color:#cbd5e1;">Whispering in Latin, <em>“In manus tuas, Domine”</em> (“Into thy hands, O Lord”), she lays her head upon the oak block. Even in death, she staged one final act of royal Catholic defiance.</p>
+        `,
+        actionsHTML: `
+          <button type="button" class="elz-primary-cta" style="width:auto;padding:11px 22px;" id="elz-r5-next-beat">
+            ⛵ Scene 3: The Armada &amp; History’s Greatest Twist (1588–1603) →
+          </button>
+          <button type="button" class="elz-secondary-cta" style="width:auto;padding:10px 14px;" id="elz-replay-vo-btn">🔊 Replay Voiceover</button>
+        `,
+        dotAttr: 'data-r5-dot',
+      });
     }
 
+    if (state.r5Beat === 2) {
+      return renderAtmosphericCinemaHTML({
+        topLeftLabel: 'FINALE SCENE 3 OF 3 • HISTORICAL AFTERMATH (1588 & 1603)',
+        topRightLabel: '🎙️ STUDIO VOICEOVER • EPILOGUE',
+        slideIndex: 2,
+        totalSlides: 3,
+        vignetteTone: 'emerald',
+        imgSrc: '/images/eee/kt2/wieringen_spanish_armada_banner.jpg',
+        imgAlt: 'Cornelis Claesz van Wieringen painting of the 1588 Spanish Armada battle at sea',
+        caption:
+          '🏛️ Cornelis Claesz van Wieringen • The Spanish Armada (1588) — launched by Philip II the year after Fotheringhay.',
+        credit: 'THE FINAL TWIST • TWO CROWNS UNITED',
+        heading: 'Her Son Takes the Throne',
+        narrationHTML: `
+          <p style="margin:0 0 8px;">Mary’s execution outraged Catholic Europe and gave Philip II of Spain the final spark to launch the <strong>1588 Spanish Armada</strong> against England.</p>
+          <p style="margin:0;font-size:0.96rem;color:#fde68a;">Yet sixteen years later, in <strong>1603</strong>, Queen Elizabeth I died childless. Who inherited the English crown? <strong>Mary’s own son—King James VI of Scotland—becoming King James I of England!</strong></p>
+        `,
+        actionsHTML: `
+          <button type="button" class="elz-primary-cta" style="width:auto;padding:11px 22px;" id="elz-r5-next-beat">
+            🏆 Claim Historian Seal &amp; Workbook Homework Code →
+          </button>
+          <button type="button" class="elz-secondary-cta" style="width:auto;padding:10px 14px;" id="elz-replay-vo-btn">🔊 Replay Voiceover</button>
+        `,
+        dotAttr: 'data-r5-dot',
+      });
+    }
+
+    const goldSeal = state.mistakes <= 1;
     return `
       <div class="elz-room-wrap">
         <div class="elz-room-grid">
@@ -1042,42 +1096,43 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
                  alt="Cornelis Claesz van Wieringen painting of the 1588 Spanish Armada battle at sea"
                  class="elz-archival-img" />
             <div class="elz-plate-caption">
-              🏛️ Cornelis Claesz van Wieringen • The Spanish Armada (1588) — King Philip II of Spain launched his invasion fleet the very next year, claiming vengeance for Mary’s execution.
+              🏛️ Escape Room Mastered • ${goldSeal ? '🏅 GOLD SEAL: Master Tudor Cryptographer (Low Spymaster Alert!)' : '🥈 SILVER SEAL: Tudor Archive Investigator'}
             </div>
           </div>
 
           <div class="elz-puzzle-card">
             <div class="elz-room-header">
               <div>
-                <div class="elz-room-kicker">ESCAPE ROOM COMPLETE • HISTORICAL AFTERMATH</div>
-                <h3 class="elz-room-title">History’s Greatest Twist (1588 &amp; 1603)</h3>
+                <div class="elz-room-kicker">${goldSeal ? '🏅 GOLD HISTORIAN SEAL AWARDED' : '🥈 SILVER HISTORIAN SEAL AWARDED'}</div>
+                <h3 class="elz-room-title">Escape Room Complete (${state.score} pts)</h3>
               </div>
-              <span class="elz-pill" style="border-color:#34d399;color:#a7f3d0;">🏆 ${state.score} PTS</span>
-            </div>
-
-            <div class="elz-story-box">
-              <strong>1. Immediate Consequence (1588):</strong> Executing an anointed Catholic queen outraged Europe and gave Philip II of Spain the final justification to launch the <strong>Spanish Armada</strong> against England.<br /><br />
-              <strong>2. The Ultimate Irony (1603):</strong> Elizabeth I died childless sixteen years later. Who inherited the English throne? <strong>Mary’s own son, King James VI of Scotland</strong>—uniting the crowns as <strong>King James I of England</strong>! Mary’s bloodline sits on the British throne to this day.
+              <span class="elz-pill" style="border-color:#34d399;color:#a7f3d0;">🔓 4/4 LOCKS</span>
             </div>
 
             ${renderWorkbookCodeCardHTML({
               slotLabel: 'ENQUIRY 2 BACK-COVER LEDGER',
               phrase: 'WALSINGHAM’S CIPHER TRAP SEALED FOTHERINGHAY',
               instruction:
-                'Copy this unlocked phrase into Slot 2 on the back cover of your Pupil Workbook. Complete every Escape Room in this unit to reveal the complete Master Verdict sentence!',
+                'Copy this unlocked phrase into Slot 2 on the Back Cover of your Printed Pupil Workbook. Complete every Escape Room in this unit to build the complete Master Verdict sentence!',
             })}
 
             <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px;">
               <button type="button" class="elz-primary-cta" style="flex:1;" id="elz-print-cert-btn">
-                🖨️ Print Hub Escape Room Certificate
+                🖨️ Print Official Escape Room Certificate
               </button>
-              <button type="button" class="elz-secondary-cta" style="width:auto;padding:10px 14px;" id="elz-replay-vo-btn">🔊 Replay Voiceover</button>
+              <button type="button" class="elz-secondary-cta" style="width:auto;padding:10px 14px;" data-r5-dot="0">
+                🎬 Rewatch 3-Scene Ending
+              </button>
               <button type="button" class="elz-secondary-cta" style="width:auto;padding:10px 16px;" data-elz-step="cover">
-                ↺ Replay From Cover
+                ↺ Replay
               </button>
             </div>
           </div>
         </div>
+        ${renderHistoricalCaseFileHTML({
+          heading: '📂 COMPLETE 1568–1587 ARCHIVAL CASE FILE',
+          items: getHistoricalCaseFileItems(),
+        })}
       </div>
     `;
   }
@@ -1088,6 +1143,13 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
       stageEl.innerHTML = `<div class="elz-shell ${state.isFullscreen ? 'elz-is-fullscreen' : ''}"></div>`;
       shellEl = stageEl.querySelector('.elz-shell');
       bindEvents();
+      bindArchivalLoupeDelegation(shellEl, (loupeId) => {
+        if (!state.loupeFound.has(loupeId)) {
+          state.loupeFound.add(loupeId);
+          addScore(10);
+          audio.lockClick();
+        }
+      });
     }
     shellEl.classList.toggle('elz-is-fullscreen', state.isFullscreen);
 
@@ -1110,7 +1172,7 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
       addScore(35);
       audio.unlockChime();
       state.r3Feedback =
-        '🔓 LOCK #3 CRACKED! You matched Saxton’s southern coast to Guise’s invasion plan, spotted the papal decoy, and locked in the 1584 Bond of Association!';
+        '🔓 LOCK #3 CRACKED! Case File #3 (1584 Bond of Association) unlocked—now one coded reply can legally cost Mary her life!';
       state.r3FeedbackType = 'ok';
     }
   }
@@ -1156,6 +1218,14 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
         return;
       }
 
+      const r5Dot = e.target.closest('[data-r5-dot]');
+      if (r5Dot) {
+        state.r5Beat = Number(r5Dot.getAttribute('data-r5-dot')) || 0;
+        render();
+        playFinaleBeatVoice(state.r5Beat);
+        return;
+      }
+
       if (e.target.closest('#elz-mute-btn')) {
         state.muted = !state.muted;
         audio.setMuted(state.muted);
@@ -1173,7 +1243,6 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
         return;
       }
 
-      // Room 1: Visual Evidence + 3-Stage Escape Sequence
       if (e.target.closest('#elz-r1-toggle-plate')) {
         state.r1PlateMode = state.r1PlateMode === 'aerial' ? 'painting' : 'aerial';
         render();
@@ -1188,12 +1257,12 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
           audio.lockClick();
           state.r1PlateMode = 'painting';
           state.r1Feedback =
-            'Spot on! Lochleven stood on an island surrounded by deep water—now look at the 1568 escape painting and sequence your 3 moves!';
+            'Correct! Deep loch water surrounded the tower—now look at the 1568 escape painting and tap your 3 moves in order!';
           state.r1FeedbackType = 'ok';
         } else {
-          audio.wrongBuzzer();
+          recordMistake();
           state.r1Feedback =
-            'Look again at the aerial photo on the left—there is no mountain bridge! What completely surrounds the castle tower?';
+            '⚠️ Spymaster Alert +10%! Magnify the aerial photo on the left—there is no mountain drawbridge; deep loch water surrounds the island.';
           state.r1FeedbackType = 'err';
         }
         render();
@@ -1213,24 +1282,23 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
             addScore(30);
             audio.unlockChime();
             state.r1Feedback =
-              '🔓 LOCK #1 CRACKED! On 2 May 1568, Mary escaped Lochleven by boat and rode south to England—hoping Elizabeth I would restore her throne!';
+              '🔓 LOCK #1 CRACKED! Read the unlocked 1568 Silver Casket Letters record below to see why arriving in England trapped Mary!';
             state.r1FeedbackType = 'ok';
           } else {
-            state.r1Feedback = `Step ${state.r1Sequence.length}/3 locked in! Choose your next move logically...`;
+            state.r1Feedback = `Step ${state.r1Sequence.length}/3 locked in! Choose your next logical move...`;
             state.r1FeedbackType = 'ok';
           }
         } else {
           state.r1Sequence = [];
-          audio.wrongBuzzer();
+          recordMistake();
           state.r1Feedback =
-            'Guard alerted! Think logically: you cannot row away before stealing the tower keys, and you cannot steal the keys before the Keeper is distracted at supper!';
+            '⚠️ Guard alerted (+10% Suspicion)! Think logically: first distract the Keeper at supper, then steal the keys, then row across Loch Leven!';
           state.r1FeedbackType = 'err';
         }
         render();
         return;
       }
 
-      // Room 2: Norfolk Visual Clues + 3-Dial Year Vault
       const r2ClueBtn = e.target.closest('[data-r2-clue]');
       if (r2ClueBtn) {
         const cid = r2ClueBtn.getAttribute('data-r2-clue');
@@ -1260,19 +1328,18 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
           addScore(35);
           audio.unlockChime();
           state.r2Feedback =
-            '🔓 LOCK #2 CRACKED (1569–1570–1571)! Northern Earls (1569) → Papal Bull (1570) → Ridolfi Plot (1571). Norfolk was executed in 1572, yet Elizabeth still spared Mary!';
+            '🔓 LOCK #2 CRACKED (1569–1570–1571)! Case File #2 unlocked: Norfolk was executed in 1572, yet Elizabeth still spared Mary!';
           state.r2FeedbackType = 'ok';
         } else {
-          audio.wrongBuzzer();
+          recordMistake();
           state.r2Feedback =
-            'Vault jammed! Tap "📜 Read the Undated Chronicle" beneath Norfolk’s portrait and count forward from Mary’s 1568 Lochleven escape.';
+            '⚠️ Spymaster Alert +10%! Tap "📜 Read Chronicle Dates Clue" beneath Norfolk’s portrait and count forward 1 year at a time from 1568.';
           state.r2FeedbackType = 'err';
         }
         render();
         return;
       }
 
-      // Room 3: Saxton Map Coastline + Plausible Dispatches + 1584 Bond
       if (e.target.closest('#elz-r3-toggle-plate')) {
         state.r3PlateMode = state.r3PlateMode === 'map' ? 'walsingham' : 'map';
         render();
@@ -1286,12 +1353,12 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
         if (val === 'south') {
           audio.lockClick();
           state.r3Feedback =
-            'Correct cartographic deduction! On Saxton’s 1579 map, Sussex & the Southern Channel coast face GALLIAE PARS (France) directly—now sort all 3 dispatches!';
+            'Correct! Magnifying Saxton’s 1579 map shows Sussex & the Southern Channel coast directly facing GALLIAE PARS (France).';
           state.r3FeedbackType = 'ok';
         } else {
-          audio.wrongBuzzer();
+          recordMistake();
           state.r3Feedback =
-            'Check the bottom-right of Saxton’s 1579 map—GALLIAE PARS (France) lies across the English Channel to the SOUTH, not Scotland!';
+            '⚠️ Spymaster Alert +10%! Magnify the bottom-right corner of Saxton’s 1579 map—GALLIAE PARS (France) lies across the Channel to the SOUTH!';
           state.r3FeedbackType = 'err';
         }
         checkRoom3Solved();
@@ -1307,12 +1374,12 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
         state.r3Answers[id] = val;
         if (item && item.correct === val) {
           audio.lockClick();
-          state.r3Feedback = 'Dispatch verified! Finish all 3 dispatches, the Saxton map clue, and the 1584 law check.';
+          state.r3Feedback = 'Dispatch verified! Complete all 3 dispatches, the Saxton map check, and the 1584 law.';
           state.r3FeedbackType = 'ok';
         } else {
-          audio.wrongBuzzer();
+          recordMistake();
           state.r3Feedback =
-            'Check the history carefully: did the Pope EVER cancel Elizabeth’s 1570 excommunication, or did he back Catholic invasion plots?';
+            '⚠️ Spymaster Alert +10%! Check carefully: did the Pope EVER cancel Elizabeth’s 1570 excommunication, or did he back Catholic invasion plots?';
           state.r3FeedbackType = 'err';
         }
         checkRoom3Solved();
@@ -1328,16 +1395,15 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
           audio.lockClick();
           checkRoom3Solved();
         } else {
-          audio.wrongBuzzer();
+          recordMistake();
           state.r3Feedback =
-            'The Treaty of Nonsuch (1585) sent English troops to the Netherlands. Which 1584 law directly targeted plots against Elizabeth?';
+            '⚠️ Spymaster Alert +10%! Nonsuch (1585) sent English troops to the Netherlands. Which 1584 law targeted plots against Elizabeth’s life?';
           state.r3FeedbackType = 'err';
         }
         render();
         return;
       }
 
-      // Room 4: Real Babington Cipher with Nullos + Written Proof Deduction
       if (e.target.closest('#elz-r4-toggle-plate')) {
         state.r4PlateMode = state.r4PlateMode === 'babington' ? 'cipher' : 'babington';
         render();
@@ -1352,12 +1418,12 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
           addScore(40);
           audio.unlockChime();
           state.r4Feedback =
-            'Brilliant cryptanalysis! You stripped the 2 Nullos († and ¤) to decode SIXMEN. Now answer the final archival clue below!';
+            'Brilliant cryptanalysis! You stripped the 2 Nullos († and ¤) to decode SIXMEN. Now answer the final proof check below!';
           state.r4FeedbackType = 'ok';
         } else {
-          audio.wrongBuzzer();
+          recordMistake();
           state.r4Feedback =
-            'Cipher mismatch! Ignore † (NULL) and ¤ (NULL) in "⚔ † ✦ ☩ ♛ ¤ ❖ ☾", then match the 6 remaining symbols in the scrambled key.';
+            '⚠️ Spymaster Alert +10%! Ignore † (NULL) and ¤ (NULL) in "⚔ † ✦ ☩ ♛ ¤ ❖ ☾", then match the 6 remaining symbols in the scrambled key.';
           state.r4FeedbackType = 'err';
         }
         render();
@@ -1373,25 +1439,24 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
           addScore(30);
           audio.unlockChime();
           state.r4Feedback =
-            '🔓 ALL 4 LOCKS CRACKED! Your coded letter is sealed inside the Chartley Hall beer barrel. Pull the escape latch now!';
+            '🔓 ALL 4 LOCKS CRACKED! Case File #4 sealed—pull the Chartley escape latch now!';
           state.r4FeedbackType = 'ok';
         } else {
-          audio.wrongBuzzer();
+          recordMistake();
           state.r4Feedback =
-            'Walsingham’s master codebreaker Thomas Phelippes was reading Mary’s letters in real time—so why did Walsingham wait for her 17 July reply?';
+            '⚠️ Spymaster Alert +10%! Thomas Phelippes was reading every letter immediately—why did Walsingham wait for Mary’s 17 July reply?';
           state.r4FeedbackType = 'err';
         }
         render();
         return;
       }
 
-      // Room 5: Voiced Finale Beat Progression + Certificate
       if (e.target.closest('#elz-r5-next-beat')) {
-        state.r5Beat = Math.min(2, state.r5Beat + 1);
+        state.r5Beat = Math.min(3, state.r5Beat + 1);
         if (state.r5Beat === 1) audio.playBellTone(110, 2.6, 0.11);
-        if (state.r5Beat === 2) audio.unlockChime();
+        if (state.r5Beat === 2 || state.r5Beat === 3) audio.unlockChime();
         render();
-        playFinaleBeatVoice(state.r5Beat);
+        if (state.r5Beat <= 2) playFinaleBeatVoice(state.r5Beat);
         return;
       }
 
@@ -1418,8 +1483,7 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
 
   return () => {
     unmounted = true;
-    if (typeof document !== 'undefined') {
-      document.removeEventListener('fullscreenchange', onFsChange);
+    if (typeof window !== 'undefined') {
       window.removeEventListener('keydown', onEscKey);
     }
     audio.destroy();

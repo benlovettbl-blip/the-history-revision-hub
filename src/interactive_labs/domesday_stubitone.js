@@ -32,7 +32,13 @@ import {
   renderStubbingtonArchivalDeskHTML,
 } from './domesday_escape_puzzles.js';
 import { saveArcadePersonalBest } from '../arcade/arcade_audio.js';
-import { renderEscapeBrandBarHTML, renderEscapeCoverSealHTML } from './escape_room_brand.js';
+import {
+  renderEscapeBrandBarHTML,
+  renderEscapeCoverSealHTML,
+  renderAtmosphericCinemaHTML,
+  renderWorkbookCodeCardHTML,
+  createEscapeCinemaVoicePlayer,
+} from './escape_room_brand.js';
 
 const SESSION_SAVE_KEY = 'hh_domesday_session_v3';
 
@@ -101,6 +107,40 @@ const STEPS = [
   { id: 'beat4', short: '5. Hut #3', mob: '5/7 Hut #3' },
   { id: 'beat5', short: '6. Latin', mob: '6/7 Latin' },
   { id: 'beat6', short: '7. Win & Seal', mob: '7/7 Finale' },
+  { id: 'epilogue', short: '🎬 Ending', mob: '🎬 Ending' },
+];
+
+const DOMESDAY_EPILOGUE_SLIDES = [
+  {
+    voClip: 'domesday_end_1',
+    credit: 'FINALE SCENE 1 OF 3 • AUGUST 1086, WINCHESTER TREASURY',
+    heading: '13,418 Settlements Locked in Ink',
+    img: '/images/medieval_england/source_b_great_domesday_book.jpg',
+    alt: 'Authentic Latin text of Great Domesday Book recording hides, ploughs, villagers, and enslaved workers',
+    caption: 'Great Domesday Book (1086) • Carried into King William’s royal treasury chest at Winchester',
+    narration:
+      'In less than nine months, royal commissioners rode across England and bound over 13,000 towns, manors, and hamlets into crisp Latin parchment—the most complete medieval survey in Europe.',
+  },
+  {
+    voClip: 'domesday_end_2',
+    credit: 'FINALE SCENE 2 OF 3 • THE NORMAN LAND REVOLUTION',
+    heading: 'Barely 13 English Lords Remained',
+    img: '/images/medieval_england/source_e_william_conqueror_seal.jpg',
+    alt: 'The Great Seal of King William I enthroned and mounted',
+    caption: 'Great Seal of William I • Proof of the total transfer of wealth at the top of English society',
+    narration:
+      'Domesday proved a total revolution at the top of society: out of roughly 1,000 chief landowners, barely 13 were English. Saxon freemen like Godwin of Stubbington vanished, replaced by Norman barons like Sheriff Hugh of Port.',
+  },
+  {
+    voClip: 'domesday_end_3',
+    credit: 'FINALE SCENE 3 OF 3 • 940 YEARS LATER ON THE SOLENT',
+    heading: 'Our Names Were Never Forgotten',
+    img: '/images/medieval_england/portchester_castle_keep.jpg',
+    alt: 'Portchester Castle Norman keep beside Fareham and Stubbington on the Solent',
+    caption: 'Portchester & The Solent Today • Linked across nine centuries by Hampshire Folio 46v',
+    narration:
+      '“The Great Wax Seal is yours! Nine hundred and forty years later, Stubbington and Fareham still stand beside the Solent—and thanks to Folio 46v, our peasant families and ploughs live on in history.”',
+  },
 ];
 
 const DOMESDAY_PROLOGUE_SLIDES = [
@@ -403,6 +443,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   if (!stageEl) return () => {};
 
   const audio = new DomesdayAudioDirector();
+  const cinemaVoice = createEscapeCinemaVoicePlayer();
   const instanceSvgUid = `sol${Math.random().toString(36).slice(2, 7)}`;
   let activeFx = null;
   let data = null;
@@ -456,6 +497,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     bennetSightings: new Set(),
     coverSecretsFound: new Set(),
     prologueIdx: 0,
+    epilogueIdx: 0,
 
     // Room 1 (beat0): 3x3 Torn Charter Tile-Swap Escape Puzzle + Coastal Rewind
     charterTiles: [...INITIAL_CHARTER_TILES],
@@ -1292,45 +1334,58 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   function renderPrologueHTML() {
     const slide = DOMESDAY_PROLOGUE_SLIDES[state.prologueIdx] || DOMESDAY_PROLOGUE_SLIDES[0];
     const isLast = state.prologueIdx >= DOMESDAY_PROLOGUE_SLIDES.length - 1;
-    return `
-      <div class="hh-er-prologue-stage">
-        <div class="hh-er-letterbox-bar">
-          <span>THE HISTORY REVISION HUB • 1086 DOMESDAY ARCHIVE CINEMA</span>
-          <span>SCENE ${state.prologueIdx + 1} OF ${DOMESDAY_PROLOGUE_SLIDES.length}</span>
-        </div>
+    return renderAtmosphericCinemaHTML({
+      topLeftLabel: 'THE HISTORY REVISION HUB • 1086 DOMESDAY ARCHIVE CINEMA',
+      topRightLabel: `SCENE ${state.prologueIdx + 1} OF ${DOMESDAY_PROLOGUE_SLIDES.length} • 🎙️ STUDIO VOICEOVER`,
+      slideIndex: state.prologueIdx,
+      totalSlides: DOMESDAY_PROLOGUE_SLIDES.length,
+      vignetteTone: 'gold',
+      imgSrc: slide.img,
+      imgAlt: slide.alt,
+      caption: slide.caption,
+      credit: slide.credit,
+      heading: slide.heading,
+      narrationHTML: `<p style="margin:0;">${slide.narration}</p>`,
+      actionsHTML: `
+        ${
+          !isLast
+            ? `<button type="button" class="dst-start-cta" style="width:auto;padding:10px 20px;" id="dst-prologue-next">Next Scene →</button>`
+            : `<button type="button" class="dst-start-cta" style="width:auto;padding:11px 22px;" id="dst-btn-start-adventure">⏳ ENTER ROOM 1: 1086 SOLENT LOCK →</button>`
+        }
+        <button type="button" class="hh-er-cover-secondary-cta" style="width:auto;padding:10px 14px;" id="dst-cinema-replay-vo">🔊 Replay Voiceover</button>
+        <button type="button" class="hh-er-cover-secondary-cta" style="width:auto;padding:10px 16px;" id="dst-btn-start-adventure">Skip Prologue →</button>
+      `,
+      dotAttr: 'data-dst-prologue-idx',
+      bottomRightLabel: 'British Studio Narration • 1086 Hampshire Folio 46v',
+    });
+  }
 
-        <div class="hh-er-cinema-canvas">
-          <div class="hh-er-cinema-plate-box">
-            <img src="${slide.img}" alt="${slide.alt}" class="hh-er-cinema-img" />
-            <div class="hh-er-cinema-caption">${slide.caption}</div>
-          </div>
-
-          <div class="hh-er-cinema-copy">
-            <div class="hh-er-cinema-credit">${slide.credit}</div>
-            <h2 class="hh-er-cinema-heading">${slide.heading}</h2>
-            <p class="hh-er-cinema-narration">${slide.narration}</p>
-            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px;">
-              ${
-                !isLast
-                  ? `<button type="button" class="dst-start-cta" style="width:auto;padding:10px 20px;" id="dst-prologue-next">Next Scene →</button>`
-                  : `<button type="button" class="dst-start-cta" style="width:auto;padding:11px 22px;" id="dst-btn-start-adventure">⏳ ENTER ROOM 1: 1086 SOLENT LOCK →</button>`
-              }
-              <button type="button" class="hh-er-cover-secondary-cta" style="width:auto;padding:10px 16px;" id="dst-btn-start-adventure">Skip Prologue →</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="hh-er-letterbox-bar is-bottom">
-          <div class="hh-er-cinema-dots">
-            ${DOMESDAY_PROLOGUE_SLIDES.map(
-              (_, i) =>
-                `<button type="button" class="hh-er-cinema-dot ${i === state.prologueIdx ? 'is-active' : ''}" data-dst-prologue-idx="${i}" aria-label="Prologue Scene ${i + 1}"></button>`,
-            ).join('')}
-          </div>
-          <span style="color:#94a3b8;font-size:0.68rem;">1086 Hampshire Folio 46v • 100% Authentic Archival Plates</span>
-        </div>
-      </div>
-    `;
+  function renderEpilogueHTML() {
+    const slide = DOMESDAY_EPILOGUE_SLIDES[state.epilogueIdx] || DOMESDAY_EPILOGUE_SLIDES[0];
+    const isLast = state.epilogueIdx >= DOMESDAY_EPILOGUE_SLIDES.length - 1;
+    return renderAtmosphericCinemaHTML({
+      topLeftLabel: 'THE HISTORY REVISION HUB • 1086 CINEMATIC ENDING',
+      topRightLabel: `FINALE ${state.epilogueIdx + 1} OF ${DOMESDAY_EPILOGUE_SLIDES.length} • 🎙️ STUDIO VOICEOVER`,
+      slideIndex: state.epilogueIdx,
+      totalSlides: DOMESDAY_EPILOGUE_SLIDES.length,
+      vignetteTone: 'emerald',
+      imgSrc: slide.img,
+      imgAlt: slide.alt,
+      caption: slide.caption,
+      credit: slide.credit,
+      heading: slide.heading,
+      narrationHTML: `<p style="margin:0;">${slide.narration}</p>`,
+      actionsHTML: `
+        ${
+          !isLast
+            ? `<button type="button" class="dst-start-cta" style="width:auto;padding:10px 20px;" id="dst-epilogue-next">Next Finale Scene →</button>`
+            : `<button type="button" class="dst-start-cta" style="width:auto;padding:11px 22px;" data-goto-step="beat6">🏆 Return to Royal Seal &amp; Workbook Code →</button>`
+        }
+        <button type="button" class="hh-er-cover-secondary-cta" style="width:auto;padding:10px 14px;" id="dst-cinema-replay-vo">🔊 Replay Voiceover</button>
+      `,
+      dotAttr: 'data-dst-epilogue-idx',
+      bottomRightLabel: '1086 Domesday Epilogue • Verified Archival Plates',
+    });
   }
 
   // =========================================================================
@@ -2194,7 +2249,17 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
             }
           </div>
 
-          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+          ${renderWorkbookCodeCardHTML({
+            slotLabel: 'ENQUIRY 2 BACK-COVER LEDGER',
+            phrase: 'WILLIAM’S 1086 SURVEY RECORDED EVERY HIDE AND PLOUGH',
+            instruction:
+              'Copy this unlocked phrase into Slot 2 on the Back Cover of your Medieval England Pupil Workbook to build the Unit Verdict Chain!',
+          })}
+
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;">
+            <button type="button" class="dst-start-cta" id="dst-btn-watch-ending" style="flex:1 1 240px;">
+              🎬 Watch 3-Scene Voiced 1086 Cinematic Ending
+            </button>
             <button type="button" class="dst-start-cta" id="dst-btn-print-warrant" style="flex:1 1 220px;">
               🖨️ Print Official 1086 Warrant
             </button>
@@ -2741,6 +2806,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       let stageBody = '';
       if (state.step === 'cover') stageBody = renderCoverHTML();
       else if (state.step === 'prologue') stageBody = renderPrologueHTML();
+      else if (state.step === 'epilogue') stageBody = renderEpilogueHTML();
       else if (state.step === 'beat0') stageBody = renderBeat0HTML();
       else if (state.step === 'beat1') stageBody = renderBeat1HTML();
       else if (state.step === 'beat2') stageBody = renderBeat2HTML();
@@ -3068,13 +3134,19 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       }
 
       // =====================================================================
-      // COVER & CINEMATIC PROLOGUE ACTIONS
+      // COVER, CINEMATIC PROLOGUE & 3-SCENE CINEMATIC ENDING ACTIONS
       // =====================================================================
+      if (e.target.closest('#dst-cinema-replay-vo')) {
+        cinemaVoice.replay();
+        return;
+      }
+
       if (e.target.closest('#dst-btn-start-cinema')) {
         state.prologueIdx = 0;
+        audio.stopVoice();
         audio.startMusic('overture');
-        audio.normanHorn();
         goToStep('prologue');
+        cinemaVoice.play('domesday_pro_1');
         return;
       }
 
@@ -3084,6 +3156,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
           audio.chimeSuccess();
           mountedSceneSignature = '';
           render();
+          cinemaVoice.play(`domesday_pro_${state.prologueIdx + 1}`);
         }
         return;
       }
@@ -3093,10 +3166,41 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         state.prologueIdx = Number(dstPrologueDot.dataset.dstPrologueIdx) || 0;
         mountedSceneSignature = '';
         render();
+        cinemaVoice.play(`domesday_pro_${state.prologueIdx + 1}`);
+        return;
+      }
+
+      if (e.target.closest('#dst-btn-watch-ending')) {
+        state.epilogueIdx = 0;
+        audio.stopVoice();
+        audio.startMusic('victory_jubilee');
+        goToStep('epilogue');
+        cinemaVoice.play('domesday_end_1');
+        return;
+      }
+
+      if (e.target.closest('#dst-epilogue-next')) {
+        if (state.epilogueIdx < DOMESDAY_EPILOGUE_SLIDES.length - 1) {
+          state.epilogueIdx += 1;
+          audio.chimeSuccess();
+          mountedSceneSignature = '';
+          render();
+          cinemaVoice.play(`domesday_end_${state.epilogueIdx + 1}`);
+        }
+        return;
+      }
+
+      const dstEpilogueDot = e.target.closest('[data-dst-epilogue-idx]');
+      if (dstEpilogueDot) {
+        state.epilogueIdx = Number(dstEpilogueDot.dataset.dstEpilogueIdx) || 0;
+        mountedSceneSignature = '';
+        render();
+        cinemaVoice.play(`domesday_end_${state.epilogueIdx + 1}`);
         return;
       }
 
       if (e.target.closest('#dst-btn-start-adventure')) {
+        cinemaVoice.stop();
         audio.startMusic('marsh_shanty');
         audio.normanHorn();
         goToStep('beat0');
@@ -4051,6 +4155,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     if (resetArmTimeout) clearTimeout(resetArmTimeout);
     if (closeArmTimeout) clearTimeout(closeArmTimeout);
     cleanupFx();
+    cinemaVoice.destroy();
     audio.destroy();
   };
 }

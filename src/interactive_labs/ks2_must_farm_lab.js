@@ -19,6 +19,13 @@ import {
   bindNativeFullscreenSync,
 } from './story_lab_engine.js';
 import { saveArcadePersonalBest } from '../arcade/arcade_audio.js';
+import {
+  renderEscapeBrandBarHTML,
+  renderEscapeCoverSealHTML,
+  renderAtmosphericCinemaHTML,
+  renderWorkbookCodeCardHTML,
+  createEscapeCinemaVoicePlayer,
+} from './escape_room_brand.js';
 
 const SESSION_KEY = 'hh_ks2_must_farm_lab_v1';
 const UNIT_ID = 'ks2_stone_to_iron_age';
@@ -44,11 +51,59 @@ const preloadStageAssets = createStageAssetPreloader({
 
 const STEPS = [
   { id: 'cover', short: '🔥 Cover', mob: 'Cover • Must Farm' },
+  { id: 'prologue', short: '🎬 Opening', mob: '🎬 Opening' },
   { id: 'stage1', short: '1. Stilt House', mob: '1/5 Stilt House' },
   { id: 'stage2', short: '2. Wet Mud Seal', mob: '2/5 Wet Mud Seal' },
   { id: 'stage3', short: '3. Dig Trench', mob: '3/5 Dig Trench' },
   { id: 'stage4', short: '4. Trade Sorter', mob: '4/5 Trade Sorter' },
   { id: 'stage5', short: '5. Field Report', mob: '5/5 Field Report' },
+  { id: 'epilogue', short: '🎬 Ending', mob: '🎬 Ending' },
+];
+
+const MUST_FARM_PROLOGUE = [
+  {
+    voClip: 'mustfarm_pro_1',
+    credit: 'THE HISTORY REVISION HUB PRESENTS • CAMBRIDGESHIRE FENS, c. 850 BC',
+    heading: 'Houses Above the Slow River',
+    img: ASSETS.roundhouse,
+    alt: 'Reconstructed Bronze Age circular roundhouse with conical reed roof and woven wattle walls',
+    caption: 'Bronze Age Fenland Architecture • Circular timber homes built on oak stilts two metres above a freshwater channel',
+    narration:
+      'Nearly three thousand years ago, Bronze Age families built a ring of sturdy oak-stilted roundhouses above a reed-lined river—catching eels below their floorboards and trading by dug-out boat.',
+  },
+  {
+    voClip: 'mustfarm_pro_2',
+    credit: 'SUDDEN FIRE • BRITAIN’S POMPEII FROZEN IN TIME',
+    heading: 'Plunged Into Oxygen-Free Mud',
+    img: ASSETS.digSite,
+    alt: 'Must Farm excavation trench showing fallen Bronze Age roundhouse rafters preserved in wet river silt',
+    caption: 'Must Farm Excavation • Every villager escaped safely, leaving pots, wheels, and porridge sealed in wet mud',
+    narration:
+      'Less than a year later, sparks caught the dry reed roofs! Everyone escaped alive, and their collapsing homes plunged into wet river silt—locking out oxygen and preserving Britain’s greatest Bronze Age time capsule!',
+  },
+];
+
+const MUST_FARM_EPILOGUE = [
+  {
+    voClip: 'mustfarm_end_1',
+    credit: 'FINALE SCENE 1 OF 2 • BRITAIN’S POMPEII UNLOCKED',
+    heading: 'Three Thousand Years Without Oxygen',
+    img: ASSETS.storagePot,
+    alt: 'Charred Must Farm Bronze Age pottery vessel preserved in Cambridgeshire silt',
+    caption: 'Must Farm Finds • Bowls still holding grain porridge, wooden spoons, woven lime-bast cloth, and Britain’s oldest wheel',
+    narration:
+      'Because waterlogged Fenland mud shut out oxygen and bacteria, fragile organic treasures that rot in dry soil survived almost untouched for thirty centuries!',
+  },
+  {
+    voClip: 'mustfarm_end_2',
+    credit: 'FINALE SCENE 2 OF 2 • REWRITING PREHISTORIC BRITAIN',
+    heading: 'Connected Across the Sea',
+    img: ASSETS.doverBoat,
+    alt: 'Dover Bronze Age oak plank boat used for cross-Channel trade',
+    caption: 'Cross-Channel Networks • Glass beads and bronze metalwork linked Fenland families to Europe and the Mediterranean',
+    narration:
+      'Must Farm proved that Bronze Age Britons were skilled engineers, carpenters, weavers, and international traders connected across the English Channel and beyond!',
+  },
 ];
 
 const ROUNDHOUSE_ZONES = [
@@ -1006,25 +1061,90 @@ export function mountKs2MustFarmLab(container, opts = {}, legacyCtx = {}) {
 
           <div class="ks2lab-cover-info">
             <div>
-              <div class="ks2lab-kicker">🔥 KS2 INTERACTIVE STORYBOOK LAB • BRONZE AGE BRITAIN (c. 850 BC)</div>
+              ${renderEscapeCoverSealHTML('THE HISTORY REVISION HUB • OFFICIAL ESCAPE LAB')}
+              <div class="ks2lab-kicker">🔥 VOICED KS2 ARCHAEOLOGY ESCAPE LAB • BRONZE AGE (c. 850 BC)</div>
               <h2 class="ks2lab-hero-title">Embers Over the Fen: The Must Farm Detective Lab</h2>
               <p class="ks2lab-hero-sub">
-                Step inside a circular Bronze Age timber home perched on oak stilts over a slow Cambridgeshire river. Test why waterlogged mud froze bowls of porridge and woven cloth for 3,000 years, excavate six real trench squares, and trace trade links across the English Channel!
+                Watch the <strong>Studio-voiced 850 BC opening</strong>, then step inside a Bronze Age roundhouse on oak stilts, test why waterlogged mud froze bowls of porridge for 3,000 years, excavate six real trench squares, and map overseas trade!
               </p>
               <div class="ks2lab-badge-row">
-                <span class="ks2lab-badge">1. Stilted Roundhouse</span>
-                <span class="ks2lab-badge">2. Waterlogged Mud Lab</span>
-                <span class="ks2lab-badge">3. 6-Square Trench Dig</span>
-                <span class="ks2lab-badge">4. Overseas Trade Sorter</span>
-                <span class="ks2lab-badge">5. Detective Certificate</span>
+                <span class="ks2lab-badge">🎬 Voiced 850 BC Cinema</span>
+                <span class="ks2lab-badge">🔒 Lock 1: Stilt House</span>
+                <span class="ks2lab-badge">🔒 Lock 2: Wet Mud Lab</span>
+                <span class="ks2lab-badge">🔒 Lock 3: Trench Dig</span>
+                <span class="ks2lab-badge">🔒 Lock 4: Trade Sorter</span>
               </div>
             </div>
-            <button type="button" class="ks2lab-cta-primary" data-step-go="stage1">
-              <span>⛏️ Begin Bronze Age Dig (Stage 1)</span>
-            </button>
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <button type="button" class="ks2lab-cta-primary" data-cinema-start="prologue">
+                <span>🎬 Watch Voiced 850 BC Opening &amp; Begin Dig</span>
+              </button>
+              <button type="button" class="hh-er-cover-secondary-cta" data-step-go="stage1">
+                ⚡ Skip Opening → Jump Straight to Stage 1 (Stilt Roundhouse)
+              </button>
+            </div>
           </div>
         </div>
       `;
+    }
+
+    if (state.step === 'prologue') {
+      const idx = state.cinemaIdx || 0;
+      const slide = MUST_FARM_PROLOGUE[idx] || MUST_FARM_PROLOGUE[0];
+      const isLast = idx >= MUST_FARM_PROLOGUE.length - 1;
+      return renderAtmosphericCinemaHTML({
+        topLeftLabel: 'THE HISTORY REVISION HUB • BRONZE AGE ARCHIVE CINEMA',
+        topRightLabel: `SCENE ${idx + 1} OF ${MUST_FARM_PROLOGUE.length} • 🎙️ STUDIO VOICEOVER`,
+        slideIndex: idx,
+        totalSlides: MUST_FARM_PROLOGUE.length,
+        vignetteTone: 'gold',
+        imgSrc: slide.img,
+        imgAlt: slide.alt,
+        caption: slide.caption,
+        credit: slide.credit,
+        heading: slide.heading,
+        narrationHTML: `<p style="margin:0;">${slide.narration}</p>`,
+        actionsHTML: `
+          ${
+            !isLast
+              ? `<button type="button" class="ks2lab-cta-primary" style="width:auto;padding:10px 20px;" data-cinema-next="prologue">Next Scene →</button>`
+              : `<button type="button" class="ks2lab-cta-primary" style="width:auto;padding:11px 22px;" data-step-go="stage1">⛏️ Enter Stage 1: Stilted Roundhouse →</button>`
+          }
+          <button type="button" class="hh-er-cover-secondary-cta" style="width:auto;padding:10px 14px;" data-cinema-replay="1">🔊 Replay Voiceover</button>
+          <button type="button" class="hh-er-cover-secondary-cta" style="width:auto;padding:10px 14px;" data-step-go="stage1">Skip Prologue →</button>
+        `,
+        dotAttr: 'data-cinema-dot',
+        bottomRightLabel: 'British Studio Narration • Must Farm Archaeological Archive',
+      });
+    }
+
+    if (state.step === 'epilogue') {
+      const idx = state.cinemaIdx || 0;
+      const slide = MUST_FARM_EPILOGUE[idx] || MUST_FARM_EPILOGUE[0];
+      const isLast = idx >= MUST_FARM_EPILOGUE.length - 1;
+      return renderAtmosphericCinemaHTML({
+        topLeftLabel: 'THE HISTORY REVISION HUB • MUST FARM CINEMATIC ENDING',
+        topRightLabel: `FINALE ${idx + 1} OF ${MUST_FARM_EPILOGUE.length} • 🎙️ STUDIO VOICEOVER`,
+        slideIndex: idx,
+        totalSlides: MUST_FARM_EPILOGUE.length,
+        vignetteTone: 'emerald',
+        imgSrc: slide.img,
+        imgAlt: slide.alt,
+        caption: slide.caption,
+        credit: slide.credit,
+        heading: slide.heading,
+        narrationHTML: `<p style="margin:0;">${slide.narration}</p>`,
+        actionsHTML: `
+          ${
+            !isLast
+              ? `<button type="button" class="ks2lab-cta-primary" style="width:auto;padding:10px 20px;" data-cinema-next="epilogue">Next Finale Scene →</button>`
+              : `<button type="button" class="ks2lab-cta-primary" style="width:auto;padding:11px 22px;" data-step-go="stage5">🏅 Return to Certificate &amp; Workbook Code →</button>`
+          }
+          <button type="button" class="hh-er-cover-secondary-cta" style="width:auto;padding:10px 14px;" data-cinema-replay="1">🔊 Replay Voiceover</button>
+        `,
+        dotAttr: 'data-cinema-dot',
+        bottomRightLabel: 'Must Farm Epilogue • Verified Cambridgeshire Finds',
+      });
     }
 
     if (state.step === 'stage1') {
@@ -1308,6 +1428,19 @@ export function mountKs2MustFarmLab(container, opts = {}, legacyCtx = {}) {
           }).join('')}
         </div>
 
+        ${renderWorkbookCodeCardHTML({
+          slotLabel: 'ENQUIRY 5 BACK-COVER LEDGER',
+          phrase: 'WET FENLAND MUD PRESERVED BRONZE AGE BRITAIN',
+          instruction:
+            'Copy this unlocked phrase into the Escape Room Ledger on the Back Cover of your Stone Age to Iron Age Pupil Workbook!',
+        })}
+
+        <div style="margin:10px 0;display:flex;gap:8px;flex-wrap:wrap;">
+          <button type="button" class="ks2lab-cta-primary" style="width:auto;padding:10px 18px;" data-cinema-start="epilogue">
+            🎬 Watch 2-Scene Voiced Must Farm Cinematic Ending
+          </button>
+        </div>
+
         ${
           allSolved
             ? `
@@ -1379,17 +1512,34 @@ export function mountKs2MustFarmLab(container, opts = {}, legacyCtx = {}) {
     `;
   }
 
+  const cinemaVoice = createEscapeCinemaVoicePlayer();
+
+  function renderBrandBarHTML() {
+    const locks = ['stage1', 'stage2', 'stage3', 'stage4'].filter((id) => isStageComplete(id)).length;
+    return renderEscapeBrandBarHTML({
+      eraTag: 'KS2 • BRONZE AGE FENS (c. 850 BC)',
+      locksCracked: locks,
+      totalLocks: 4,
+    });
+  }
+
   function render(scrollToTop = false) {
     if (unmounted || !shellEl) return;
     shellEl.classList.toggle('ks2lab-is-fullscreen', state.isFullscreen);
 
     const mutate = () => {
+      const brandEl = shellEl.querySelector('#ks2-mf-brand');
       const topEl = shellEl.querySelector('#ks2-mf-topbar');
       const speechEl = shellEl.querySelector('#ks2-mf-speech');
       const bodyEl = shellEl.querySelector('#ks2-mf-body');
       const navEl = shellEl.querySelector('#ks2-mf-bottom');
+      if (brandEl) brandEl.innerHTML = renderBrandBarHTML();
       if (topEl) topEl.innerHTML = renderTopBarHTML();
-      if (speechEl) speechEl.innerHTML = renderSpeechBarHTML();
+      if (speechEl) {
+        const hideSpeech = state.step === 'cover' || state.step === 'prologue' || state.step === 'epilogue';
+        speechEl.style.display = hideSpeech ? 'none' : '';
+        if (!hideSpeech) speechEl.innerHTML = renderSpeechBarHTML();
+      }
       if (bodyEl) bodyEl.innerHTML = renderStageBodyHTML();
       if (navEl) navEl.innerHTML = renderBottomNavHTML();
     };
@@ -1405,6 +1555,7 @@ export function mountKs2MustFarmLab(container, opts = {}, legacyCtx = {}) {
   // Mount persistent shell once (`CLS = 0`)
   container.innerHTML = `
     <div class="ks2lab-shell theme-must-farm ${state.isFullscreen ? 'ks2lab-is-fullscreen' : ''}">
+      <div id="ks2-mf-brand"></div>
       <div class="ks2lab-topbar" id="ks2-mf-topbar"></div>
       <div class="ks2lab-speech-bar" id="ks2-mf-speech" aria-live="polite"></div>
       <div class="ks2lab-stage-slot" id="ks2-mf-body"></div>
@@ -1424,10 +1575,45 @@ export function mountKs2MustFarmLab(container, opts = {}, legacyCtx = {}) {
   });
 
   shellEl.addEventListener('click', (e) => {
+    const cStart = e.target.closest('[data-cinema-start]');
+    if (cStart) {
+      const mode = cStart.getAttribute('data-cinema-start');
+      state.cinemaIdx = 0;
+      sound.stopSpeech();
+      goToStep(mode);
+      cinemaVoice.play(mode === 'epilogue' ? 'mustfarm_end_1' : 'mustfarm_pro_1');
+      return;
+    }
+
+    const cNext = e.target.closest('[data-cinema-next]');
+    if (cNext) {
+      const mode = cNext.getAttribute('data-cinema-next');
+      const arr = mode === 'epilogue' ? MUST_FARM_EPILOGUE : MUST_FARM_PROLOGUE;
+      state.cinemaIdx = Math.min(arr.length - 1, (state.cinemaIdx || 0) + 1);
+      sound.click();
+      render(false);
+      cinemaVoice.play(`${mode === 'epilogue' ? 'mustfarm_end' : 'mustfarm_pro'}_${state.cinemaIdx + 1}`);
+      return;
+    }
+
+    const cDot = e.target.closest('[data-cinema-dot]');
+    if (cDot) {
+      state.cinemaIdx = Number(cDot.getAttribute('data-cinema-dot')) || 0;
+      render(false);
+      cinemaVoice.play(`${state.step === 'epilogue' ? 'mustfarm_end' : 'mustfarm_pro'}_${state.cinemaIdx + 1}`);
+      return;
+    }
+
+    if (e.target.closest('[data-cinema-replay]')) {
+      cinemaVoice.replay();
+      return;
+    }
+
     const stepBtn = e.target.closest('[data-step-go]');
     if (stepBtn) {
       const target = stepBtn.getAttribute('data-step-go');
       if (target) {
+        cinemaVoice.stop();
         sound.click();
         goToStep(target);
       }
@@ -1646,6 +1832,7 @@ export function mountKs2MustFarmLab(container, opts = {}, legacyCtx = {}) {
     if (resetArmTimer) clearTimeout(resetArmTimer);
     scrollLock.dispose();
     fsSync.dispose();
+    cinemaVoice.destroy();
     sound.destroy();
   };
 }

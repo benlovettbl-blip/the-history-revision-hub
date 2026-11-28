@@ -300,26 +300,32 @@ function renderFooterStrip(pageNum, quip, totalPages = TOTAL_PAGES) {
 function renderKs2VersoSpinePage(lesson, wCfg, pageNum) {
   const cdsStages = lesson.causal_domino_spine?.stages || [];
   const wbStages = lesson.workbook_stages || [];
+  const isThematic = lesson.spine_mode === 'thematic';
 
   const stagesHtml = [0, 1, 2]
     .map((sIdx) => {
       const cds = cdsStages[sIdx] || {};
       const wbs = wbStages[sIdx] || {};
       const stageNum = sIdx + 1;
-      const dateStr = cds.date || `Stage ${stageNum}`;
+      const dateStr = isThematic
+        ? String(wbs.theme || cds.theme || wbs.date || cds.date || `Focus ${stageNum}`).trim()
+        : String(cds.date || wbs.date || `Stage ${stageNum}`).trim();
       const questionText = String(wbs.question || wbs.heading || cds.question || lesson.narrative_blocks?.[sIdx]?.title || '')
         .replace(/^\[[\d.]+\]\s*/, '')
         .trim();
 
       const combinedLen = questionText.length + dateStr.length;
       const qFont = combinedLen > 92 ? '8.4pt' : combinedLen > 80 ? '8.8pt' : '9.2pt';
+      const pillHtml = isThematic
+        ? `<span class="stage-theme" style="font-family:'Inter',sans-serif;font-size:7.1pt;font-weight:800;color:#000000;background:#f4f4f5;border:1.2px solid #000000;padding:0.5px 5px;border-radius:2px;text-transform:uppercase;white-space:nowrap;flex-shrink:0;">${esc(dateStr)}</span>`
+        : `<span class="stage-date">${esc(dateStr)}</span>`;
 
       return `
         <div class="spine-stage-block">
           <div class="stage-banner">
             <div style="display:flex;align-items:center;gap:6px;min-width:0;flex:1;overflow:hidden;">
               <span class="stage-pill">Stage ${stageNum}</span>
-              <span class="stage-date">${esc(dateStr)}</span>
+              ${pillHtml}
               <span style="font-size:8.4pt;font-weight:900;color:#000000;flex-shrink:0;">&bull;</span>
               <span class="stage-q-text" style="font-size:${qFont};">${esc(questionText)}</span>
             </div>
@@ -332,13 +338,13 @@ function renderKs2VersoSpinePage(lesson, wCfg, pageNum) {
     .join('');
 
   return `
-  <!-- PAGE ${pageNum} (VERSO): ENQUIRY ${wCfg.lessonNum} • 3-STAGE STORY SPINE -->
+  <!-- PAGE ${pageNum} (VERSO): ENQUIRY ${wCfg.lessonNum} • ${isThematic ? '3-STAGE ENQUIRY ROADMAP' : '3-STAGE STORY SPINE'} -->
   <div class="page verso-page" id="page-${pageNum}">
     <div class="page-body-full">
       <div class="lesson-top-hdr">
         <div style="flex:1;min-width:0;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2px;gap:6px;">
-            <span class="enq-tag-box">ENQUIRY ${wCfg.lessonNum} OF 11 &bull; STORY SPINE</span>
+            <span class="enq-tag-box">ENQUIRY ${wCfg.lessonNum} OF 11 &bull; ${isThematic ? '3-STAGE ENQUIRY ROADMAP' : 'STORY SPINE'}</span>
             <span style="font-family:'Inter',sans-serif;font-size:7.6pt;font-weight:800;text-transform:uppercase;color:#000000;white-space:nowrap;">
               KS2 HISTORY &bull; WORLD WAR II (1933–1945)
             </span>
@@ -354,7 +360,7 @@ function renderKs2VersoSpinePage(lesson, wCfg, pageNum) {
       </div>
 
       <div class="verso-instruction-bar">
-        <strong>Listening &amp; Reading Notes:</strong> As your class reads each stage, jot down key facts, dates, and names in clear sentences on the wide lines below.
+        <strong>Listening &amp; Reading Notes:</strong> As your class reads each stage, ${isThematic ? 'jot down key facts, evidence, and examples in clear sentences on the wide lines below.' : 'jot down key facts, dates, and names in clear sentences on the wide lines below.'}
       </div>
 
       <div class="spine-stack">
@@ -1055,6 +1061,17 @@ function buildSpineWorkbookHtml(unitData) {
     keyStageBadge: 'KEY STAGE 2 HISTORY &bull; YEARS 5–6',
     pagePadding: '9mm 11mm 8.5mm 11mm',
     checkpoints: markingCheckpoints,
+    escapeRoomLedger: {
+      title: 'Official Home Front Escape Room Verdict Ledger (1939–1945)',
+      badge: 'Homework Code Chain',
+      instruction:
+        'Scan the Revision Arcade QR below to play the 1939–1945 Home Front Escape Room! Crack all 4 wartime locks and copy your unlocked Verification Phrase below:',
+      slots: [
+        { code: 'Lock 1–2 (Pied Piper & Shelters)' },
+        { code: 'Lock 3–4 (Ration Vault & Enigma)' },
+        { code: 'Master Home Front Verdict Code' },
+      ],
+    },
     footerQuip: 'The History Revision Hub • KS2 World War II Structured Spine Workbook • Independent Curriculum Resource',
     renderFooterStrip: (p, q) => renderFooterStrip(p, q),
   });
