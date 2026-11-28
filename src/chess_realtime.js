@@ -10,13 +10,19 @@ import {
   getScopedChessEndpoint,
 } from './engine/staff_auth.js';
 
-const SYNC_ENDPOINT = '/api/chess_sync';
+const SYNC_ENDPOINT =
+  typeof window !== 'undefined' &&
+  (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+    ? 'https://historyrevisionhub.co.uk/api/chess_sync'
+    : '/api/chess_sync';
 const POLL_INTERVAL_MS = 3000;
 const POLL_INTERVAL_BACKGROUND_MS = 15000;
 
 let lastKnownSyncedAt = 0;
 let lastKnownClaimsSig = '';
 let lastKnownJoinSig = '';
+let lastKnownFeedSig = '';
+let lastKnownBotSig = '';
 let pollingIntervalId = null;
 let isPushing = false;
 let pushDebounceTimer = null;
@@ -268,7 +274,9 @@ export function startPupilRealtimeSync(onUpdateReceived) {
         !remoteData ||
         (!remoteData.syncedAt &&
           !Array.isArray(remoteData.pendingXpClaims) &&
-          !Array.isArray(remoteData.pendingJoinRequests))
+          !Array.isArray(remoteData.pendingJoinRequests) &&
+          !Array.isArray(remoteData.clubFeed) &&
+          !remoteData.botStats)
       ) {
         currentSyncStatus = 'idle';
         updateSyncStatusUI();
@@ -285,8 +293,20 @@ export function startPupilRealtimeSync(onUpdateReceived) {
       const joinSig = Array.isArray(remoteData.pendingJoinRequests)
         ? remoteData.pendingJoinRequests.map((r) => r.requestId).join('|')
         : '';
+      const feedSig = Array.isArray(remoteData.clubFeed)
+        ? remoteData.clubFeed.slice(0, 12).map((f) => f.eventId).join('|')
+        : '';
+      const botSig =
+        remoteData.botStats && typeof remoteData.botStats === 'object'
+          ? Object.values(remoteData.botStats)
+              .map((b) => `${b.botId}:${b.games || 0}:${b.pupilWins || 0}`)
+              .join('|')
+          : '';
       const hasChangedInbox =
-        claimsSig !== lastKnownClaimsSig || joinSig !== lastKnownJoinSig;
+        claimsSig !== lastKnownClaimsSig ||
+        joinSig !== lastKnownJoinSig ||
+        feedSig !== lastKnownFeedSig ||
+        botSig !== lastKnownBotSig;
 
       if (hasNewSync || hasChangedInbox) {
         if (hasNewSync) {
@@ -294,6 +314,8 @@ export function startPupilRealtimeSync(onUpdateReceived) {
         }
         lastKnownClaimsSig = claimsSig;
         lastKnownJoinSig = joinSig;
+        lastKnownFeedSig = feedSig;
+        lastKnownBotSig = botSig;
         if (typeof onUpdateReceived === 'function') {
           onUpdateReceived(remoteData);
         }
@@ -466,6 +488,7 @@ export async function clearClubJoinRequestsFromCloud(requestIds = null) {
     return false;
   }
 }
+
 export async function clearPracticeXpClaimsFromCloud(claimIds = null) {
   if (isAirgapModeActive()) return false;
   try {
@@ -483,5 +506,127 @@ export async function clearPracticeXpClaimsFromCloud(claimIds = null) {
     return res.ok;
   } catch (e) {
     return false;
+  }
+}
+
+function buildActionUrl(action, extraQuery = '') {
+  const endpoint = getScopedChessEndpoint(SYNC_ENDPOINT);
+  const sep = endpoint.includes('?') ? '&' : '?';
+  return `${endpoint}${sep}action=${encodeURIComponent(action)}${extraQuery ? '&' + extraQuery : ''}`;
+}
+
+export async function createOnlineDuelRoom(payload) {
+  if (!payload || isAirgapModeActive()) {
+    return { ok: false, error: 'Live Online Duels require Cloud Sync (turn off Airgap Mode).' };
+  }
+  try {
+    const res = await fetch(buildActionUrl('duel_create'), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'duel_create', ...payload }),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) return { ok: false, error: data.error || 'Could not create online duel room.' };
+    return { ok: true, room: data.room };
+  } catch {
+    return { ok: false, error: 'Network offline — check school Wi-Fi connection.' };
+  }
+}
+
+export async function joinOnlineDuelRoom(payload) {
+  if (!payload || isAirgapModeActive()) {
+    return { ok: false, error: 'Live Online Duels require Cloud Sync (turn off Airgap Mode).' };
+  }
+  try {
+    const res = await fetch(buildActionUrl('duel_join'), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'duel_join', ...payload }),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) return { ok: false, error: data.error || 'Could not join duel room.' };
+    return { ok: true, room: data.room, assignedSide: data.assignedSide };
+  } catch {
+    return { ok: false, error: 'Network offline — check school Wi-Fi connection.' };
+  }
+}
+
+export async function pollOnlineDuelRoom(roomCode) {
+  if (!roomCode || isAirgapModeActive()) return { ok: false };
+  try {
+    const res = await fetch(
+      buildActionUrl('duel_poll', `roomCode=${encodeURIComponent(roomCode)}`),
+      { method: 'GET', cache: 'no-store' },
+    );
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) return { ok: false, status: res.status, error: data.error };
+    return { ok: true, room: data.room };
+  } catch {
+    return { ok: false, offline: true };
+  }
+}
+
+export async function pushOnlineDuelMove(payload) {
+  if (!payload || isAirgapModeActive()) return { ok: false };
+  try {
+    const res = await fetch(buildActionUrl('duel_move'), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'duel_move', ...payload }),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (res.status === 409 && data.room) {
+      return { ok: false, conflict: true, room: data.room };
+    }
+    if (!res.ok) return { ok: false, error: data.error };
+    return { ok: true, room: data.room };
+  } catch {
+    return { ok: false, offline: true };
+  }
+}
+
+export async function sendOnlineDuelReaction(payload) {
+  if (!payload || isAirgapModeActive()) return { ok: false };
+  try {
+    const res = await fetch(buildActionUrl('duel_react'), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'duel_react', ...payload }),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) return { ok: false };
+    return { ok: true, room: data.room };
+  } catch {
+    return { ok: false };
+  }
+}
+
+export async function postClubHighlightToCloud(payload) {
+  if (!payload || isAirgapModeActive()) return { ok: false };
+  try {
+    const res = await fetch(buildActionUrl('post_highlight'), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'post_highlight', ...payload }),
+    });
+    const data = await res.json().catch(() => ({}));
+    return { ok: res.ok, item: data.item };
+  } catch {
+    return { ok: false };
+  }
+}
+
+export async function recordBotResultToCloud(payload) {
+  if (!payload || isAirgapModeActive()) return { ok: false };
+  try {
+    const res = await fetch(buildActionUrl('record_bot_result'), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'record_bot_result', ...payload }),
+    });
+    const data = await res.json().catch(() => ({}));
+    return { ok: res.ok, botStats: data.botStats };
+  } catch {
+    return { ok: false };
   }
 }

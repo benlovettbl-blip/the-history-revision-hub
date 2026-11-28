@@ -42,6 +42,11 @@ import {
   renderVirtualChessView,
   registerVirtualChessHandlers,
 } from './chess_play.js';
+import {
+  renderClubHighlightsFeedTab,
+  renderBotRankingsAndConquestsTab,
+  renderPlayerProfileModalHtml,
+} from './chess_community.js';
 
 export function isChessViewActive() {
   if (typeof window === 'undefined') return false;
@@ -536,7 +541,11 @@ export function getPlayerDisplayName(player, context = 'default') {
 }
 
 export function renderPlayerNameWithCallsign(player, context = 'default') {
-  return getPlayerDisplayName(player, context);
+  const inner = getPlayerDisplayName(player, context);
+  if (player && player.id) {
+    return `<span onclick="event.stopPropagation(); window.openChessPlayerProfile && window.openChessPlayerProfile('${player.id}')" title="Click to open Chess Profile Card" style="cursor: pointer; border-bottom: 1px dotted #94a3b8;">${inner}</span>`;
+  }
+  return inner;
 }
 if (typeof window !== 'undefined') {
   window.renderPlayerNameWithCallsign = renderPlayerNameWithCallsign;
@@ -685,6 +694,9 @@ let chessState = {
   processedXpClaimIds: [],
   pendingJoinRequests: [],
   processedJoinRequestIds: [],
+  clubFeed: [],
+  botStats: {},
+  feedFilter: 'all',
   activePuzzleBoard: null,
   activePuzzleIndex: 0,
   selectedSquare: null,
@@ -1281,6 +1293,12 @@ function initChessState(forceClean = false) {
           xpInboxChanged = true;
         }
       }
+      if (remoteData && Array.isArray(remoteData.clubFeed)) {
+        chessState.clubFeed = remoteData.clubFeed;
+      }
+      if (remoteData && remoteData.botStats && typeof remoteData.botStats === 'object') {
+        chessState.botStats = remoteData.botStats;
+      }
 
       // Apply remote data updates ONLY when cloud actually has newer standings/matches
       const hasRemoteStandings =
@@ -1552,14 +1570,18 @@ export function renderChessHubView() {
   }
 
   const currentTab = chessState.activeTab || 'play';
+  const isFeedGroup = currentTab === 'feed';
   const isLadderGroup =
-    currentTab === 'ladder' || currentTab === 'pairings' || currentTab === 'table';
+    currentTab === 'ladder' ||
+    currentTab === 'bots' ||
+    currentTab === 'pairings' ||
+    currentTab === 'table';
   const isModesGroup =
     currentTab === 'modes' ||
     currentTab === 'knockout' ||
     currentTab === 'beginners' ||
     currentTab === 'drills';
-  const isPlayGroup = !isLadderGroup && !isModesGroup;
+  const isPlayGroup = !isFeedGroup && !isLadderGroup && !isModesGroup;
   const activePairingsCount = (chessState.activePairings || []).filter((p) => !p.isBye).length;
 
   const isFirstChessMount = !document.getElementById('chess-hub-root');
@@ -1674,19 +1696,24 @@ export function renderChessHubView() {
         </div>
       </div>
 
-      <!-- Clean 3-Tab Primary Navigation -->
-      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-bottom: 12px; background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 11px; padding: 4px;">
-        <button id="tab-btn-play" type="button" onclick="window.switchChessTab('play')" style="padding: 9px 10px; border-radius: 8px; border: ${isPlayGroup ? '1px solid #cbd5e1' : '1px solid transparent'}; background: ${isPlayGroup ? '#ffffff' : 'transparent'}; color: ${isPlayGroup ? '#0f172a' : '#475569'}; font-weight: 800; font-size: 0.85rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-shadow: ${isPlayGroup ? '0 2px 6px rgba(15,23,42,0.06)' : 'none'};">
-          <span>♟️</span> <span>Play Chess</span>
+      <!-- Clean 4-Tab Primary Navigation -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 6px; margin-bottom: 12px; background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 11px; padding: 4px;">
+        <button id="tab-btn-play" type="button" onclick="window.switchChessTab('play')" style="padding: 9px 10px; border-radius: 8px; border: ${isPlayGroup ? '1px solid #cbd5e1' : '1px solid transparent'}; background: ${isPlayGroup ? '#ffffff' : 'transparent'}; color: ${isPlayGroup ? '#0f172a' : '#475569'}; font-weight: 800; font-size: 0.84rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-shadow: ${isPlayGroup ? '0 2px 6px rgba(15,23,42,0.06)' : 'none'};">
+          <span>♟️</span> <span>Play &amp; Live Duel</span>
         </button>
 
-        <button id="tab-btn-ladder" type="button" onclick="window.switchChessTab('ladder')" style="padding: 9px 10px; border-radius: 8px; border: ${isLadderGroup ? '1px solid #cbd5e1' : '1px solid transparent'}; background: ${isLadderGroup ? '#ffffff' : 'transparent'}; color: ${isLadderGroup ? '#0f172a' : '#475569'}; font-weight: 800; font-size: 0.85rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-shadow: ${isLadderGroup ? '0 2px 6px rgba(15,23,42,0.06)' : 'none'};">
-          <span>🏆</span> <span>Club Ladder &amp; Pairings</span>
+        <button id="tab-btn-feed" type="button" onclick="window.switchChessTab('feed')" style="padding: 9px 10px; border-radius: 8px; border: ${isFeedGroup ? '1px solid #cbd5e1' : '1px solid transparent'}; background: ${isFeedGroup ? '#ffffff' : 'transparent'}; color: ${isFeedGroup ? '#0f172a' : '#475569'}; font-weight: 800; font-size: 0.84rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-shadow: ${isFeedGroup ? '0 2px 6px rgba(15,23,42,0.06)' : 'none'};">
+          <span>📣</span> <span>Club Feed</span>
+          ${(chessState.clubFeed || []).length > 0 ? `<span style="background: #e0f2fe; color: #0369a1; padding: 1px 6px; border-radius: 999px; font-size: 0.66rem; font-weight: 800;">Live</span>` : ''}
+        </button>
+
+        <button id="tab-btn-ladder" type="button" onclick="window.switchChessTab('ladder')" style="padding: 9px 10px; border-radius: 8px; border: ${isLadderGroup ? '1px solid #cbd5e1' : '1px solid transparent'}; background: ${isLadderGroup ? '#ffffff' : 'transparent'}; color: ${isLadderGroup ? '#0f172a' : '#475569'}; font-weight: 800; font-size: 0.84rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-shadow: ${isLadderGroup ? '0 2px 6px rgba(15,23,42,0.06)' : 'none'};">
+          <span>🏆</span> <span>Rankings &amp; Bots</span>
           ${activePairingsCount > 0 ? `<span style="background: #dcfce7; color: #166534; padding: 1px 6px; border-radius: 999px; font-size: 0.68rem; font-weight: 800;">${activePairingsCount} Live</span>` : ''}
         </button>
 
-        <button id="tab-btn-modes" type="button" onclick="window.switchChessTab('modes')" style="padding: 9px 10px; border-radius: 8px; border: ${isModesGroup ? '1px solid #cbd5e1' : '1px solid transparent'}; background: ${isModesGroup ? '#ffffff' : 'transparent'}; color: ${isModesGroup ? '#0f172a' : '#475569'}; font-weight: 800; font-size: 0.85rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-shadow: ${isModesGroup ? '0 2px 6px rgba(15,23,42,0.06)' : 'none'};">
-          <span>🎮</span> <span>Game Modes &amp; Cup</span>
+        <button id="tab-btn-modes" type="button" onclick="window.switchChessTab('modes')" style="padding: 9px 10px; border-radius: 8px; border: ${isModesGroup ? '1px solid #cbd5e1' : '1px solid transparent'}; background: ${isModesGroup ? '#ffffff' : 'transparent'}; color: ${isModesGroup ? '#0f172a' : '#475569'}; font-weight: 800; font-size: 0.84rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-shadow: ${isModesGroup ? '0 2px 6px rgba(15,23,42,0.06)' : 'none'};">
+          <span>🎮</span> <span>Modes &amp; Cup</span>
           ${chessState.knockoutBracket ? `<span style="background: #fef3c7; color: #b45309; padding: 1px 6px; border-radius: 999px; font-size: 0.68rem; font-weight: 800;">Cup</span>` : ''}
         </button>
       </div>
@@ -1716,14 +1743,25 @@ export function renderChessHubView() {
 function renderActiveTabContent(filteredPlayers) {
   const tab = chessState.activeTab || 'play';
 
-  // HUB 2: Club Ladder & Pairings ('ladder' | 'pairings' | 'table')
-  if (tab === 'ladder' || tab === 'pairings' || tab === 'table') {
+  // HUB 1B: Live Club Highlights Feed ('feed')
+  if (tab === 'feed') {
+    return renderClubHighlightsFeedTab(chessState, {
+      calculatePlayerPoints,
+      calculateHouseTotals,
+    });
+  }
+
+  // HUB 2: Club Ladder, Bot Rankings & Pairings ('ladder' | 'bots' | 'pairings' | 'table')
+  if (tab === 'ladder' || tab === 'bots' || tab === 'pairings' || tab === 'table') {
     const activePairingsCount = (chessState.activePairings || []).filter((p) => !p.isBye).length;
     const subNavHtml = `
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 7px 10px;">
         <div style="display: inline-flex; gap: 4px; background: #f1f5f9; padding: 3px; border-radius: 8px; flex-wrap: wrap;">
           <button type="button" onclick="window.switchChessTab('ladder')" style="background: ${tab === 'ladder' ? '#ffffff' : 'transparent'}; color: ${tab === 'ladder' ? '#0f172a' : '#475569'}; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: ${tab === 'ladder' ? '0 1px 2px rgba(0,0,0,0.08)' : 'none'};">
-            🏆 Standings (${chessState.players.length})
+            🏆 Member Standings (${chessState.players.length})
+          </button>
+          <button type="button" onclick="window.switchChessTab('bots')" style="background: ${tab === 'bots' ? '#ffffff' : 'transparent'}; color: ${tab === 'bots' ? '#0f172a' : '#475569'}; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: ${tab === 'bots' ? '0 1px 2px rgba(0,0,0,0.08)' : 'none'};">
+            🤖 Bot Rankings &amp; Matrix (6)
           </button>
           <button type="button" onclick="window.switchChessTab('pairings')" style="background: ${tab === 'pairings' ? '#ffffff' : 'transparent'}; color: ${tab === 'pairings' ? '#0f172a' : '#475569'}; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: ${tab === 'pairings' ? '0 1px 2px rgba(0,0,0,0.08)' : 'none'};">
             ⚔️ Board Pairings ${activePairingsCount > 0 ? `(${activePairingsCount})` : ''}
@@ -1778,6 +1816,14 @@ function renderActiveTabContent(filteredPlayers) {
       </div>
     `;
 
+    if (tab === 'bots') {
+      return (
+        subNavHtml +
+        renderBotRankingsAndConquestsTab(chessState, {
+          calculatePlayerPoints,
+        })
+      );
+    }
     if (tab === 'pairings') return subNavHtml + renderPairingsTab();
     if (tab === 'table') return subNavHtml + renderLeagueTableTab(filteredPlayers);
     return subNavHtml + renderLadderTab(filteredPlayers);
@@ -12060,32 +12106,51 @@ registerClubGameModeHandlers({
 // ============================================================================
 // PRACTICE XP -> HOUSE POINTS ENGINE & TEACHER 1-CLICK APPROVAL INBOX
 // ============================================================================
-function applyPracticeXpToCanonicalPlayer(playerId, xpToAdd) {
+function applyPracticeXpToCanonicalPlayer(playerId, xpToAdd, claimMeta = {}) {
   const player = (chessState.players || []).find((p) => p.id === playerId);
-  if (!player || !xpToAdd || xpToAdd <= 0) return { housePtsAwarded: 0 };
+  if (!player) return { housePtsAwarded: 0 };
+
+  const safeXp = Math.max(0, Number(xpToAdd || 0));
+  const extraDuelPts = Math.max(0, Number(claimMeta.bonusHousePts || 0));
 
   const oldXp = Number(player.practiceXp || 0);
-  const newXp = oldXp + Number(xpToAdd);
+  const newXp = oldXp + safeXp;
   player.practiceXp = newXp;
+
+  if (typeof claimMeta.accuracyPct === 'number' && claimMeta.accuracyPct > (player.bestAccuracy || 0)) {
+    player.bestAccuracy = Math.round(claimMeta.accuracyPct);
+  }
+  if (claimMeta.botConquered) {
+    if (!player.conqueredBots || typeof player.conqueredBots !== 'object' || Array.isArray(player.conqueredBots)) {
+      player.conqueredBots = {};
+    }
+    const prev = player.conqueredBots[claimMeta.botConquered] || { wins: 0, bestAccuracy: 0 };
+    player.conqueredBots[claimMeta.botConquered] = {
+      wins: (prev.wins || 0) + 1,
+      bestAccuracy: Math.max(prev.bestAccuracy || 0, claimMeta.accuracyPct || 0) || null,
+    };
+  }
 
   const oldMilestones = Math.floor(oldXp / 100);
   const newMilestones = Math.floor(newXp / 100);
-  const housePtsAwarded = Math.max(0, newMilestones - oldMilestones);
+  const milestonePts = Math.max(0, newMilestones - oldMilestones);
+  const housePtsAwarded = milestonePts + extraDuelPts;
 
   if (housePtsAwarded > 0) {
     player.bonusPoints = (player.bonusPoints || 0) + housePtsAwarded;
+    const isDuelBonus = extraDuelPts > 0;
     chessState.matches.unshift({
       id: 'xp_b_' + Date.now() + '_' + Math.floor(Math.random() * 1000),
-      date: 'Virtual Chess Practice Milestone',
+      date: isDuelBonus ? 'Live 2-Laptop Online Duel Bonus' : 'Virtual Chess Practice Milestone',
       timestamp: Date.now(),
-      round: '100 XP Practice Bonus',
+      round: isDuelBonus ? 'Live Online Duel + Practice Bonus' : '100 XP Practice Bonus',
       white: player.name,
-      black: 'Computer Coach',
+      black: claimMeta.opponentCallsign || 'Computer Coach',
       whiteId: player.id,
       whiteHouse: player.house,
       result: 'BONUS',
       bonusPoints: housePtsAwarded,
-      opening: 'Virtual Board Practice XP',
+      opening: isDuelBonus ? 'Live Online Chess Duel' : 'Virtual Board Practice XP',
     });
   }
 
@@ -12208,10 +12273,18 @@ function renderPendingXpClaimsBanner() {
 
   const byPupil = new Map();
   let totalXp = 0;
+  let totalExtraDuelPts = 0;
   claims.forEach((c) => {
     totalXp += Number(c.xp || 0);
-    const prev = byPupil.get(c.playerId) || { callsign: c.callsign, xp: 0, count: 0 };
+    totalExtraDuelPts += Number(c.bonusHousePts || 0);
+    const prev = byPupil.get(c.playerId) || {
+      callsign: c.callsign,
+      xp: 0,
+      extraPts: 0,
+      count: 0,
+    };
     prev.xp += Number(c.xp || 0);
+    prev.extraPts += Number(c.bonusHousePts || 0);
     prev.count += 1;
     byPupil.set(c.playerId, prev);
   });
@@ -12219,7 +12292,7 @@ function renderPendingXpClaimsBanner() {
   const summaryPills = [...byPupil.values()]
     .map(
       (item) =>
-        `<span style="background: #ffffff; border: 1px solid #a7f3d0; color: #065f46; border-radius: 999px; padding: 2px 8px; font-size: 0.72rem; font-weight: 800;">${item.callsign}: +${item.xp} XP</span>`,
+        `<span style="background: #ffffff; border: 1px solid #a7f3d0; color: #065f46; border-radius: 999px; padding: 2px 8px; font-size: 0.72rem; font-weight: 800;">${item.callsign}: +${item.xp} XP${item.extraPts > 0 ? ` · 🏆 +${item.extraPts} Duel House Pt` : ''}</span>`,
     )
     .join(' ');
 
@@ -12227,7 +12300,7 @@ function renderPendingXpClaimsBanner() {
     <div id="teacher-xp-inbox-banner" style="background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%); border: 1.5px solid #6ee7b7; border-radius: 11px; padding: 10px 14px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; box-shadow: 0 2px 8px rgba(16, 185, 129, 0.1);">
       <div style="display: flex; flex-direction: column; gap: 5px;">
         <div style="font-size: 0.82rem; font-weight: 800; color: #065f46;">
-          ✨ Virtual Board Practice XP Ready (${claims.length} game${claims.length === 1 ? '' : 's'} · +${totalXp} XP total)
+          ✨ Practice XP &amp; Live Duel Rewards Ready (${claims.length} event${claims.length === 1 ? '' : 's'} · +${totalXp} XP${totalExtraDuelPts > 0 ? ` + 🏆 ${totalExtraDuelPts} Extra Duel House Pt${totalExtraDuelPts === 1 ? '' : 's'}` : ''})
         </div>
         <div style="display: flex; gap: 5px; flex-wrap: wrap;">
           ${summaryPills}
@@ -12258,7 +12331,7 @@ window.approveAllPendingXpClaims = function () {
   claims.forEach((c) => {
     claimIds.push(c.claimId);
     totalXp += Number(c.xp || 0);
-    const res = applyPracticeXpToCanonicalPlayer(c.playerId, Number(c.xp || 0));
+    const res = applyPracticeXpToCanonicalPlayer(c.playerId, Number(c.xp || 0), c);
     totalHousePts += res.housePtsAwarded || 0;
   });
 
@@ -12290,6 +12363,33 @@ window.dismissAllPendingXpClaims = function () {
   showChessToast('Dismissed pending practice XP claims.', 'info');
 };
 
+window.openChessPlayerProfile = function (playerId) {
+  const modalCont = getChessModalContainer();
+  if (!modalCont || !playerId) return;
+  const html = renderPlayerProfileModalHtml(playerId, chessState, {
+    calculatePlayerPoints,
+  });
+  if (html) modalCont.innerHTML = html;
+};
+
+window.setChessFeedFilter = function (filter) {
+  chessState.feedFilter = filter || 'all';
+  renderChessHubView();
+};
+
+window.challengeHistoricalBot = function (botId) {
+  chessState.activeTab = 'play';
+  if (!chessState.virtualChess) {
+    chessState.virtualChess = createDefaultVirtualChessState();
+  }
+  chessState.virtualChess.mode = 'ai';
+  chessState.virtualChess.aiLevel = botId || 'elizabeth_i';
+  renderChessHubView();
+  if (typeof window.startNewVirtualGame === 'function') {
+    window.startNewVirtualGame();
+  }
+};
+
 // Register Virtual Chess Set & Computer Coach Controllers
 registerVirtualChessHandlers({
   getState: () => chessState,
@@ -12303,7 +12403,7 @@ registerVirtualChessHandlers({
   onPracticeXpEarned: (claim) => {
     if (chessState.userRole === 'teacher' && !chessState.isPupilPreview) {
       pushChessUndoSnapshot(`Practice XP: ${claim.callsign} (+${claim.xp} XP)`);
-      const res = applyPracticeXpToCanonicalPlayer(claim.playerId, claim.xp);
+      const res = applyPracticeXpToCanonicalPlayer(claim.playerId, claim.xp, claim);
       if (res.housePtsAwarded > 0) {
         autoSortPlayersByPoints();
       }

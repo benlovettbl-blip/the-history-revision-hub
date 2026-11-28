@@ -6,6 +6,31 @@
 
 import { HOUSES } from './chess_data.js';
 import { playClubSound } from './chess_club_modes.js';
+import {
+  HISTORICAL_BOTS,
+  resolveBotProfile,
+  detectOpeningName,
+  pickTuringBookMove,
+  generateSafeDuelRoomCode,
+  DUEL_QUICK_REACTIONS,
+  DAILY_TACTICAL_PUZZLES,
+  parseFenBoardOnly,
+  getTodayDailyPuzzle,
+  readDailyPuzzleProgress,
+  markDailyPuzzleSolved,
+  recordLocalBotConquest,
+  updateLocalBestAccuracy,
+  appendLocalClubFeed,
+} from './chess_bots_and_review.js';
+import {
+  createOnlineDuelRoom,
+  joinOnlineDuelRoom,
+  pollOnlineDuelRoom,
+  pushOnlineDuelMove,
+  sendOnlineDuelReaction,
+  postClubHighlightToCloud,
+  recordBotResultToCloud,
+} from './chess_realtime.js';
 
 // ============================================================================
 // 1. CRISP STAUNTON INLINE SVG PIECE SET (Zero external requests or emoji bugs)
@@ -88,7 +113,7 @@ const PIECE_VALUES = { p: 1, n: 3, b: 3, r: 5, q: 9, k: 0 };
 const TAPPED_IN_STORAGE_KEY = 'chess_active_pupil_id';
 const PENDING_JOIN_STORAGE_KEY = 'chess_pending_join_v1';
 const LOCAL_XP_LEDGER_KEY = 'chess_pupil_xp_ledger_v1';
-const DAILY_XP_CAP = 100;
+const DAILY_XP_CAP = 150;
 
 function getPendingJoinLocal() {
   if (typeof window === 'undefined') return null;
@@ -205,8 +230,9 @@ export function createDefaultVirtualChessState() {
     capturedByBlack: [], // uppercase chars captured by Black
     status: 'playing', // 'playing' | 'checkmate' | 'stalemate' | 'draw_repetition' | 'draw_50' | 'draw_material' | 'draw_agreed' | 'resigned' | 'timeout'
     winner: null, // 'w' | 'b' | 'draw' | null
-    mode: 'ai', // 'ai' | 'pass'
-    aiLevel: 'medium', // 'easy' | 'medium' | 'hard'
+    mode: 'ai', // 'ai' | 'online' | 'daily' | 'pass'
+    aiLevel: 'elizabeth_i', // 'henry_viii' | 'boudicca' | 'elizabeth_i' | 'napoleon' | 'eleanor' | 'turing'
+    botQuip: '',
     humanSide: 'w', // 'w' | 'b'
     aiThinking: false,
     flipped: false,
@@ -224,6 +250,22 @@ export function createDefaultVirtualChessState() {
     xpGrantedThisGame: false,
     lastXpNotice: null,
     loggedToLadder: false,
+    gameReview: null, // Post-game Coach Review { accuracyPct, counts, bestMoveItem, blunderItem }
+    replayPlyIndex: null, // null = live board, 0..N = historical move scrub
+    drawnArrows: [], // [{ from: [r, c], to: [r, c] }]
+    highlightedSquares: [], // ['e4', ...]
+    // Live 2-Laptop Online Duel state
+    onlineRoomCode: '',
+    onlineSide: 'w',
+    onlineSeq: 0,
+    onlineHostPrefSide: 'w',
+    onlineRoomData: null,
+    onlineError: '',
+    onlineReactionToast: null,
+    // Daily Tactical Puzzle state
+    dailyPuzzleIdx: 0,
+    dailySolvedBanner: '',
+    dailyWrongToast: '',
   };
   const key = computePositionKey(state);
   state.positionCounts[key] = 1;
@@ -870,6 +912,10 @@ function orderMovesForSearch(board, moves) {
 }
 
 function quiesceSearch(node, alpha, beta, qDepth) {
+  if (isSideInCheck(node.board, node.turn)) {
+    const evasions = getAllLegalMovesForState(node);
+    if (evasions.length === 0) return -(19000 + qDepth * 50);
+  }
   const standPatRaw = evaluateBoardForWhite(node.board);
   const standPat = node.turn === 'w' ? standPatRaw : -standPatRaw;
   if (standPat >= beta) return beta;
@@ -920,30 +966,23 @@ function negamax(node, depth, alpha, beta, useQuiesce) {
   return best;
 }
 
-export function chooseBestMove(game, level = 'medium') {
+export function chooseBestMove(game, level = 'elizabeth_i') {
   const legal = getAllLegalMovesForState(game);
   if (legal.length === 0) return null;
   if (legal.length === 1) return legal[0];
 
-  // Prefer Queen promotion unless underpromotion strictly beats it
+  const bot = resolveBotProfile(level);
   const candidates = legal.filter((m) => !m.promotion || m.promotion === 'q' || m.promotion === 'n');
 
-  let searchDepth = 1;
-  let jitter = 25;
-  let useQuiesce = false;
-
-  if (level === 'easy') {
-    searchDepth = 0; // 1-ply evaluation + friendly beginner jitter
-    jitter = 145;
-  } else if (level === 'medium') {
-    searchDepth = 1; // 2-ply lookahead
-    jitter = 28;
-    useQuiesce = true;
-  } else {
-    searchDepth = 2; // 3-ply lookahead + 2-ply capture quiescence
-    jitter = 8;
-    useQuiesce = true;
+  // Alan Turing (1700 Boss) uses his 1948 Turochamp classical opening book in the first 6 plies
+  if (bot.style === 'engine') {
+    const bookMv = pickTuringBookMove(game.moveLog, candidates, sqName);
+    if (bookMv) return bookMv;
   }
+
+  const searchDepth = bot.searchDepth ?? 1;
+  const jitter = bot.jitter ?? 28;
+  const useQuiesce = Boolean(bot.useQuiesce);
 
   const ordered = orderMovesForSearch(game.board, candidates);
   let bestMove = ordered[0];
@@ -953,13 +992,42 @@ export function chooseBestMove(game, level = 'medium') {
     const child = makeLightSearchChild(game, mv);
     let exactScore = -negamax(child, searchDepth, -30000, 30000, useQuiesce);
 
+    // Distinct Historical Personality Biases
+    const movingPiece = (game.board[mv.fromR]?.[mv.fromC] || '').toLowerCase();
+    const isCapture = mv.isEnPassant || game.board[mv.toR]?.[mv.toC] !== '.';
+    const givesCheck = isSideInCheck(child.board, child.turn);
+
+    if (bot.style === 'reckless') {
+      // Henry VIII: greedy captures + rash early Queen sorties
+      if (isCapture) exactScore += 55;
+      if (movingPiece === 'q' && (game.moveLog?.length || 0) < 12) exactScore += 42;
+      if (givesCheck) exactScore += 35;
+    } else if (bot.style === 'raider') {
+      // Boudicca: aggressive Knight charges & checks
+      if (movingPiece === 'n') exactScore += 32;
+      if (givesCheck) exactScore += 45;
+      if (isCapture) exactScore += 28;
+    } else if (bot.style === 'solid') {
+      // Elizabeth I: castles early & keeps Queen safe in opening
+      if (mv.castleSide) exactScore += 60;
+      if (movingPiece === 'q' && (game.moveLog?.length || 0) < 10) exactScore -= 38;
+    } else if (bot.style === 'tactical') {
+      // Napoleon: central control + long-range Bishops + forcing checks
+      if (mv.toR >= 2 && mv.toR <= 5 && mv.toC >= 2 && mv.toC <= 5) exactScore += 24;
+      if (movingPiece === 'b') exactScore += 18;
+      if (givesCheck) exactScore += 26;
+    } else if (bot.style === 'engine') {
+      // Alan Turing: bonus for castling, Rook on 7th rank, and clean development
+      if (mv.castleSide) exactScore += 35;
+      if (movingPiece === 'r' && (mv.toR === 1 || mv.toR === 6)) exactScore += 22;
+    }
+
     // Slight repetition avoidance when winning
     const childKey = computePositionKey(child);
     if ((game.positionCounts?.[childKey] || 0) >= 2 && exactScore > -40) {
       exactScore -= 120;
     }
 
-    // Keep mates exact so even Easy takes an obvious mate in 1
     const noisyScore =
       Math.abs(exactScore) > 15000 ? exactScore : exactScore + (Math.random() * 2 - 1) * jitter;
 
@@ -972,8 +1040,142 @@ export function chooseBestMove(game, level = 'medium') {
   return bestMove;
 }
 
+export function computePostGameCoachReview(vc, reviewSide = 'w') {
+  const snaps = vc.history || [];
+  const logs = vc.moveLog || [];
+  if (snaps.length < 2 || logs.length < 2) return null;
+
+  const counts = { best: 0, good: 0, inaccuracy: 0, blunder: 0 };
+  let scoreSum = 0;
+  let moveCount = 0;
+  let bestMoveItem = null;
+  let worstCpLoss = -1;
+  let blunderItem = null;
+  const annotations = {}; // moveLog index -> glyph
+
+  const total = Math.min(snaps.length, logs.length);
+  for (let i = 0; i < total; i++) {
+    const logItem = logs[i];
+    const snap = snaps[i];
+    if (!logItem || !snap || logItem.side !== reviewSide) continue;
+
+    const legal = getAllLegalMovesForState(snap);
+    if (legal.length <= 1) {
+      counts.best++;
+      scoreSum += 100;
+      moveCount++;
+      annotations[i] = '⭐';
+      continue;
+    }
+
+    // Evaluate played board (next snapshot or final vc.board)
+    const afterBoard = i + 1 < snaps.length ? snaps[i + 1].board : vc.board;
+    const afterTurn = reviewSide === 'w' ? 'b' : 'w';
+    const afterNode = {
+      board: afterBoard,
+      turn: afterTurn,
+      castling: snap.castling || {},
+      enPassant: null,
+    };
+    const playedEval = -quiesceSearch(afterNode, -30000, 30000, 1);
+
+    // Find best move in that position (fast 1-ply + quiescence)
+    const ordered = orderMovesForSearch(snap.board, legal).slice(0, 18);
+    let topEval = playedEval;
+    let topMv = ordered[0];
+    for (const cand of ordered) {
+      const child = makeLightSearchChild(snap, cand);
+      const ev = -quiesceSearch(child, -30000, 30000, 1);
+      if (ev > topEval) {
+        topEval = ev;
+        topMv = cand;
+      }
+    }
+
+    const cpLoss = Math.max(0, Math.min(900, topEval - playedEval));
+    moveCount++;
+
+    if (cpLoss <= 22) {
+      counts.best++;
+      scoreSum += 100;
+      annotations[i] = '⭐';
+      if (!bestMoveItem || playedEval > bestMoveItem.evalScore) {
+        bestMoveItem = {
+          plyIndex: i,
+          moveNumber: Math.floor(i / 2) + 1,
+          san: logItem.san,
+          evalScore: playedEval,
+        };
+      }
+    } else if (cpLoss <= 65) {
+      counts.good++;
+      scoreSum += 87;
+      annotations[i] = '👍';
+    } else if (cpLoss <= 145) {
+      counts.inaccuracy++;
+      scoreSum += 62;
+      annotations[i] = '⚠️';
+      if (cpLoss > worstCpLoss && topMv) {
+        worstCpLoss = cpLoss;
+        const nextLegal = getAllLegalMovesForState(makeLightSearchChild(snap, topMv));
+        const nextCheck = isSideInCheck(applyMoveToBoardClone(snap.board, topMv), afterTurn);
+        blunderItem = {
+          historyIdx: i,
+          moveNumber: Math.floor(i / 2) + 1,
+          playedSan: logItem.san,
+          bestSan: formatMoveSAN(snap, topMv, legal, nextCheck, nextLegal.length > 0),
+          fromR: topMv.fromR,
+          fromC: topMv.fromC,
+          toR: topMv.toR,
+          toC: topMv.toC,
+          fromSq: sqName(topMv.fromR, topMv.fromC),
+          toSq: sqName(topMv.toR, topMv.toC),
+          cpLoss: Math.round(cpLoss),
+          label: 'Inaccuracy',
+        };
+      }
+    } else {
+      counts.blunder++;
+      const mvScore = Math.max(15, Math.round(44 - (cpLoss - 145) / 16));
+      scoreSum += mvScore;
+      annotations[i] = '❓';
+      if (cpLoss > worstCpLoss && topMv) {
+        worstCpLoss = cpLoss;
+        const nextLegal = getAllLegalMovesForState(makeLightSearchChild(snap, topMv));
+        const nextCheck = isSideInCheck(applyMoveToBoardClone(snap.board, topMv), afterTurn);
+        blunderItem = {
+          historyIdx: i,
+          moveNumber: Math.floor(i / 2) + 1,
+          playedSan: logItem.san,
+          bestSan: formatMoveSAN(snap, topMv, legal, nextCheck, nextLegal.length > 0),
+          fromR: topMv.fromR,
+          fromC: topMv.fromC,
+          toR: topMv.toR,
+          toC: topMv.toC,
+          fromSq: sqName(topMv.fromR, topMv.fromC),
+          toSq: sqName(topMv.toR, topMv.toC),
+          cpLoss: Math.round(cpLoss),
+          label: 'Blunder',
+        };
+      }
+    }
+  }
+
+  if (moveCount === 0) return null;
+  const accuracyPct = Math.max(14, Math.min(99, Math.round(scoreSum / moveCount)));
+  return {
+    reviewSide,
+    accuracyPct,
+    moveCount,
+    counts,
+    bestMoveItem,
+    blunderItem,
+    annotations,
+  };
+}
+
 export function computeCoachHint(game) {
-  const best = chooseBestMove(game, 'hard');
+  const best = chooseBestMove(game, 'turing');
   if (!best) return null;
 
   const allBefore = getAllLegalMovesForState(game);
@@ -1051,7 +1253,45 @@ function renderCapturedRow(capturedList, advantagePts, isWhiteRow) {
   `;
 }
 
-function getStatusBannerInfo(vc, whiteLabel, blackLabel) {
+function getStatusBannerInfo(vc, whiteLabel, blackLabel, botProfile) {
+  if (vc.mode === 'daily') {
+    const puz = DAILY_TACTICAL_PUZZLES[vc.dailyPuzzleIdx % DAILY_TACTICAL_PUZZLES.length];
+    if (vc.status === 'checkmate') {
+      return {
+        bg: '#ecfdf5',
+        border: '#6ee7b7',
+        color: '#065f46',
+        text: `🏆 Puzzle Solved! ${puz.title} — Checkmate!`,
+      };
+    }
+    return {
+      bg: '#eff6ff',
+      border: '#93c5fd',
+      color: '#1e3a8a',
+      text: `🧩 ${puz.title} (${puz.theme}) · Find Checkmate in 1 move!`,
+    };
+  }
+
+  if (vc.mode === 'online' && (!vc.onlineRoomCode || vc.onlineRoomData?.status === 'waiting')) {
+    return {
+      bg: '#f0f9ff',
+      border: '#7dd3fc',
+      color: '#0369a1',
+      text: vc.onlineRoomCode
+        ? `📡 Room ${vc.onlineRoomCode} Ready — Waiting for classmate's laptop to join...`
+        : '🌐 Live 2-Laptop Duel · Create a Room Code or enter a friend’s code!',
+    };
+  }
+
+  if (vc.replayPlyIndex !== null && vc.replayPlyIndex !== undefined) {
+    return {
+      bg: '#fefce8',
+      border: '#fde047',
+      color: '#854d0e',
+      text: `⏪ Move Replay (Ply ${vc.replayPlyIndex}/${vc.moveLog.length}) · Click ⏭ for Live Board`,
+    };
+  }
+
   if (vc.status === 'checkmate') {
     const winName = vc.winner === 'w' ? whiteLabel : blackLabel;
     return {
@@ -1114,7 +1354,7 @@ function getStatusBannerInfo(vc, whiteLabel, blackLabel) {
       bg: '#eff6ff',
       border: '#93c5fd',
       color: '#1e40af',
-      text: '🤖 Computer Coach is thinking...',
+      text: `${botProfile ? botProfile.icon : '🤖'} ${botProfile ? botProfile.shortName : 'Computer'} (${botProfile ? botProfile.elo : ''} ELO) is thinking...`,
     };
   }
 
@@ -1126,6 +1366,14 @@ function getStatusBannerInfo(vc, whiteLabel, blackLabel) {
       border: '#fca5a5',
       color: '#991b1b',
       text: `🚨 CHECK! ${turnLabel} — protect your King!`,
+    };
+  }
+  if (vc.mode === 'online' && vc.turn !== vc.onlineSide) {
+    return {
+      bg: '#f8fafc',
+      border: '#cbd5e1',
+      color: '#475569',
+      text: `⏳ ${turnLabel} · Waiting for opponent's move...`,
     };
   }
   return {
@@ -1142,6 +1390,7 @@ function renderVirtualChessInner(chessState) {
   }
   const vc = chessState.virtualChess;
   const players = chessState.players || [];
+  const botProfile = resolveBotProfile(vc.aiLevel);
 
   const whiteRoster = vc.whitePlayerId ? players.find((p) => p.id === vc.whitePlayerId) : null;
   const blackRoster = vc.blackPlayerId ? players.find((p) => p.id === vc.blackPlayerId) : null;
@@ -1165,12 +1414,7 @@ function renderVirtualChessInner(chessState) {
     : null;
   const xpInfo = getPupilXpProgress(tappedPupil);
   const tappedHouse = tappedPupil ? HOUSES[tappedPupil.house] : null;
-
-  const aiNames = {
-    easy: '🌱 Rookie Bot',
-    medium: '⚔️ Club Coach Bot',
-    hard: '👑 Grandmaster Bot',
-  };
+  const dailyProg = readDailyPuzzleProgress(tappedPupil ? tappedPupil.id : 'guest');
 
   const humanDisplayLabel = tappedPupil ? tappedPupil.name : 'You';
 
@@ -1178,26 +1422,59 @@ function renderVirtualChessInner(chessState) {
     vc.mode === 'ai'
       ? vc.humanSide === 'w'
         ? `${humanDisplayLabel} (White)`
-        : aiNames[vc.aiLevel] || 'Computer'
-      : whiteRoster
-        ? whiteRoster.name
-        : 'White Player';
+        : `${botProfile.icon} ${botProfile.name} (${botProfile.elo})`
+      : vc.mode === 'online'
+        ? vc.onlineRoomData?.white?.callsign
+          ? `${vc.onlineRoomData.white.callsign}${vc.onlineSide === 'w' ? ' (You)' : ''}`
+          : 'Waiting for White...'
+        : vc.mode === 'daily'
+          ? `${humanDisplayLabel} (Tactician)`
+          : whiteRoster
+            ? whiteRoster.name
+            : 'White Player';
 
   const blackLabel =
     vc.mode === 'ai'
       ? vc.humanSide === 'b'
         ? `${humanDisplayLabel} (Black)`
-        : aiNames[vc.aiLevel] || 'Computer'
-      : blackRoster
-        ? blackRoster.name
-        : 'Black Player';
+        : `${botProfile.icon} ${botProfile.name} (${botProfile.elo})`
+      : vc.mode === 'online'
+        ? vc.onlineRoomData?.black?.callsign
+          ? `${vc.onlineRoomData.black.callsign}${vc.onlineSide === 'b' ? ' (You)' : ''}`
+          : 'Waiting for Classmate...'
+        : vc.mode === 'daily'
+          ? '🧩 Puzzle Defence'
+          : blackRoster
+            ? blackRoster.name
+            : 'Black Player';
 
   const topSide = vc.flipped ? 'w' : 'b';
   const bottomSide = vc.flipped ? 'b' : 'w';
 
-  const matDiff = computeMaterialDiff(vc.board);
+  // Support historical replay scrubbing without mutating live game state
+  const isReplaying =
+    vc.replayPlyIndex !== null &&
+    vc.replayPlyIndex !== undefined &&
+    vc.replayPlyIndex < vc.history.length;
+  const displaySnap = isReplaying ? vc.history[vc.replayPlyIndex] : null;
+  const displayBoard = displaySnap ? displaySnap.board : vc.board;
+  const displayLastMove = displaySnap ? displaySnap.lastMove : vc.lastMove;
+
+  const matDiff = computeMaterialDiff(displayBoard);
   const legalTargets = new Map();
-  if (vc.selected && vc.status === 'playing' && !vc.aiThinking && !vc.pendingPromotion) {
+  const isMyInteractiveTurn =
+    !isReplaying &&
+    vc.status === 'playing' &&
+    !vc.aiThinking &&
+    !vc.pendingPromotion &&
+    (vc.mode === 'pass' ||
+      vc.mode === 'daily' ||
+      (vc.mode === 'ai' && vc.turn === vc.humanSide) ||
+      (vc.mode === 'online' &&
+        vc.onlineRoomData?.status === 'playing' &&
+        vc.turn === vc.onlineSide));
+
+  if (vc.selected && isMyInteractiveTurn) {
     const moves = getLegalMovesFrom(vc, vc.selected[0], vc.selected[1]);
     moves.forEach((m) => {
       const key = `${m.toR},${m.toC}`;
@@ -1205,18 +1482,20 @@ function renderVirtualChessInner(chessState) {
     });
   }
 
+  const activeTurnForCheck = displaySnap ? displaySnap.turn : vc.turn;
   const checkSide =
-    vc.status === 'playing' || vc.status === 'checkmate'
-      ? isSideInCheck(vc.board, vc.turn)
-        ? vc.turn
+    vc.status === 'playing' || vc.status === 'checkmate' || isReplaying
+      ? isSideInCheck(displayBoard, activeTurnForCheck)
+        ? activeTurnForCheck
         : null
       : null;
-  const checkKingSq = checkSide ? findKingSquare(vc.board, checkSide) : null;
+  const checkKingSq = checkSide ? findKingSquare(displayBoard, checkSide) : null;
 
   const lightSq = vc.boardTheme === 'slate' ? '#e2e8f0' : '#f0d9b5';
   const darkSq = vc.boardTheme === 'slate' ? '#64748b' : '#b58863';
   const lastLight = vc.boardTheme === 'slate' ? '#bae6fd' : '#f7ec6e';
   const lastDark = vc.boardTheme === 'slate' ? '#38bdf8' : '#dac34b';
+  const hiSet = new Set(vc.highlightedSquares || []);
 
   // Render 64 squares respecting board orientation
   let squaresHtml = '';
@@ -1224,31 +1503,28 @@ function renderVirtualChessInner(chessState) {
     for (let viewC = 0; viewC < 8; viewC++) {
       const r = vc.flipped ? 7 - viewR : viewR;
       const c = vc.flipped ? 7 - viewC : viewC;
+      const sqStr = sqName(r, c);
       const isLight = (r + c) % 2 === 0;
-      const piece = vc.board[r][c];
-      const isSelected = vc.selected && vc.selected[0] === r && vc.selected[1] === c;
+      const piece = displayBoard[r][c];
+      const isSelected = !isReplaying && vc.selected && vc.selected[0] === r && vc.selected[1] === c;
       const isLast =
-        vc.lastMove &&
-        ((vc.lastMove.from[0] === r && vc.lastMove.from[1] === c) ||
-          (vc.lastMove.to[0] === r && vc.lastMove.to[1] === c));
-      const isHintFrom = vc.hintMove && vc.hintMove.fromR === r && vc.hintMove.fromC === c;
-      const isHintTo = vc.hintMove && vc.hintMove.toR === r && vc.hintMove.toC === c;
+        displayLastMove &&
+        ((displayLastMove.from[0] === r && displayLastMove.from[1] === c) ||
+          (displayLastMove.to[0] === r && displayLastMove.to[1] === c));
+      const isHintFrom = !isReplaying && vc.hintMove && vc.hintMove.fromR === r && vc.hintMove.fromC === c;
+      const isHintTo = !isReplaying && vc.hintMove && vc.hintMove.toR === r && vc.hintMove.toC === c;
       const isCheckSq = checkKingSq && checkKingSq[0] === r && checkKingSq[1] === c;
       const isTarget = legalTargets.has(`${r},${c}`);
+      const isRightHi = hiSet.has(sqStr);
 
       let bg = isLight ? lightSq : darkSq;
       if (isLast) bg = isLight ? lastLight : lastDark;
       if (isHintFrom || isHintTo) bg = '#fde047';
       if (isSelected) bg = '#7dd3fc';
+      if (isRightHi) bg = isLight ? '#86efac' : '#22c55e';
       if (isCheckSq) bg = 'radial-gradient(circle, #ef4444 18%, #dc2626 68%, #991b1b 100%)';
 
-      const canDrag =
-        vc.status === 'playing' &&
-        !vc.aiThinking &&
-        !vc.pendingPromotion &&
-        piece !== '.' &&
-        sideOf(piece) === vc.turn &&
-        (vc.mode === 'pass' || vc.turn === vc.humanSide);
+      const canDrag = isMyInteractiveTurn && piece !== '.' && sideOf(piece) === vc.turn;
 
       const rankLabel =
         viewC === 0
@@ -1267,12 +1543,14 @@ function renderVirtualChessInner(chessState) {
 
       squaresHtml += `
         <div onclick="window.handleVirtualSquareTap(${r}, ${c})"
+             onmousedown="window.handleVirtualRightDown(event, ${r}, ${c})"
+             onmouseup="window.handleVirtualRightUp(event, ${r}, ${c})"
              ondragstart="window.handleVirtualDragStart(event, ${r}, ${c})"
              ondragend="window.handleVirtualDragEnd()"
              ondragover="event.preventDefault()"
              ondrop="window.handleVirtualDrop(event, ${r}, ${c})"
              draggable="${canDrag ? 'true' : 'false'}"
-             data-sq="${sqName(r, c)}"
+             data-sq="${sqStr}"
              style="background: ${bg}; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; position: relative; user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent; cursor: ${canDrag || isTarget ? 'pointer' : 'default'}; touch-action: manipulation; ${isHintTo ? 'box-shadow: inset 0 0 0 3px #d97706;' : ''}">
           ${rankLabel}
           ${fileLabel}
@@ -1283,11 +1561,45 @@ function renderVirtualChessInner(chessState) {
     }
   }
 
+  // Right-click tactical SVG arrows overlay (Chess.com style for Windows mice/trackpads)
+  let arrowsSvgHtml = '';
+  if (Array.isArray(vc.drawnArrows) && vc.drawnArrows.length > 0) {
+    const lines = vc.drawnArrows
+      .map((ar) => {
+        const vr1 = vc.flipped ? 7 - ar.from[0] : ar.from[0];
+        const vc1 = vc.flipped ? 7 - ar.from[1] : ar.from[1];
+        const vr2 = vc.flipped ? 7 - ar.to[0] : ar.to[0];
+        const vc2 = vc.flipped ? 7 - ar.to[1] : ar.to[1];
+        const x1 = vc1 * 100 + 50;
+        const y1 = vr1 * 100 + 50;
+        const x2 = vc2 * 100 + 50;
+        const y2 = vr2 * 100 + 50;
+        return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="rgba(245, 158, 11, 0.85)" stroke-width="18" stroke-linecap="round" marker-end="url(#vc-arrow-head)" />`;
+      })
+      .join('');
+    arrowsSvgHtml = `
+      <svg viewBox="0 0 800 800" style="position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 12;">
+        <defs>
+          <marker id="vc-arrow-head" markerWidth="4" markerHeight="4" refX="2.4" refY="2" orient="auto">
+            <polygon points="0 0, 4 2, 0 4" fill="rgba(245, 158, 11, 0.92)" />
+          </marker>
+        </defs>
+        ${lines}
+      </svg>
+    `;
+  }
+
   const renderPlayerStrip = (side) => {
     const isWhite = side === 'w';
     const name = isWhite ? whiteLabel : blackLabel;
     const isActiveTurn = vc.status === 'playing' && vc.turn === side;
-    const captured = isWhite ? vc.capturedByWhite : vc.capturedByBlack;
+    const captured = isWhite
+      ? displaySnap
+        ? displaySnap.capturedByWhite
+        : vc.capturedByWhite
+      : displaySnap
+        ? displaySnap.capturedByBlack
+        : vc.capturedByBlack;
     const adv = isWhite ? Math.max(0, matDiff) : Math.max(0, -matDiff);
     const secs = isWhite ? vc.whiteTimeSecs : vc.blackTimeSecs;
     const lowTime = vc.timeControlMins > 0 && secs <= 30;
@@ -1308,7 +1620,7 @@ function renderVirtualChessInner(chessState) {
         </div>
 
         ${
-          vc.timeControlMins > 0
+          vc.timeControlMins > 0 && vc.mode !== 'daily'
             ? `
           <div id="vc-clock-${side}" style="font-family: 'JetBrains Mono', monospace; font-size: 1.15rem; font-weight: 900; padding: 4px 10px; border-radius: 7px; background: ${isActiveTurn ? (lowTime ? '#fef2f2' : '#0f172a') : '#e2e8f0'}; color: ${isActiveTurn ? (lowTime ? '#dc2626' : '#4ade80') : '#475569'}; border: 1px solid ${lowTime && isActiveTurn ? '#fca5a5' : 'transparent'}; flex-shrink: 0;">
             ${formatClockSecs(secs)}
@@ -1320,22 +1632,32 @@ function renderVirtualChessInner(chessState) {
     `;
   };
 
-  // Format move pairs for compact algebraic scoresheet
+  // Format move pairs with Coach Review badges & clickable replay scrubbing
+  const ann = vc.gameReview?.annotations || {};
   let moveRowsHtml = '';
   for (let i = 0; i < vc.moveLog.length; i += 2) {
     const num = Math.floor(i / 2) + 1;
     const wSan = vc.moveLog[i]?.san || '';
     const bSan = vc.moveLog[i + 1]?.san || '';
+    const wTag = ann[i] ? ` ${ann[i]}` : '';
+    const bTag = ann[i + 1] ? ` ${ann[i + 1]}` : '';
+    const wAct = vc.replayPlyIndex === i + 1;
+    const bAct = vc.replayPlyIndex === i + 2;
     moveRowsHtml += `
-      <div style="display: grid; grid-template-columns: 32px 1fr 1fr; padding: 3px 8px; font-family: monospace; font-size: 0.78rem; background: ${num % 2 === 0 ? '#f8fafc' : '#ffffff'}; border-radius: 4px;">
+      <div style="display: grid; grid-template-columns: 30px 1fr 1fr; padding: 2px 6px; font-family: monospace; font-size: 0.77rem; background: ${num % 2 === 0 ? '#f8fafc' : '#ffffff'}; border-radius: 4px; align-items: center;">
         <span style="color: #94a3b8; font-weight: 700;">${num}.</span>
-        <span style="color: #0f172a; font-weight: 700;">${wSan}</span>
-        <span style="color: #334155; font-weight: 700;">${bSan}</span>
+        <span onclick="window.scrubVirtualMove(${i + 1})" style="color: #0f172a; font-weight: 700; cursor: pointer; padding: 1px 4px; border-radius: 4px; background: ${wAct ? '#bae6fd' : 'transparent'};">${wSan}${wTag}</span>
+        ${
+          bSan
+            ? `<span onclick="window.scrubVirtualMove(${i + 2})" style="color: #334155; font-weight: 700; cursor: pointer; padding: 1px 4px; border-radius: 4px; background: ${bAct ? '#bae6fd' : 'transparent'};">${bSan}${bTag}</span>`
+            : '<span></span>'
+        }
       </div>
     `;
   }
 
-  const banner = getStatusBannerInfo(vc, whiteLabel, blackLabel);
+  const openingName = vc.mode !== 'daily' ? detectOpeningName(vc.moveLog) : '';
+  const banner = getStatusBannerInfo(vc, whiteLabel, blackLabel, botProfile);
   const isFinished = vc.status !== 'playing';
   const canTeacherLog =
     chessState.userRole === 'teacher' &&
@@ -1345,11 +1667,64 @@ function renderVirtualChessInner(chessState) {
     whiteRoster.id !== blackRoster.id &&
     isFinished;
 
+  // Post-Game Coach Review Card HTML (appears below board when game ends — 0px shift to board above!)
+  let coachReviewHtml = '';
+  if (isFinished && vc.gameReview && vc.mode !== 'daily') {
+    const rev = vc.gameReview;
+    const accColor =
+      rev.accuracyPct >= 85 ? '#059669' : rev.accuracyPct >= 68 ? '#0284c7' : '#d97706';
+    coachReviewHtml = `
+      <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #f8fafc; border-radius: 11px; padding: 12px 14px; border: 1.5px solid #38bdf8; box-shadow: 0 6px 18px rgba(15,23,42,0.18);">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap;">
+          <div>
+            <div style="font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #38bdf8;">
+              🎓 Post-Game Coach Review
+            </div>
+            <div style="font-size: 0.92rem; font-weight: 900; color: #ffffff;">
+              Game Accuracy: <span style="background: ${accColor}; color: #ffffff; padding: 2px 8px; border-radius: 999px; font-family: monospace;">${rev.accuracyPct}%</span>
+              ${rev.accuracyPct >= 85 ? `<span style="font-size: 0.72rem; color: #6ee7b7; margin-left: 4px;">⚡ Precision Bonus!</span>` : ''}
+            </div>
+          </div>
+          <div style="display: flex; gap: 6px; font-size: 0.72rem; font-weight: 800; font-family: monospace;">
+            <span style="background: rgba(255,255,255,0.1); padding: 3px 7px; border-radius: 6px;">⭐ ${rev.counts.best}</span>
+            <span style="background: rgba(255,255,255,0.1); padding: 3px 7px; border-radius: 6px;">👍 ${rev.counts.good}</span>
+            <span style="background: rgba(255,255,255,0.1); padding: 3px 7px; border-radius: 6px;">⚠️ ${rev.counts.inaccuracy}</span>
+            <span style="background: rgba(239,68,68,0.25); color: #fca5a5; padding: 3px 7px; border-radius: 6px;">❓ ${rev.counts.blunder}</span>
+          </div>
+        </div>
+
+        ${
+          rev.bestMoveItem
+            ? `<div style="font-size: 0.76rem; color: #cbd5e1; margin-bottom: 4px;">⭐ <strong>Star Move:</strong> Move ${rev.bestMoveItem.moveNumber} (<strong>${rev.bestMoveItem.san}</strong>)</div>`
+            : ''
+        }
+
+        ${
+          rev.blunderItem
+            ? `
+          <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; background: rgba(255,255,255,0.07); border: 1px solid rgba(251,191,36,0.4); border-radius: 8px; padding: 7px 10px; margin-top: 6px;">
+            <div style="font-size: 0.75rem; color: #fde68a;">
+              ❓ <strong>Key ${rev.blunderItem.label} (Move ${rev.blunderItem.moveNumber}):</strong> Played <strong>${rev.blunderItem.playedSan}</strong> — Coach liked <strong>${rev.blunderItem.bestSan}</strong> (${rev.blunderItem.fromSq}→${rev.blunderItem.toSq})
+            </div>
+            <button type="button" onclick="window.retryCoachBlunder()" style="background: #fbbf24; color: #0f172a; border: none; border-radius: 6px; padding: 5px 10px; font-size: 0.74rem; font-weight: 900; cursor: pointer; flex-shrink: 0;">
+              🔄 Retry Mistake
+            </button>
+          </div>
+        `
+            : `<div style="font-size: 0.75rem; color: #86efac; margin-top: 4px;">✨ Clean sheet — zero major blunders detected!</div>`
+        }
+      </div>
+    `;
+  }
+
+  const activePuzzle = DAILY_TACTICAL_PUZZLES[vc.dailyPuzzleIdx % DAILY_TACTICAL_PUZZLES.length];
+  const todayDailyObj = getTodayDailyPuzzle();
+
   const innerHtml = `
     <style>
       .vc-layout-grid {
         display: grid;
-        grid-template-columns: clamp(290px, calc(100vh - 455px), 425px) minmax(270px, 360px);
+        grid-template-columns: clamp(290px, calc(100vh - 455px), 425px) minmax(280px, 380px);
         gap: 18px;
         justify-content: center;
         align-items: start;
@@ -1382,20 +1757,21 @@ function renderVirtualChessInner(chessState) {
               .join('')}
           </select>
           ${
-            !tappedPupil
-              ? `
+            tappedPupil
+              ? `<button type="button" onclick="window.openChessPlayerProfile && window.openChessPlayerProfile('${tappedPupil.id}')" style="background: #ffffff; color: #0f172a; border: 1px solid #cbd5e1; border-radius: 7px; padding: 4px 9px; font-size: 0.73rem; font-weight: 800; cursor: pointer;">📊 My Card</button>`
+              : `
             <button type="button" onclick="window.openPupilJoinRequestModal && window.openPupilJoinRequestModal()" style="background: #ffffff; color: #0284c7; border: 1.5px solid #7dd3fc; border-radius: 8px; padding: 5px 10px; font-size: 0.76rem; font-weight: 800; cursor: pointer;">
               + New Member? Get a Callsign
             </button>
           `
-              : ''
           }
         </div>
 
         ${
           tappedPupil
             ? `
-          <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; flex: 1; justify-content: flex-end; min-width: 240px;">
+          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; flex: 1; justify-content: flex-end; min-width: 240px;">
+            ${dailyProg.streak > 0 ? `<span style="background: #fff7ed; border: 1px solid #fdba74; color: #c2410c; padding: 3px 8px; border-radius: 999px; font-size: 0.72rem; font-weight: 800;">🔥 ${dailyProg.streak}d Streak</span>` : ''}
             <span style="background: #ffffff; border: 1px solid #cbd5e1; color: ${xpInfo.badge.color}; padding: 3px 9px; border-radius: 999px; font-size: 0.74rem; font-weight: 800;">
               ${xpInfo.badge.icon} ${xpInfo.badge.title} · ${xpInfo.totalXp} XP
             </span>
@@ -1418,7 +1794,7 @@ function renderVirtualChessInner(chessState) {
         `
               : `
           <div style="font-size: 0.75rem; color: #64748b; font-weight: 600;">
-            ⚡ Beat the Computer Coach to earn XP (<strong style="color: #0f172a;">100 XP = +1 House Point</strong>)
+            ⚡ Beat History Bots, solve Daily Puzzles, or play Live Laptop Duels (<strong style="color: #0f172a;">100 XP = +1 House Pt</strong>)
           </div>
         `
         }
@@ -1436,9 +1812,20 @@ function renderVirtualChessInner(chessState) {
 
           ${renderPlayerStrip(topSide)}
 
-          <!-- 8x8 Board Frame -->
-          <div style="position: relative; width: 100%; aspect-ratio: 1 / 1; border: 4px solid #1e293b; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 26px rgba(15, 23, 42, 0.16); display: grid; grid-template-columns: repeat(8, 1fr); grid-template-rows: repeat(8, 1fr);">
+          <!-- 8x8 Board Frame (Right-click & drag on Windows laptops draws tactical arrows!) -->
+          <div oncontextmenu="event.preventDefault()" style="position: relative; width: 100%; aspect-ratio: 1 / 1; border: 4px solid #1e293b; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 26px rgba(15, 23, 42, 0.16); display: grid; grid-template-columns: repeat(8, 1fr); grid-template-rows: repeat(8, 1fr);">
             ${squaresHtml}
+            ${arrowsSvgHtml}
+
+            ${
+              vc.onlineReactionToast && Date.now() - vc.onlineReactionToast.at < 8000
+                ? `
+              <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,23,42,0.92); color: #ffffff; border: 1.5px solid #38bdf8; border-radius: 999px; padding: 5px 12px; font-size: 0.78rem; font-weight: 800; z-index: 16; pointer-events: none; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+                ${vc.onlineReactionToast.callsign}: ${vc.onlineReactionToast.text}
+              </div>
+            `
+                : ''
+            }
 
             ${
               vc.pendingPromotion
@@ -1478,6 +1865,8 @@ function renderVirtualChessInner(chessState) {
               : ''
           }
 
+          ${coachReviewHtml}
+
           ${
             vc.hintMove
               ? `
@@ -1489,61 +1878,172 @@ function renderVirtualChessInner(chessState) {
           }
         </div>
 
-        <!-- RIGHT COLUMN: Clean Game Setup, Controls & Move Sheet -->
-        <div style="display: flex; flex-direction: column; gap: 12px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px;">
+        <!-- RIGHT COLUMN: 4-Mode Selector, Bot / Online / Puzzle Controls & Move Sheet -->
+        <div style="display: flex; flex-direction: column; gap: 11px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 13px;">
           
-          <!-- 1. Game Mode Segmented Toggle -->
+          <!-- 1. 4-Way Play Mode Selector -->
           <div>
-            <div style="font-size: 0.7rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">
-              Play Mode
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+              <span style="font-size: 0.69rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em;">Play Mode</span>
+              <span style="font-size: 0.66rem; color: #64748b;">🖱️ Right-drag board for arrows</span>
             </div>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; background: #e2e8f0; padding: 3px; border-radius: 9px;">
-              <button type="button" onclick="window.setVirtualChessMode('ai')" style="background: ${vc.mode === 'ai' ? '#ffffff' : 'transparent'}; color: ${vc.mode === 'ai' ? '#0f172a' : '#475569'}; border: none; border-radius: 7px; padding: 8px 10px; font-size: 0.82rem; font-weight: 800; cursor: pointer; box-shadow: ${vc.mode === 'ai' ? '0 1px 3px rgba(0,0,0,0.1)' : 'none'};">
-                🤖 vs Computer
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; background: #e2e8f0; padding: 3px; border-radius: 9px;">
+              <button type="button" onclick="window.setVirtualChessMode('ai')" style="background: ${vc.mode === 'ai' ? '#ffffff' : 'transparent'}; color: ${vc.mode === 'ai' ? '#0f172a' : '#475569'}; border: none; border-radius: 7px; padding: 7px 4px; font-size: 0.74rem; font-weight: 800; cursor: pointer; box-shadow: ${vc.mode === 'ai' ? '0 1px 3px rgba(0,0,0,0.1)' : 'none'};">
+                🤖 Bots (6)
               </button>
-              <button type="button" onclick="window.setVirtualChessMode('pass')" style="background: ${vc.mode === 'pass' ? '#ffffff' : 'transparent'}; color: ${vc.mode === 'pass' ? '#0f172a' : '#475569'}; border: none; border-radius: 7px; padding: 8px 10px; font-size: 0.82rem; font-weight: 800; cursor: pointer; box-shadow: ${vc.mode === 'pass' ? '0 1px 3px rgba(0,0,0,0.1)' : 'none'};">
-                👥 2 Players
+              <button type="button" onclick="window.setVirtualChessMode('online')" style="background: ${vc.mode === 'online' ? '#ffffff' : 'transparent'}; color: ${vc.mode === 'online' ? '#0284c7' : '#475569'}; border: none; border-radius: 7px; padding: 7px 4px; font-size: 0.74rem; font-weight: 800; cursor: pointer; box-shadow: ${vc.mode === 'online' ? '0 1px 3px rgba(0,0,0,0.1)' : 'none'};">
+                🌐 Live Duel
+              </button>
+              <button type="button" onclick="window.setVirtualChessMode('daily')" style="background: ${vc.mode === 'daily' ? '#ffffff' : 'transparent'}; color: ${vc.mode === 'daily' ? '#b45309' : '#475569'}; border: none; border-radius: 7px; padding: 7px 4px; font-size: 0.74rem; font-weight: 800; cursor: pointer; box-shadow: ${vc.mode === 'daily' ? '0 1px 3px rgba(0,0,0,0.1)' : 'none'};">
+                🧩 Daily${!dailyProg.solvedToday ? ' •' : ' ✓'}
+              </button>
+              <button type="button" onclick="window.setVirtualChessMode('pass')" style="background: ${vc.mode === 'pass' ? '#ffffff' : 'transparent'}; color: ${vc.mode === 'pass' ? '#0f172a' : '#475569'}; border: none; border-radius: 7px; padding: 7px 4px; font-size: 0.74rem; font-weight: 800; cursor: pointer; box-shadow: ${vc.mode === 'pass' ? '0 1px 3px rgba(0,0,0,0.1)' : 'none'};">
+                👥 2P Desk
               </button>
             </div>
           </div>
 
-          <!-- 2. Mode-Specific Settings -->
+          <!-- 2. Mode-Specific Panel -->
           ${
             vc.mode === 'ai'
               ? `
-            <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; flex-direction: column; gap: 9px;">
               <div>
-                <div style="font-size: 0.7rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 5px;">
-                  Computer Strength
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                  <span style="font-size: 0.69rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em;">6 Historical Opponents (450–1700 ELO)</span>
+                  <button type="button" onclick="window.switchChessTab && window.switchChessTab('bots')" style="background: none; border: none; color: #0284c7; font-size: 0.7rem; font-weight: 800; cursor: pointer; padding: 0;">Bot Rankings →</button>
                 </div>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;">
-                  ${[
-                    { id: 'easy', label: '🌱 Easy', sub: 'Rookie' },
-                    { id: 'medium', label: '⚔️ Medium', sub: 'Club' },
-                    { id: 'hard', label: '👑 Hard', sub: 'Master' },
-                  ]
-                    .map(
-                      (lv) => `
-                    <button type="button" onclick="window.setVirtualAiLevel('${lv.id}')" style="background: ${vc.aiLevel === lv.id ? '#0284c7' : '#ffffff'}; color: ${vc.aiLevel === lv.id ? '#ffffff' : '#334155'}; border: 1.5px solid ${vc.aiLevel === lv.id ? '#0284c7' : '#cbd5e1'}; border-radius: 8px; padding: 6px 4px; cursor: pointer; text-align: center;">
-                      <div style="font-size: 0.78rem; font-weight: 800;">${lv.label}</div>
-                      <div style="font-size: 0.65rem; opacity: 0.82; font-weight: 600;">${lv.sub}</div>
-                    </button>
-                  `,
-                    )
-                    .join('')}
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px;">
+                  ${HISTORICAL_BOTS.map((b) => {
+                    const active = botProfile.id === b.id;
+                    return `
+                      <button type="button" onclick="window.setVirtualAiLevel('${b.id}')" style="background: ${active ? b.accent : '#ffffff'}; color: ${active ? '#ffffff' : '#0f172a'}; border: 1.5px solid ${active ? b.accent : '#cbd5e1'}; border-radius: 8px; padding: 6px 4px; cursor: pointer; text-align: center; transition: transform 0.1s;">
+                        <div style="font-size: 0.75rem; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${b.icon} ${b.shortName}</div>
+                        <div style="font-size: 0.64rem; opacity: ${active ? '0.92' : '0.72'}; font-weight: 700; font-family: monospace;">${b.elo} ELO · +${b.winXp}XP</div>
+                      </button>
+                    `;
+                  }).join('')}
+                </div>
+              </div>
+
+              <!-- Selected Historical Bot Persona Card & Live Quip -->
+              <div style="background: ${botProfile.bgLight}; border: 1px solid ${botProfile.border}; border-radius: 9px; padding: 8px 10px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; margin-bottom: 3px;">
+                  <span style="font-size: 0.8rem; font-weight: 900; color: #0f172a;">${botProfile.icon} ${botProfile.name}</span>
+                  <span style="font-size: 0.66rem; font-weight: 800; color: ${botProfile.accent}; font-family: monospace;">${botProfile.era}</span>
+                </div>
+                <div style="font-size: 0.73rem; color: #334155; line-height: 1.35;">
+                  ${vc.botQuip ? `<em>${vc.botQuip}</em>` : botProfile.summary}
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
-                <span style="font-size: 0.76rem; font-weight: 700; color: #475569;">Play as:</span>
+                <span style="font-size: 0.75rem; font-weight: 700; color: #475569;">Play as:</span>
                 <div style="display: inline-flex; gap: 5px;">
-                  <button type="button" onclick="window.setVirtualHumanSide('w')" style="background: ${vc.humanSide === 'w' ? '#0f172a' : '#ffffff'}; color: ${vc.humanSide === 'w' ? '#ffffff' : '#334155'}; border: 1px solid #cbd5e1; border-radius: 6px; padding: 4px 10px; font-size: 0.76rem; font-weight: 800; cursor: pointer;">♔ White</button>
-                  <button type="button" onclick="window.setVirtualHumanSide('b')" style="background: ${vc.humanSide === 'b' ? '#0f172a' : '#ffffff'}; color: ${vc.humanSide === 'b' ? '#ffffff' : '#334155'}; border: 1px solid #cbd5e1; border-radius: 6px; padding: 4px 10px; font-size: 0.76rem; font-weight: 800; cursor: pointer;">♚ Black</button>
+                  <button type="button" onclick="window.setVirtualHumanSide('w')" style="background: ${vc.humanSide === 'w' ? '#0f172a' : '#ffffff'}; color: ${vc.humanSide === 'w' ? '#ffffff' : '#334155'}; border: 1px solid #cbd5e1; border-radius: 6px; padding: 4px 10px; font-size: 0.75rem; font-weight: 800; cursor: pointer;">♔ White</button>
+                  <button type="button" onclick="window.setVirtualHumanSide('b')" style="background: ${vc.humanSide === 'b' ? '#0f172a' : '#ffffff'}; color: ${vc.humanSide === 'b' ? '#ffffff' : '#334155'}; border: 1px solid #cbd5e1; border-radius: 6px; padding: 4px 10px; font-size: 0.75rem; font-weight: 800; cursor: pointer;">♚ Black</button>
                 </div>
               </div>
             </div>
           `
-              : `
+              : vc.mode === 'online'
+                ? `
+            <div style="display: flex; flex-direction: column; gap: 9px;">
+              <div style="background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%); border: 1.5px solid #7dd3fc; border-radius: 10px; padding: 9px 11px;">
+                <div style="font-size: 0.76rem; font-weight: 900; color: #0369a1; margin-bottom: 3px;">
+                  🌐 Live 2-Laptop School Duel · 🏆 +1 Extra House Point!
+                </div>
+                <div style="font-size: 0.72rem; color: #334155; line-height: 1.38;">
+                  Play a classmate live across two Windows school laptops! Callsigns only, zero chat box, and completing a duel awards <strong>Boosted XP + 1 Extra Bonus House Point</strong>.
+                </div>
+              </div>
+
+              ${
+                !vc.onlineRoomCode
+                  ? `
+                <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 9px; padding: 9px 10px; display: flex; flex-direction: column; gap: 8px;">
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-size: 0.74rem; font-weight: 800; color: #0f172a;">1. Host a Duel Room:</span>
+                    <div style="display: inline-flex; gap: 4px;">
+                      <button type="button" onclick="window.setOnlineHostPrefSide('w')" style="background: ${vc.onlineHostPrefSide !== 'b' ? '#0f172a' : '#f8fafc'}; color: ${vc.onlineHostPrefSide !== 'b' ? '#ffffff' : '#475569'}; border: 1px solid #cbd5e1; border-radius: 5px; padding: 2px 7px; font-size: 0.7rem; font-weight: 800; cursor: pointer;">♔ White</button>
+                      <button type="button" onclick="window.setOnlineHostPrefSide('b')" style="background: ${vc.onlineHostPrefSide === 'b' ? '#0f172a' : '#f8fafc'}; color: ${vc.onlineHostPrefSide === 'b' ? '#ffffff' : '#475569'}; border: 1px solid #cbd5e1; border-radius: 5px; padding: 2px 7px; font-size: 0.7rem; font-weight: 800; cursor: pointer;">♚ Black</button>
+                    </div>
+                  </div>
+                  <button id="btn-create-online-duel" type="button" onclick="window.createLiveOnlineDuel()" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; border: none; border-radius: 8px; padding: 9px 12px; font-size: 0.82rem; font-weight: 800; cursor: pointer;">
+                    ⚡ Create Room Code
+                  </button>
+
+                  <div style="border-top: 1px dashed #cbd5e1; padding-top: 8px;">
+                    <label style="display: block; font-size: 0.74rem; font-weight: 800; color: #0f172a; margin-bottom: 4px;">2. Or Join a Classmate's Code:</label>
+                    <div style="display: flex; gap: 6px;">
+                      <input id="vc-join-code-input" type="text" placeholder="e.g. CASTLE-48" maxlength="12" style="flex: 1; padding: 7px 10px; border-radius: 7px; border: 1.5px solid #94a3b8; font-family: monospace; font-size: 16px; font-weight: 900; text-transform: uppercase; color: #0f172a;" />
+                      <button id="btn-join-online-duel" type="button" onclick="window.joinLiveOnlineDuel()" style="background: #059669; color: #ffffff; border: none; border-radius: 7px; padding: 7px 13px; font-size: 0.8rem; font-weight: 800; cursor: pointer;">
+                        Join
+                      </button>
+                    </div>
+                  </div>
+                  ${vc.onlineError ? `<div style="font-size: 0.73rem; font-weight: 800; color: #dc2626;">⚠️ ${vc.onlineError}</div>` : ''}
+                </div>
+              `
+                  : `
+                <div style="background: #ffffff; border: 2px solid #0284c7; border-radius: 10px; padding: 10px;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                    <div>
+                      <div style="font-size: 0.65rem; font-weight: 800; color: #64748b; text-transform: uppercase;">Live Duel Room Code</div>
+                      <div id="vc-active-room-code" style="font-size: 1.2rem; font-weight: 900; font-family: monospace; color: #0f172a; letter-spacing: 0.04em;">${vc.onlineRoomCode}</div>
+                    </div>
+                    <button type="button" onclick="window.leaveLiveOnlineDuel()" style="background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; border-radius: 6px; padding: 4px 9px; font-size: 0.72rem; font-weight: 800; cursor: pointer;">Leave Room</button>
+                  </div>
+                  <div style="font-size: 0.73rem; color: #334155; margin-bottom: 7px;">
+                    ${
+                      vc.onlineRoomData?.status === 'waiting'
+                        ? '📡 Tell your opponent to open <strong>Live Duel</strong> on their laptop and type this code!'
+                        : `⚔️ Connected! You are playing <strong>${vc.onlineSide === 'w' ? '♔ White' : '♚ Black'}</strong>.`
+                    }
+                  </div>
+                  ${
+                    vc.onlineRoomData?.drawOfferBy && vc.onlineRoomData.drawOfferBy !== vc.onlineSide && vc.status === 'playing'
+                      ? `
+                    <div style="background: #fefce8; border: 1.5px solid #facc15; border-radius: 7px; padding: 6px 9px; margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center; gap: 6px;">
+                      <span style="font-size: 0.74rem; font-weight: 800; color: #854d0e;">🤝 Opponent offered a Draw!</span>
+                      <div style="display: flex; gap: 4px;">
+                        <button type="button" onclick="window.respondOnlineDrawOffer(true)" style="background: #059669; color: #fff; border: none; border-radius: 5px; padding: 3px 8px; font-size: 0.7rem; font-weight: 800; cursor: pointer;">Accept</button>
+                        <button type="button" onclick="window.respondOnlineDrawOffer(false)" style="background: #e2e8f0; color: #334155; border: none; border-radius: 5px; padding: 3px 8px; font-size: 0.7rem; font-weight: 700; cursor: pointer;">Decline</button>
+                      </div>
+                    </div>
+                  `
+                      : ''
+                  }
+                  <div style="display: flex; gap: 4px; flex-wrap: wrap;">
+                    ${DUEL_QUICK_REACTIONS.map(
+                      (rx) =>
+                        `<button type="button" onclick="window.sendVirtualDuelReaction('${rx}')" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 999px; padding: 3px 8px; font-size: 0.69rem; font-weight: 700; color: #334155; cursor: pointer;">${rx}</button>`,
+                    ).join('')}
+                  </div>
+                </div>
+              `
+              }
+            </div>
+          `
+                : vc.mode === 'daily'
+                  ? `
+            <div style="background: #fffbeb; border: 1.5px solid #fcd34d; border-radius: 10px; padding: 10px 12px; display: flex; flex-direction: column; gap: 7px;">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 0.78rem; font-weight: 900; color: #92400e;">🧩 ${vc.dailyPuzzleIdx === todayDailyObj.index ? `Puzzle of the Day (${todayDailyObj.todayKey})` : `Bonus Tactical Drill #${(vc.dailyPuzzleIdx % DAILY_TACTICAL_PUZZLES.length) + 1}`}</span>
+                <span style="background: #fef3c7; color: #b45309; border: 1px solid #fde68a; padding: 1px 7px; border-radius: 999px; font-size: 0.68rem; font-weight: 800;">+15 XP</span>
+              </div>
+              <div style="font-size: 0.76rem; color: #78350f; line-height: 1.4;">
+                <strong>Mission:</strong> White to move and deliver <strong>Checkmate in 1 move</strong> (${activePuzzle.theme}).
+              </div>
+              ${vc.dailyWrongToast ? `<div style="font-size: 0.74rem; font-weight: 800; color: #dc2626;">❌ ${vc.dailyWrongToast}</div>` : ''}
+              ${vc.dailySolvedBanner ? `<div style="font-size: 0.76rem; font-weight: 800; color: #15803d;">🎉 ${vc.dailySolvedBanner}</div>` : ''}
+              <div style="display: flex; gap: 6px; margin-top: 2px;">
+                <button type="button" onclick="window.showDailyPuzzleHint()" style="flex: 1; background: #ffffff; color: #b45309; border: 1px solid #fcd34d; border-radius: 7px; padding: 6px 8px; font-size: 0.75rem; font-weight: 800; cursor: pointer;">💡 Puzzle Hint</button>
+                <button type="button" onclick="window.nextDailyPracticePuzzle()" style="flex: 1; background: #0f172a; color: #ffffff; border: none; border-radius: 7px; padding: 6px 8px; font-size: 0.75rem; font-weight: 800; cursor: pointer;">⏭ Next Puzzle</button>
+              </div>
+            </div>
+          `
+                  : `
             <div style="display: flex; flex-direction: column; gap: 8px;">
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
                 <div>
@@ -1573,47 +2073,53 @@ function renderVirtualChessInner(chessState) {
               </div>
               <label style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.76rem; font-weight: 700; color: #475569; cursor: pointer;">
                 <input type="checkbox" ${vc.autoFlipPass ? 'checked' : ''} onchange="window.toggleVirtualAutoFlip(this.checked)" />
-                Auto-flip board after each move (tabletop iPad)
+                Auto-flip board after each move (shared laptop)
               </label>
             </div>
           `
           }
 
-          <!-- 3. Clock Pills -->
-          <div>
-            <div style="font-size: 0.7rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 5px;">
-              Chess Clock
+          <!-- 3. Clock Pills (Hidden in Daily Puzzle mode) -->
+          ${
+            vc.mode !== 'daily'
+              ? `
+            <div>
+              <div style="font-size: 0.69rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">
+                Chess Clock
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px;">
+                ${[
+                  { mins: 0, label: '∞ None' },
+                  { mins: 3, label: '⚡ 3m' },
+                  { mins: 5, label: '⏱ 5m' },
+                  { mins: 10, label: '🕰 10m' },
+                ]
+                  .map(
+                    (tc) => `
+                  <button type="button" onclick="window.setVirtualTimeControl(${tc.mins})" ${vc.mode === 'online' && vc.onlineRoomCode ? 'disabled' : ''} style="background: ${vc.timeControlMins === tc.mins ? '#0f172a' : '#ffffff'}; color: ${vc.timeControlMins === tc.mins ? '#ffffff' : '#334155'}; border: 1px solid ${vc.timeControlMins === tc.mins ? '#0f172a' : '#cbd5e1'}; border-radius: 6px; padding: 5px 4px; font-size: 0.74rem; font-weight: 800; cursor: pointer;">
+                    ${tc.label}
+                  </button>
+                `,
+                  )
+                  .join('')}
+              </div>
             </div>
-            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px;">
-              ${[
-                { mins: 0, label: '∞ None' },
-                { mins: 3, label: '⚡ 3m' },
-                { mins: 5, label: '⏱ 5m' },
-                { mins: 10, label: '🕰 10m' },
-              ]
-                .map(
-                  (tc) => `
-                <button type="button" onclick="window.setVirtualTimeControl(${tc.mins})" style="background: ${vc.timeControlMins === tc.mins ? '#0f172a' : '#ffffff'}; color: ${vc.timeControlMins === tc.mins ? '#ffffff' : '#334155'}; border: 1px solid ${vc.timeControlMins === tc.mins ? '#0f172a' : '#cbd5e1'}; border-radius: 6px; padding: 5px 4px; font-size: 0.75rem; font-weight: 800; cursor: pointer;">
-                  ${tc.label}
-                </button>
-              `,
-                )
-                .join('')}
-            </div>
-          </div>
+          `
+              : ''
+          }
 
           <!-- 4. Primary Action Controls -->
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 7px;">
-            <button type="button" onclick="window.startNewVirtualGame()" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; border: none; border-radius: 8px; padding: 9px 10px; font-size: 0.82rem; font-weight: 800; cursor: pointer; box-shadow: 0 2px 6px rgba(2,132,199,0.25);">
-              🔄 New Game
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
+            <button type="button" onclick="window.startNewVirtualGame()" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; border: none; border-radius: 8px; padding: 8px 10px; font-size: 0.8rem; font-weight: 800; cursor: pointer; box-shadow: 0 2px 6px rgba(2,132,199,0.22);">
+              🔄 ${vc.mode === 'daily' ? 'Reset Puzzle' : 'New Game'}
             </button>
-            <button type="button" onclick="window.undoVirtualMove()" ${vc.history.length === 0 || vc.aiThinking ? 'disabled' : ''} style="background: #ffffff; color: ${vc.history.length === 0 ? '#94a3b8' : '#0f172a'}; border: 1px solid #cbd5e1; border-radius: 8px; padding: 9px 10px; font-size: 0.82rem; font-weight: 800; cursor: ${vc.history.length === 0 ? 'not-allowed' : 'pointer'};">
-              ↩️ Undo Move
+            <button type="button" onclick="window.undoVirtualMove()" ${vc.mode === 'online' || vc.history.length === 0 || vc.aiThinking ? 'disabled' : ''} style="background: #ffffff; color: ${vc.mode === 'online' || vc.history.length === 0 ? '#94a3b8' : '#0f172a'}; border: 1px solid #cbd5e1; border-radius: 8px; padding: 8px 10px; font-size: 0.8rem; font-weight: 800; cursor: ${vc.mode === 'online' || vc.history.length === 0 ? 'not-allowed' : 'pointer'};">
+              ↩️ Undo
             </button>
-            <button type="button" onclick="window.requestVirtualHint()" ${isFinished || vc.aiThinking ? 'disabled' : ''} style="background: #fffbeb; color: ${isFinished ? '#94a3b8' : '#b45309'}; border: 1px solid #fde68a; border-radius: 8px; padding: 8px 10px; font-size: 0.8rem; font-weight: 800; cursor: ${isFinished ? 'not-allowed' : 'pointer'};">
+            <button type="button" onclick="window.requestVirtualHint()" ${vc.mode === 'online' || isFinished || vc.aiThinking ? 'disabled' : ''} style="background: #fffbeb; color: ${vc.mode === 'online' || isFinished ? '#94a3b8' : '#b45309'}; border: 1px solid #fde68a; border-radius: 8px; padding: 7px 10px; font-size: 0.78rem; font-weight: 800; cursor: ${vc.mode === 'online' || isFinished ? 'not-allowed' : 'pointer'};">
               💡 Coach Hint
             </button>
-            <button type="button" onclick="window.flipVirtualBoard()" style="background: #ffffff; color: #334155; border: 1px solid #cbd5e1; border-radius: 8px; padding: 8px 10px; font-size: 0.8rem; font-weight: 800; cursor: pointer;">
+            <button type="button" onclick="window.flipVirtualBoard()" style="background: #ffffff; color: #334155; border: 1px solid #cbd5e1; border-radius: 8px; padding: 7px 10px; font-size: 0.78rem; font-weight: 800; cursor: pointer;">
               🔃 Flip Board
             </button>
           </div>
@@ -1625,11 +2131,11 @@ function renderVirtualChessInner(chessState) {
             </button>
 
             ${
-              !isFinished && vc.moveLog.length > 0
+              !isFinished && vc.moveLog.length > 0 && vc.mode !== 'daily'
                 ? vc.confirmAction
                   ? `
                   <div style="display: inline-flex; align-items: center; gap: 5px;">
-                    <span style="font-size: 0.72rem; font-weight: 800; color: #b91c1c;">${vc.confirmAction === 'resign' ? 'Resign?' : 'Agree Draw?'}</span>
+                    <span style="font-size: 0.72rem; font-weight: 800; color: #b91c1c;">${vc.confirmAction === 'resign' ? 'Resign?' : vc.mode === 'online' ? 'Send Draw Offer?' : 'Agree Draw?'}</span>
                     <button type="button" onclick="window.confirmVirtualEndAction()" style="background: #dc2626; color: #ffffff; border: none; border-radius: 5px; padding: 3px 8px; font-size: 0.72rem; font-weight: 800; cursor: pointer;">Yes</button>
                     <button type="button" onclick="window.cancelVirtualEndAction()" style="background: #e2e8f0; color: #334155; border: none; border-radius: 5px; padding: 3px 8px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">No</button>
                   </div>
@@ -1637,8 +2143,8 @@ function renderVirtualChessInner(chessState) {
                   : `
                   <div style="display: inline-flex; gap: 5px;">
                     ${
-                      vc.mode === 'pass'
-                        ? `<button type="button" onclick="window.promptVirtualEndAction('draw')" style="background: transparent; border: 1px solid #cbd5e1; color: #475569; border-radius: 6px; padding: 4px 8px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">🤝 Draw</button>`
+                      vc.mode === 'pass' || vc.mode === 'online'
+                        ? `<button type="button" onclick="window.promptVirtualEndAction('draw')" style="background: transparent; border: 1px solid #cbd5e1; color: #475569; border-radius: 6px; padding: 4px 8px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">🤝 ${vc.mode === 'online' ? 'Offer Draw' : 'Draw'}</button>`
                         : ''
                     }
                     <button type="button" onclick="window.promptVirtualEndAction('resign')" style="background: transparent; border: 1px solid #fecaca; color: #dc2626; border-radius: 6px; padding: 4px 8px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">🏳️ Resign</button>
@@ -1658,16 +2164,24 @@ function renderVirtualChessInner(chessState) {
               : ''
           }
 
-          <!-- 5. Algebraic Move Sheet -->
+          <!-- 5. Opening Explorer + Interactive Algebraic Move Sheet -->
           <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 8px; flex: 1;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; padding: 0 4px;">
-              <span style="font-size: 0.68rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em;">Move History</span>
-              <span style="font-size: 0.68rem; font-family: monospace; color: #94a3b8;">${vc.moveLog.length} ply</span>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; padding: 0 2px; gap: 4px; flex-wrap: wrap;">
+              <span style="font-size: 0.68rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.04em;">
+                ${openingName ? `📖 ${openingName}` : 'Move History'}
+              </span>
+              <div style="display: inline-flex; align-items: center; gap: 3px;">
+                <button type="button" onclick="window.scrubVirtualMove(0)" ${vc.history.length === 0 ? 'disabled' : ''} style="background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 4px; padding: 1px 5px; font-size: 0.66rem; cursor: pointer;" title="Start">⏮</button>
+                <button type="button" onclick="window.scrubVirtualMoveStep(-1)" ${vc.history.length === 0 ? 'disabled' : ''} style="background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 4px; padding: 1px 5px; font-size: 0.66rem; cursor: pointer;" title="Back">◀</button>
+                <button type="button" onclick="window.scrubVirtualMoveStep(1)" ${vc.history.length === 0 ? 'disabled' : ''} style="background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 4px; padding: 1px 5px; font-size: 0.66rem; cursor: pointer;" title="Forward">▶</button>
+                <button type="button" onclick="window.scrubVirtualMove(null)" ${vc.replayPlyIndex === null ? 'disabled' : ''} style="background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 4px; padding: 1px 5px; font-size: 0.66rem; cursor: pointer;" title="Live">⏭</button>
+                <span style="font-size: 0.66rem; font-family: monospace; color: #94a3b8; margin-left: 3px;">${vc.moveLog.length}p</span>
+              </div>
             </div>
-            <div id="vc-move-sheet" style="max-height: 155px; overflow-y: auto; display: flex; flex-direction: column; gap: 1px;">
+            <div id="vc-move-sheet" style="max-height: 145px; overflow-y: auto; display: flex; flex-direction: column; gap: 1px;">
               ${
                 moveRowsHtml ||
-                `<div style="font-size: 0.76rem; color: #94a3b8; text-align: center; padding: 14px 6px;">Moves will appear here (1. e4 e5...)</div>`
+                `<div style="font-size: 0.75rem; color: #94a3b8; text-align: center; padding: 12px 6px;">Moves appear here — click any move to replay!</div>`
               }
             </div>
           </div>
@@ -1684,9 +2198,11 @@ export function renderVirtualChessView(chessState) {
 }
 
 // ============================================================================
-// 5. EVENT CONTROLLERS & CLOCK / AI ORCHESTRATION
+// 5. EVENT CONTROLLERS, ONLINE 2-LAPTOP SYNC, COACH REVIEW & AI ORCHESTRATION
 // ============================================================================
 let aiMoveTimeout = null;
+let onlinePollTimer = null;
+let rightMouseDragStart = null;
 
 export function registerVirtualChessHandlers(ctx) {
   if (typeof window === 'undefined') return;
@@ -1697,7 +2213,6 @@ export function registerVirtualChessHandlers(ctx) {
     return st.virtualChess;
   };
 
-  // Surgical in-place update of Virtual Chess workspace (zero page flash, zero scroll jump, zero header/tab teardown!)
   const rerenderBoardOnly = (scrollSheetToEnd = false) => {
     const mount = document.getElementById('virtual-chess-mount');
     if (mount) {
@@ -1721,42 +2236,17 @@ export function registerVirtualChessHandlers(ctx) {
     }
   };
 
-  const evaluateGameEndPracticeXp = () => {
+  const emitHighlightEvent = (item) => {
+    appendLocalClubFeed(item);
     const st = ctx.getState();
-    const vc = getVc();
-    if (vc.status === 'playing' || vc.xpEvaluated) return false;
-    vc.xpEvaluated = true;
+    st.clubFeed = [item, ...(st.clubFeed || []).filter((x) => x.eventId !== item.eventId)].slice(
+      0,
+      60,
+    );
+    postClubHighlightToCloud(item);
+  };
 
-    if (vc.mode !== 'ai' || !vc.tappedInPlayerId) return false;
-    const pupil = (st.players || []).find((p) => p.id === vc.tappedInPlayerId);
-    if (!pupil) return false;
-
-    const plies = vc.moveLog.length;
-    const pupilWon = vc.winner === vc.humanSide;
-    const isDraw = vc.winner === 'draw';
-
-    let rawXp = 0;
-    let outcome = 'effort';
-
-    if (pupilWon && plies >= 6) {
-      outcome = 'win';
-      rawXp = vc.aiLevel === 'hard' ? 50 : vc.aiLevel === 'medium' ? 30 : 15;
-    } else if (isDraw && plies >= 20) {
-      outcome = 'draw';
-      rawXp = vc.aiLevel === 'hard' ? 25 : vc.aiLevel === 'medium' ? 15 : 10;
-    } else if (!pupilWon && !isDraw && plies >= 30) {
-      outcome = 'effort';
-      rawXp = vc.aiLevel === 'easy' ? 5 : 10;
-    } else {
-      return false;
-    }
-
-    let hintCapNote = '';
-    if ((vc.hintsUsedCount || 0) > 2 && rawXp > 5) {
-      rawXp = 5;
-      hintCapNote = ' (Guided Hint Cap)';
-    }
-
+  const bankPupilXpHelper = (pupil, rawXp, meta = {}) => {
     const todayKey = new Date().toISOString().slice(0, 10);
     const ledger = readLocalXpLedger();
     const entry = ledger[pupil.id] || {
@@ -1765,53 +2255,388 @@ export function registerVirtualChessHandlers(ctx) {
     };
     if (!entry.daily) entry.daily = {};
     const usedToday = Number(entry.daily[todayKey] || 0);
-    if (usedToday >= DAILY_XP_CAP) {
-      vc.lastXpNotice = {
-        type: 'cap',
-        text: `🌟 Daily XP Cap Reached (${DAILY_XP_CAP}/${DAILY_XP_CAP} XP today)! Great commitment — play freely for fun, and earn fresh XP tomorrow!`,
-      };
-      return false;
+    const remaining = Math.max(0, DAILY_XP_CAP - usedToday);
+    if (remaining <= 0 && !(meta.bonusHousePts > 0)) {
+      return { capped: true, grantedXp: 0, housePtsAwarded: 0 };
     }
-
-    const grantedXp = Math.min(rawXp, DAILY_XP_CAP - usedToday);
+    const grantedXp = Math.min(rawXp, remaining);
     const baseTotal = Math.max(Number(pupil.practiceXp || 0), Number(entry.localTotalXp || 0));
     entry.localTotalXp = baseTotal + grantedXp;
     entry.daily[todayKey] = usedToday + grantedXp;
     ledger[pupil.id] = entry;
     writeLocalXpLedger(ledger);
-    vc.xpGrantedThisGame = true;
 
     const claimPayload = {
-      claimId: `xp_${pupil.id}_${Date.now()}`,
+      claimId: `xp_${pupil.id}_${Date.now()}_${Math.floor(Math.random() * 999)}`,
       playerId: pupil.id,
       callsign: pupil.name,
       house: pupil.house,
       xp: grantedXp,
-      level: vc.aiLevel,
-      outcome,
-      moves: plies,
+      source: meta.source || 'ai',
+      bonusHousePts: meta.bonusHousePts || 0,
+      accuracyPct: meta.accuracyPct ?? null,
+      botConquered: meta.botConquered || null,
+      opponentCallsign: meta.opponentCallsign || null,
+      level: meta.level || 'elizabeth_i',
+      outcome: meta.outcome || 'win',
+      moves: meta.moves || 10,
     };
 
-    const hName = HOUSES[pupil.house]?.name || pupil.house;
     if (typeof ctx.onPracticeXpEarned === 'function') {
       const res = ctx.onPracticeXpEarned(claimPayload);
-      if (res && res.directTeacherBanked) {
-        const bonusTxt =
-          res.housePtsAwarded > 0
-            ? ` · 🏆 +${res.housePtsAwarded} ${hName} House Point Unlocked!`
-            : '';
-        vc.lastXpNotice = {
-          type: 'earned',
-          text: `⚡ +${grantedXp} XP banked for ${pupil.name}${hintCapNote}!${bonusTxt}`,
-        };
-        return res.housePtsAwarded > 0;
-      }
-      vc.lastXpNotice = {
-        type: 'earned',
-        text: `⚡ +${grantedXp} XP earned by ${pupil.name}${hintCapNote}! Sent to Teacher Inbox toward ${hName} House Points.`,
+      return {
+        capped: false,
+        grantedXp,
+        directTeacherBanked: Boolean(res?.directTeacherBanked),
+        housePtsAwarded: Number(res?.housePtsAwarded || 0),
       };
     }
-    return false;
+    return { capped: false, grantedXp, housePtsAwarded: 0 };
+  };
+
+  const rebuildHistoryFromMoveLogIfNeeded = (vc) => {
+    if (vc.history.length >= vc.moveLog.length || vc.moveLog.length === 0) return;
+    // Lightweight reconstruction not needed when local player played; ensure review works cleanly
+  };
+
+  const evaluateGameEndPracticeXp = () => {
+    const st = ctx.getState();
+    const vc = getVc();
+    if (vc.status === 'playing' || vc.xpEvaluated) return false;
+    vc.xpEvaluated = true;
+
+    if (vc.mode === 'daily') return false;
+
+    rebuildHistoryFromMoveLogIfNeeded(vc);
+    const reviewSide =
+      vc.mode === 'online' ? vc.onlineSide : vc.mode === 'ai' ? vc.humanSide : 'w';
+    if (!vc.gameReview && vc.moveLog.length >= 4 && vc.history.length >= 2) {
+      vc.gameReview = computePostGameCoachReview(vc, reviewSide);
+    }
+    const accuracyPct = vc.gameReview?.accuracyPct ?? null;
+
+    const pupil = vc.tappedInPlayerId
+      ? (st.players || []).find((p) => p.id === vc.tappedInPlayerId)
+      : null;
+
+    if (accuracyPct !== null) {
+      updateLocalBestAccuracy(pupil ? pupil.id : 'guest', accuracyPct);
+    }
+
+    const plies = vc.moveLog.length;
+    const bot = resolveBotProfile(vc.aiLevel);
+
+    // Record Historical Bot Ranking & Conquest stats even for Guest (and credit Callsign when tapped in!)
+    if (vc.mode === 'ai' && plies >= 6) {
+      const pupilWonBot = vc.winner === vc.humanSide;
+      const isBotDraw = vc.winner === 'draw';
+      const botOutcome = pupilWonBot ? 'pupil_win' : isBotDraw ? 'draw' : 'bot_win';
+      vc.botQuip = pupilWonBot ? bot.quips.pupilWin : !isBotDraw ? bot.quips.botWin : '';
+
+      if (pupilWonBot) {
+        recordLocalBotConquest(pupil ? pupil.id : 'guest', bot.id, accuracyPct);
+      }
+      recordBotResultToCloud({
+        botId: bot.id,
+        outcome: botOutcome,
+        moves: plies,
+        playerId: pupil ? pupil.id : '',
+        callsign: pupil ? pupil.name : '',
+        house: pupil ? pupil.house : 'warrior',
+        accuracyPct,
+      }).then((res) => {
+        if (res?.ok && res.botStats) {
+          ctx.getState().botStats = res.botStats;
+        }
+      });
+    }
+
+    if (!pupil) return false;
+
+    // 1. LIVE 2-LAPTOP ONLINE DUEL REWARDS (+1 EXTRA HOUSE POINT!)
+    if (vc.mode === 'online') {
+      if (plies < 6) return false;
+      const myWon = vc.winner === vc.onlineSide;
+      const isDraw = vc.winner === 'draw';
+      const oppSeat =
+        vc.onlineSide === 'w' ? vc.onlineRoomData?.black : vc.onlineRoomData?.white;
+      const oppCallsign = oppSeat?.callsign || 'Classmate';
+      const oppHouse = oppSeat?.house || null;
+
+      let rawXp = myWon ? 45 : isDraw ? 30 : 20;
+      if (accuracyPct !== null && accuracyPct >= 85 && plies >= 10) rawXp += 15;
+      const bonusHousePts = plies >= 10 ? 1 : 0;
+
+      const bankRes = bankPupilXpHelper(pupil, rawXp, {
+        source: 'online_duel',
+        bonusHousePts,
+        accuracyPct,
+        opponentCallsign: oppCallsign,
+        level: 'online_duel',
+        outcome: myWon ? 'win' : isDraw ? 'draw' : 'effort',
+        moves: plies,
+      });
+      vc.xpGrantedThisGame = true;
+
+      if (myWon || isDraw) {
+        emitHighlightEvent({
+          eventId: `hl_duel_${vc.onlineRoomCode}_${pupil.id}_${plies}`,
+          type: 'online_duel',
+          callsign: pupil.name,
+          house: pupil.house,
+          opponentCallsign: oppCallsign,
+          opponentHouse: oppHouse,
+          accuracyPct,
+          xp: bankRes.grantedXp,
+          bonusHousePts,
+          moves: plies,
+          roomCode: vc.onlineRoomCode,
+        });
+      }
+
+      const hName = HOUSES[pupil.house]?.name || pupil.house;
+      vc.lastXpNotice = {
+        type: 'earned',
+        text: bankRes.directTeacherBanked
+          ? `🌐 Online Duel Complete! +${bankRes.grantedXp} XP & 🏆 +${bankRes.housePtsAwarded} ${hName} House Point(s) Banked!`
+          : `🌐 Online Duel Complete! +${bankRes.grantedXp} XP${bonusHousePts ? ` + 🏆 1 Extra ${hName} House Point` : ''} sent to Teacher Approval!`,
+      };
+      return bankRes.housePtsAwarded > 0;
+    }
+
+    // 2. HISTORICAL BOT REWARDS + ACCURACY MASTERY BONUS
+    if (vc.mode !== 'ai') return false;
+    const pupilWon = vc.winner === vc.humanSide;
+    const isDraw = vc.winner === 'draw';
+
+    let rawXp = 0;
+    let outcome = 'effort';
+    if (pupilWon && plies >= 6) {
+      outcome = 'win';
+      rawXp = bot.winXp;
+    } else if (isDraw && plies >= 16) {
+      outcome = 'draw';
+      rawXp = bot.drawXp;
+    } else if (!pupilWon && !isDraw && plies >= 24) {
+      outcome = 'effort';
+      rawXp = bot.effortXp;
+    } else {
+      return false;
+    }
+
+    let accBonus = 0;
+    if (accuracyPct !== null && plies >= 10 && (vc.hintsUsedCount || 0) <= 1) {
+      if (accuracyPct >= 90) accBonus = 20;
+      else if (accuracyPct >= 80) accBonus = 10;
+    }
+    rawXp += accBonus;
+
+    let hintCapNote = '';
+    if ((vc.hintsUsedCount || 0) > 2 && rawXp > 5) {
+      rawXp = 5;
+      hintCapNote = ' (Guided Hint Cap)';
+    }
+
+    const bankRes = bankPupilXpHelper(pupil, rawXp, {
+      source: 'ai',
+      accuracyPct,
+      botConquered: pupilWon ? bot.id : null,
+      level: bot.id,
+      outcome,
+      moves: plies,
+    });
+
+    if (bankRes.capped) {
+      vc.lastXpNotice = {
+        type: 'cap',
+        text: `🌟 Daily XP Cap Reached (${DAILY_XP_CAP}/${DAILY_XP_CAP} XP today)! Play freely & check your Coach Accuracy % below!`,
+      };
+      return false;
+    }
+
+    vc.xpGrantedThisGame = true;
+
+    if (pupilWon) {
+      emitHighlightEvent({
+        eventId: `hl_bot_${pupil.id}_${bot.id}_${Date.now()}`,
+        type: 'bot_conquest',
+        callsign: pupil.name,
+        house: pupil.house,
+        botId: bot.id,
+        accuracyPct,
+        xp: bankRes.grantedXp,
+        moves: plies,
+      });
+    } else if (accuracyPct !== null && accuracyPct >= 88 && plies >= 14) {
+      emitHighlightEvent({
+        eventId: `hl_acc_${pupil.id}_${Date.now()}`,
+        type: 'high_accuracy',
+        callsign: pupil.name,
+        house: pupil.house,
+        botId: bot.id,
+        accuracyPct,
+        xp: bankRes.grantedXp,
+        moves: plies,
+      });
+    }
+
+    const hName = HOUSES[pupil.house]?.name || pupil.house;
+    const accTag = accBonus > 0 ? ` (incl. +${accBonus} Accuracy Bonus!)` : '';
+    vc.lastXpNotice = {
+      type: 'earned',
+      text: bankRes.directTeacherBanked
+        ? `⚡ +${bankRes.grantedXp} XP banked for ${pupil.name}${accTag}${hintCapNote}!${bankRes.housePtsAwarded > 0 ? ` · 🏆 +${bankRes.housePtsAwarded} ${hName} House Pt!` : ''}`
+        : `⚡ +${bankRes.grantedXp} XP earned by ${pupil.name}${accTag}${hintCapNote}! Sent to Teacher Inbox toward ${hName} House Points.`,
+    };
+    return bankRes.housePtsAwarded > 0;
+  };
+
+  // =========================================================================
+  // LIVE 2-LAPTOP ONLINE DUEL POLLING ENGINE (1.1s Low-Latency Sync)
+  // =========================================================================
+  const stopOnlinePolling = () => {
+    if (onlinePollTimer) {
+      clearInterval(onlinePollTimer);
+      onlinePollTimer = null;
+    }
+  };
+
+  const syncLocalStateFromRoom = (room, forceRender = false) => {
+    if (!room) return;
+    const vc = getVc();
+    const prevStatus = vc.onlineRoomData?.status;
+    const prevMoveCount = vc.moveLog.length;
+    const prevReactionAt = vc.onlineReactionToast?.at || 0;
+
+    vc.onlineRoomData = room;
+    vc.onlineSeq = room.seq || 1;
+
+    if (room.lastReaction && room.lastReaction.at > prevReactionAt) {
+      vc.onlineReactionToast = room.lastReaction;
+      forceRender = true;
+    }
+
+    if (prevStatus === 'waiting' && room.status === 'playing') {
+      const opp = vc.onlineSide === 'w' ? room.black : room.white;
+      playClubSound('bounty');
+      ctx.showChessToast(
+        `⚔️ ${opp?.callsign || 'Classmate'} joined Room ${room.roomCode}! Game on!`,
+        'success',
+      );
+      forceRender = true;
+    }
+
+    // Apply remote move or status transition
+    if (
+      room.moveLog &&
+      (room.moveLog.length > prevMoveCount ||
+        (room.status !== 'waiting' && room.status !== vc.status))
+    ) {
+      // Snapshot pre-move board into vc.history if remote opponent just made 1 move
+      if (room.moveLog.length === prevMoveCount + 1) {
+        vc.history.push({
+          board: cloneBoard(vc.board),
+          turn: vc.turn,
+          castling: { ...vc.castling },
+          enPassant: vc.enPassant ? [...vc.enPassant] : null,
+          halfMoveClock: vc.halfMoveClock,
+          fullMoveNumber: vc.fullMoveNumber,
+          positionCounts: { ...vc.positionCounts },
+          lastMove: vc.lastMove ? { from: [...vc.lastMove.from], to: [...vc.lastMove.to] } : null,
+          moveLog: [...vc.moveLog],
+          capturedByWhite: [...vc.capturedByWhite],
+          capturedByBlack: [...vc.capturedByBlack],
+          status: vc.status,
+          winner: vc.winner,
+          whiteTimeSecs: vc.whiteTimeSecs,
+          blackTimeSecs: vc.blackTimeSecs,
+        });
+      }
+
+      vc.board = cloneBoard(room.board);
+      vc.turn = room.turn;
+      vc.castling = { ...(room.castling || {}) };
+      vc.enPassant = room.enPassant || null;
+      vc.halfMoveClock = room.halfMoveClock || 0;
+      vc.fullMoveNumber = room.fullMoveNumber || 1;
+      vc.lastMove = room.lastMove || null;
+      vc.moveLog = [...(room.moveLog || [])];
+      vc.capturedByWhite = [...(room.capturedByWhite || [])];
+      vc.capturedByBlack = [...(room.capturedByBlack || [])];
+      vc.whiteTimeSecs = room.whiteTimeSecs ?? vc.whiteTimeSecs;
+      vc.blackTimeSecs = room.blackTimeSecs ?? vc.blackTimeSecs;
+      vc.clockActive = room.timeControlMins > 0 && room.status === 'playing' && vc.moveLog.length > 0;
+
+      if (room.status !== 'waiting') {
+        vc.status = room.status;
+        vc.winner = room.winner || null;
+      }
+      vc.selected = null;
+      vc.replayPlyIndex = null;
+
+      if (room.moveLog.length > prevMoveCount) {
+        if (vc.status === 'checkmate') playClubSound('win');
+        else playClubSound('move');
+      }
+
+      if (vc.status !== 'playing') {
+        vc.clockActive = false;
+        evaluateGameEndPracticeXp();
+      }
+      forceRender = true;
+    } else if (room.drawOfferBy !== (vc.onlineRoomData?.drawOfferBy ?? null)) {
+      forceRender = true;
+    }
+
+    if (forceRender) {
+      rerenderBoardOnly(true);
+    }
+  };
+
+  const startOnlinePolling = () => {
+    stopOnlinePolling();
+    onlinePollTimer = setInterval(async () => {
+      if (!ctx.isChessViewActive()) return;
+      const vc = getVc();
+      if (vc.mode !== 'online' || !vc.onlineRoomCode) {
+        stopOnlinePolling();
+        return;
+      }
+      const res = await pollOnlineDuelRoom(vc.onlineRoomCode);
+      if (res.ok && res.room && res.room.seq !== vc.onlineSeq) {
+        syncLocalStateFromRoom(res.room, true);
+      }
+    }, 1100);
+  };
+
+  const broadcastLocalMoveToOnlineRoom = async () => {
+    const vc = getVc();
+    if (vc.mode !== 'online' || !vc.onlineRoomCode) return;
+    const res = await pushOnlineDuelMove({
+      roomCode: vc.onlineRoomCode,
+      expectedSeq: vc.onlineSeq,
+      board: vc.board,
+      turn: vc.turn,
+      castling: vc.castling,
+      enPassant: vc.enPassant,
+      halfMoveClock: vc.halfMoveClock,
+      fullMoveNumber: vc.fullMoveNumber,
+      lastMove: vc.lastMove,
+      moveLog: vc.moveLog,
+      capturedByWhite: vc.capturedByWhite,
+      capturedByBlack: vc.capturedByBlack,
+      whiteTimeSecs: vc.whiteTimeSecs,
+      blackTimeSecs: vc.blackTimeSecs,
+      status: vc.status,
+      winner: vc.winner,
+      drawOfferBy: null,
+    });
+    if (res.ok && res.room) {
+      vc.onlineSeq = res.room.seq;
+      vc.onlineRoomData = res.room;
+    } else if (res.conflict && res.room) {
+      syncLocalStateFromRoom(res.room, true);
+    }
   };
 
   const maybeScheduleAiReply = (alreadyRenderedThinking = false) => {
@@ -1832,11 +2657,17 @@ export function registerVirtualChessHandlers(ctx) {
         currentVc.aiThinking = false;
         return;
       }
-      const chosen = chooseBestMove(currentVc, currentVc.aiLevel);
+      const bot = resolveBotProfile(currentVc.aiLevel);
+      const chosen = chooseBestMove(currentVc, bot.id);
       currentVc.aiThinking = false;
       let unlockedHousePt = false;
       if (chosen) {
+        const wasCap = chosen.isEnPassant || currentVc.board[chosen.toR][chosen.toC] !== '.';
         applyVirtualChessMove(currentVc, chosen, false);
+        if (currentVc.status === 'playing') {
+          if (isSideInCheck(currentVc.board, currentVc.turn)) currentVc.botQuip = bot.quips.check;
+          else if (wasCap) currentVc.botQuip = bot.quips.capture;
+        }
         unlockedHousePt = evaluateGameEndPracticeXp();
       }
       if (unlockedHousePt) {
@@ -1854,7 +2685,14 @@ export function registerVirtualChessHandlers(ctx) {
       const st = ctx.getState();
       if ((st.activeTab || 'play') !== 'play') return;
       const vc = st.virtualChess;
-      if (!vc || vc.status !== 'playing' || !vc.clockActive || vc.timeControlMins <= 0) return;
+      if (
+        !vc ||
+        vc.mode === 'daily' ||
+        vc.status !== 'playing' ||
+        !vc.clockActive ||
+        vc.timeControlMins <= 0
+      )
+        return;
 
       if (vc.turn === 'w') {
         vc.whiteTimeSecs = Math.max(0, (vc.whiteTimeSecs || 0) - 1);
@@ -1870,6 +2708,7 @@ export function registerVirtualChessHandlers(ctx) {
             vc.status = 'draw_material';
             vc.winner = 'draw';
           }
+          if (vc.mode === 'online') broadcastLocalMoveToOnlineRoom();
           const unlocked = evaluateGameEndPracticeXp();
           if (unlocked) ctx.renderChessHubView();
           else rerenderBoardOnly();
@@ -1888,6 +2727,7 @@ export function registerVirtualChessHandlers(ctx) {
             vc.status = 'draw_material';
             vc.winner = 'draw';
           }
+          if (vc.mode === 'online') broadcastLocalMoveToOnlineRoom();
           const unlocked = evaluateGameEndPracticeXp();
           if (unlocked) ctx.renderChessHubView();
           else rerenderBoardOnly();
@@ -1896,15 +2736,100 @@ export function registerVirtualChessHandlers(ctx) {
     }, 1000);
   }
 
+  const loadDailyPuzzleIntoBoard = (idx) => {
+    const vc = getVc();
+    const safeIdx = ((idx % DAILY_TACTICAL_PUZZLES.length) + DAILY_TACTICAL_PUZZLES.length) % DAILY_TACTICAL_PUZZLES.length;
+    const puz = DAILY_TACTICAL_PUZZLES[safeIdx];
+    vc.dailyPuzzleIdx = safeIdx;
+    vc.board = parseFenBoardOnly(puz.fenBoard);
+    vc.turn = puz.sideToMove || 'w';
+    vc.castling = { K: false, Q: false, k: false, q: false };
+    vc.enPassant = null;
+    vc.history = [];
+    vc.moveLog = [];
+    vc.capturedByWhite = [];
+    vc.capturedByBlack = [];
+    vc.status = 'playing';
+    vc.winner = null;
+    vc.selected = null;
+    vc.lastMove = null;
+    vc.hintMove = null;
+    vc.replayPlyIndex = null;
+    vc.drawnArrows = [];
+    vc.highlightedSquares = [];
+    vc.dailySolvedBanner = '';
+    vc.dailyWrongToast = '';
+    vc.flipped = false;
+  };
+
   const attemptHumanMove = (fromR, fromC, toR, toC) => {
     const vc = getVc();
     if (vc.status !== 'playing' || vc.aiThinking) return false;
+    if (vc.replayPlyIndex !== null) vc.replayPlyIndex = null;
     if (vc.mode === 'ai' && vc.turn !== vc.humanSide) return false;
+    if (
+      vc.mode === 'online' &&
+      (vc.onlineRoomData?.status !== 'playing' || vc.turn !== vc.onlineSide)
+    )
+      return false;
 
     const legal = getLegalMovesFrom(vc, fromR, fromC).filter(
       (m) => m.toR === toR && m.toC === toC,
     );
     if (legal.length === 0) return false;
+
+    // Daily Tactical Puzzle check!
+    if (vc.mode === 'daily') {
+      const puz = DAILY_TACTICAL_PUZZLES[vc.dailyPuzzleIdx % DAILY_TACTICAL_PUZZLES.length];
+      const fromStr = sqName(fromR, fromC);
+      const toStr = sqName(toR, toC);
+      if (fromStr !== puz.solutionFrom || toStr !== puz.solutionTo) {
+        vc.selected = null;
+        vc.dailyWrongToast = `Not quite! ${fromStr}→${toStr} lets Black escape — look for Checkmate in 1 move!`;
+        rerenderBoardOnly();
+        return true;
+      }
+
+      vc.dailyWrongToast = '';
+      applyVirtualChessMove(vc, legal[0], false);
+
+      const st = ctx.getState();
+      const pupil = vc.tappedInPlayerId
+        ? (st.players || []).find((p) => p.id === vc.tappedInPlayerId)
+        : null;
+      const todayObj = getTodayDailyPuzzle();
+      const isOfficialToday = vc.dailyPuzzleIdx === todayObj.index;
+
+      if (isOfficialToday) {
+        const prog = markDailyPuzzleSolved(pupil ? pupil.id : 'guest');
+        if (!prog.alreadySolved && pupil) {
+          const bankRes = bankPupilXpHelper(pupil, 15, {
+            source: 'daily_puzzle',
+            level: puz.id,
+            outcome: 'solved',
+            moves: 1,
+          });
+          emitHighlightEvent({
+            eventId: `hl_puz_${todayObj.todayKey}_${pupil.id}`,
+            type: 'daily_puzzle',
+            callsign: pupil.name,
+            house: pupil.house,
+            xp: bankRes.grantedXp,
+            streak: prog.streak,
+            moves: 1,
+          });
+          vc.dailySolvedBanner = `Checkmate! +${bankRes.grantedXp} XP earned · 🔥 ${prog.streak}-Day Streak!`;
+        } else {
+          vc.dailySolvedBanner = pupil
+            ? `Checkmate! Today's +15 XP already banked (🔥 ${prog.streak}-Day Streak). Try Next Puzzle!`
+            : `Checkmate! Tap in with your Club Callsign above to bank +15 XP & build a Streak!`;
+        }
+      } else {
+        vc.dailySolvedBanner = `Spot on — ${vc.moveLog[0]?.san || 'Checkmate'}! Click Next Puzzle for another drill.`;
+      }
+      rerenderBoardOnly();
+      return true;
+    }
 
     if (legal.some((m) => m.promotion)) {
       vc.pendingPromotion = { fromR, fromC, toR, toC };
@@ -1914,6 +2839,13 @@ export function registerVirtualChessHandlers(ctx) {
     }
 
     applyVirtualChessMove(vc, legal[0], false);
+    vc.drawnArrows = [];
+    vc.highlightedSquares = [];
+
+    if (vc.mode === 'online') {
+      broadcastLocalMoveToOnlineRoom();
+    }
+
     const unlockedHousePt = evaluateGameEndPracticeXp();
     const willAiReply =
       vc.mode === 'ai' && vc.status === 'playing' && vc.turn !== vc.humanSide;
@@ -1931,10 +2863,56 @@ export function registerVirtualChessHandlers(ctx) {
     return true;
   };
 
+  // Right-click arrow & square highlight handlers (Windows mouse/trackpad)
+  window.handleVirtualRightDown = function (e, r, c) {
+    if (e && e.button === 2) {
+      e.preventDefault();
+      rightMouseDragStart = [r, c];
+    }
+  };
+
+  window.handleVirtualRightUp = function (e, r, c) {
+    if (!e || e.button !== 2 || !rightMouseDragStart) return;
+    e.preventDefault();
+    const vc = getVc();
+    const [sr, sc] = rightMouseDragStart;
+    rightMouseDragStart = null;
+    if (sr === r && sc === c) {
+      const sq = sqName(r, c);
+      const list = vc.highlightedSquares || [];
+      vc.highlightedSquares = list.includes(sq)
+        ? list.filter((x) => x !== sq)
+        : [...list, sq];
+    } else {
+      const arrows = vc.drawnArrows || [];
+      const existsIdx = arrows.findIndex(
+        (a) => a.from[0] === sr && a.from[1] === sc && a.to[0] === r && a.to[1] === c,
+      );
+      if (existsIdx >= 0) arrows.splice(existsIdx, 1);
+      else arrows.push({ from: [sr, sc], to: [r, c] });
+      vc.drawnArrows = arrows;
+    }
+    rerenderBoardOnly();
+  };
+
   window.handleVirtualSquareTap = function (r, c) {
     const vc = getVc();
+    if ((vc.drawnArrows && vc.drawnArrows.length > 0) || (vc.highlightedSquares && vc.highlightedSquares.length > 0)) {
+      vc.drawnArrows = [];
+      vc.highlightedSquares = [];
+    }
+    if (vc.replayPlyIndex !== null) {
+      vc.replayPlyIndex = null;
+      rerenderBoardOnly();
+      return;
+    }
     if (vc.status !== 'playing' || vc.aiThinking || vc.pendingPromotion) return;
     if (vc.mode === 'ai' && vc.turn !== vc.humanSide) return;
+    if (
+      vc.mode === 'online' &&
+      (vc.onlineRoomData?.status !== 'playing' || vc.turn !== vc.onlineSide)
+    )
+      return;
 
     const tappedPiece = vc.board[r][c];
     const tappedSide = sideOf(tappedPiece);
@@ -1968,8 +2946,9 @@ export function registerVirtualChessHandlers(ctx) {
 
   window.handleVirtualDragStart = function (e, r, c) {
     const vc = getVc();
-    if (vc.status !== 'playing' || vc.aiThinking) return;
+    if (vc.status !== 'playing' || vc.aiThinking || vc.replayPlyIndex !== null) return;
     if (sideOf(vc.board[r][c]) !== vc.turn) return;
+    if (vc.mode === 'online' && vc.turn !== vc.onlineSide) return;
     if (e && e.dataTransfer) {
       e.dataTransfer.setData('text/plain', JSON.stringify({ r, c }));
     }
@@ -1996,7 +2975,7 @@ export function registerVirtualChessHandlers(ctx) {
         vc.selected = null;
         rerenderBoardOnly();
       }
-    } catch (err) {}
+    } catch {}
   };
 
   window.chooseVirtualPromotion = function (promoChar) {
@@ -2009,6 +2988,7 @@ export function registerVirtualChessHandlers(ctx) {
     vc.pendingPromotion = null;
     if (legal) {
       applyVirtualChessMove(vc, legal, false);
+      if (vc.mode === 'online') broadcastLocalMoveToOnlineRoom();
       const unlockedHousePt = evaluateGameEndPracticeXp();
       const willAiReply =
         vc.mode === 'ai' && vc.status === 'playing' && vc.turn !== vc.humanSide;
@@ -2027,12 +3007,280 @@ export function registerVirtualChessHandlers(ctx) {
     rerenderBoardOnly();
   };
 
+  // Interactive Move History Scrubbing & "Retry Your Mistake"
+  window.scrubVirtualMove = function (plyIdx) {
+    const vc = getVc();
+    if (plyIdx === null || plyIdx === undefined || plyIdx >= vc.history.length) {
+      vc.replayPlyIndex = null;
+    } else {
+      vc.replayPlyIndex = Math.max(0, plyIdx);
+    }
+    rerenderBoardOnly();
+  };
+
+  window.scrubVirtualMoveStep = function (delta) {
+    const vc = getVc();
+    if (vc.history.length === 0) return;
+    const cur = vc.replayPlyIndex === null ? vc.history.length : vc.replayPlyIndex;
+    const next = cur + delta;
+    if (next >= vc.history.length) vc.replayPlyIndex = null;
+    else vc.replayPlyIndex = Math.max(0, next);
+    rerenderBoardOnly();
+  };
+
+  window.retryCoachBlunder = function () {
+    const vc = getVc();
+    const bl = vc.gameReview?.blunderItem;
+    if (!bl || !vc.history[bl.historyIdx]) return;
+    const snap = vc.history[bl.historyIdx];
+    vc.board = cloneBoard(snap.board);
+    vc.turn = snap.turn;
+    vc.castling = { ...snap.castling };
+    vc.enPassant = snap.enPassant ? [...snap.enPassant] : null;
+    vc.halfMoveClock = snap.halfMoveClock;
+    vc.fullMoveNumber = snap.fullMoveNumber;
+    vc.positionCounts = { ...snap.positionCounts };
+    vc.lastMove = snap.lastMove ? { from: [...snap.lastMove.from], to: [...snap.lastMove.to] } : null;
+    vc.moveLog = [...snap.moveLog];
+    vc.capturedByWhite = [...snap.capturedByWhite];
+    vc.capturedByBlack = [...snap.capturedByBlack];
+    vc.history = vc.history.slice(0, bl.historyIdx);
+    vc.status = 'playing';
+    vc.winner = null;
+    vc.gameReview = null;
+    vc.replayPlyIndex = null;
+    vc.selected = null;
+    if (vc.mode === 'online') {
+      stopOnlinePolling();
+      vc.mode = 'ai';
+      vc.onlineRoomCode = '';
+    }
+    vc.hintMove = {
+      fromR: bl.fromR,
+      fromC: bl.fromC,
+      toR: bl.toR,
+      toC: bl.toC,
+      san: bl.bestSan,
+      fromSq: bl.fromSq,
+      toSq: bl.toSq,
+      reason: `fixes your earlier ${bl.playedSan} mistake!`,
+    };
+    rerenderBoardOnly();
+    ctx.showChessToast(`🔄 Position restored! Try ${bl.bestSan} (${bl.fromSq}→${bl.toSq})!`, 'info');
+  };
+
+  // Live Online 2-Laptop Duel Controllers
+  window.setOnlineHostPrefSide = function (side) {
+    const vc = getVc();
+    vc.onlineHostPrefSide = side === 'b' ? 'b' : 'w';
+    rerenderBoardOnly();
+  };
+
+  window.createLiveOnlineDuel = async function () {
+    const st = ctx.getState();
+    const vc = getVc();
+    const pupil = vc.tappedInPlayerId
+      ? (st.players || []).find((p) => p.id === vc.tappedInPlayerId)
+      : null;
+    const btn = document.getElementById('btn-create-online-duel');
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = 'Creating Room...';
+    }
+    vc.onlineError = '';
+    const code = generateSafeDuelRoomCode();
+    const hostSide = vc.onlineHostPrefSide === 'b' ? 'b' : 'w';
+    const res = await createOnlineDuelRoom({
+      roomCode: code,
+      hostPlayerId: pupil ? pupil.id : `guest_${Date.now()}`,
+      hostCallsign: pupil ? pupil.name : 'Guest Challenger',
+      hostHouse: pupil ? pupil.house : 'warrior',
+      hostSide,
+      timeControlMins: vc.timeControlMins || 5,
+    });
+
+    if (!res.ok || !res.room) {
+      vc.onlineError = res.error || 'Could not create online room.';
+      rerenderBoardOnly();
+      return;
+    }
+
+    const fresh = createDefaultVirtualChessState();
+    fresh.mode = 'online';
+    fresh.boardTheme = vc.boardTheme;
+    fresh.tappedInPlayerId = vc.tappedInPlayerId;
+    fresh.onlineRoomCode = res.room.roomCode;
+    fresh.onlineSide = hostSide;
+    fresh.onlineHostPrefSide = hostSide;
+    fresh.onlineSeq = res.room.seq;
+    fresh.onlineRoomData = res.room;
+    fresh.timeControlMins = res.room.timeControlMins;
+    fresh.whiteTimeSecs = res.room.whiteTimeSecs;
+    fresh.blackTimeSecs = res.room.blackTimeSecs;
+    fresh.flipped = hostSide === 'b';
+    st.virtualChess = fresh;
+
+    startOnlinePolling();
+    rerenderBoardOnly();
+    ctx.showChessToast(`📡 Room ${res.room.roomCode} created! Share the code with your classmate.`, 'success');
+  };
+
+  window.joinLiveOnlineDuel = async function (explicitCode = '') {
+    const st = ctx.getState();
+    const vc = getVc();
+    const inputEl = document.getElementById('vc-join-code-input');
+    const rawCode = String(explicitCode || inputEl?.value || '')
+      .trim()
+      .toUpperCase();
+    if (!rawCode) {
+      vc.onlineError = 'Enter your classmate’s Room Code (e.g. CASTLE-48).';
+      rerenderBoardOnly();
+      return;
+    }
+
+    const pupil = vc.tappedInPlayerId
+      ? (st.players || []).find((p) => p.id === vc.tappedInPlayerId)
+      : null;
+    const btn = document.getElementById('btn-join-online-duel');
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = '...';
+    }
+    vc.onlineError = '';
+
+    const res = await joinOnlineDuelRoom({
+      roomCode: rawCode,
+      guestPlayerId: pupil ? pupil.id : `guest_${Date.now()}`,
+      guestCallsign: pupil ? pupil.name : 'Guest Challenger',
+      guestHouse: pupil ? pupil.house : 'invincible',
+    });
+
+    if (!res.ok || !res.room) {
+      vc.onlineError = res.error || 'Could not join room.';
+      rerenderBoardOnly();
+      return;
+    }
+
+    const side = res.assignedSide || 'b';
+    const fresh = createDefaultVirtualChessState();
+    fresh.mode = 'online';
+    fresh.boardTheme = vc.boardTheme;
+    fresh.tappedInPlayerId = vc.tappedInPlayerId;
+    fresh.onlineRoomCode = res.room.roomCode;
+    fresh.onlineSide = side;
+    fresh.onlineSeq = res.room.seq;
+    fresh.onlineRoomData = res.room;
+    fresh.board = cloneBoard(res.room.board);
+    fresh.turn = res.room.turn;
+    fresh.moveLog = [...(res.room.moveLog || [])];
+    fresh.status = res.room.status === 'waiting' ? 'playing' : res.room.status;
+    fresh.timeControlMins = res.room.timeControlMins;
+    fresh.whiteTimeSecs = res.room.whiteTimeSecs;
+    fresh.blackTimeSecs = res.room.blackTimeSecs;
+    fresh.flipped = side === 'b';
+    st.virtualChess = fresh;
+
+    playClubSound('bounty');
+    startOnlinePolling();
+    rerenderBoardOnly();
+    ctx.showChessToast(`⚔️ Joined Room ${res.room.roomCode} as ${side === 'w' ? 'White' : 'Black'}!`, 'success');
+  };
+
+  window.leaveLiveOnlineDuel = function () {
+    stopOnlinePolling();
+    const vc = getVc();
+    vc.onlineRoomCode = '';
+    vc.onlineRoomData = null;
+    vc.onlineError = '';
+    window.startNewVirtualGame();
+  };
+
+  window.sendVirtualDuelReaction = async function (text) {
+    const vc = getVc();
+    if (vc.mode !== 'online' || !vc.onlineRoomCode) return;
+    const res = await sendOnlineDuelReaction({
+      roomCode: vc.onlineRoomCode,
+      side: vc.onlineSide,
+      text,
+    });
+    if (res.ok && res.room) {
+      vc.onlineSeq = res.room.seq;
+      vc.onlineReactionToast = res.room.lastReaction;
+      rerenderBoardOnly();
+    }
+  };
+
+  window.respondOnlineDrawOffer = async function (accept) {
+    const vc = getVc();
+    if (vc.mode !== 'online' || !vc.onlineRoomCode) return;
+    if (accept) {
+      vc.status = 'draw_agreed';
+      vc.winner = 'draw';
+      vc.clockActive = false;
+      playClubSound('bounty');
+      await broadcastLocalMoveToOnlineRoom();
+      evaluateGameEndPracticeXp();
+    } else {
+      await pushOnlineDuelMove({
+        roomCode: vc.onlineRoomCode,
+        expectedSeq: vc.onlineSeq,
+        drawOfferBy: null,
+      }).then((r) => {
+        if (r.ok && r.room) {
+          vc.onlineSeq = r.room.seq;
+          vc.onlineRoomData = r.room;
+        }
+      });
+    }
+    rerenderBoardOnly();
+  };
+
+  // Daily Puzzle Helpers
+  window.showDailyPuzzleHint = function () {
+    const vc = getVc();
+    const puz = DAILY_TACTICAL_PUZZLES[vc.dailyPuzzleIdx % DAILY_TACTICAL_PUZZLES.length];
+    const fromC = puz.solutionFrom.charCodeAt(0) - 97;
+    const fromR = 8 - Number(puz.solutionFrom[1]);
+    const toC = puz.solutionTo.charCodeAt(0) - 97;
+    const toR = 8 - Number(puz.solutionTo[1]);
+    vc.hintMove = {
+      fromR,
+      fromC,
+      toR,
+      toC,
+      san: `${puz.solutionFrom}→${puz.solutionTo}`,
+      fromSq: puz.solutionFrom,
+      toSq: puz.solutionTo,
+      reason: puz.hint,
+    };
+    rerenderBoardOnly();
+  };
+
+  window.nextDailyPracticePuzzle = function () {
+    const vc = getVc();
+    loadDailyPuzzleIntoBoard((vc.dailyPuzzleIdx || 0) + 1);
+    rerenderBoardOnly();
+  };
+
   window.startNewVirtualGame = function () {
     if (aiMoveTimeout) clearTimeout(aiMoveTimeout);
     const prev = getVc();
+    if (prev.mode === 'daily') {
+      loadDailyPuzzleIntoBoard(prev.dailyPuzzleIdx);
+      rerenderBoardOnly();
+      return;
+    }
+    if (prev.mode === 'online' && prev.onlineRoomCode && prev.status === 'playing') {
+      ctx.showChessToast('Use Resign or Leave Room during a live online duel.', 'info');
+      return;
+    }
+    stopOnlinePolling();
+
+    const bot = resolveBotProfile(prev.aiLevel);
     const fresh = createDefaultVirtualChessState();
     fresh.mode = prev.mode;
-    fresh.aiLevel = prev.aiLevel;
+    fresh.aiLevel = bot.id;
+    fresh.botQuip = prev.mode === 'ai' ? bot.quips.start : '';
     fresh.humanSide = prev.humanSide;
     fresh.boardTheme = prev.boardTheme;
     fresh.autoFlipPass = prev.autoFlipPass;
@@ -2056,18 +3304,30 @@ export function registerVirtualChessHandlers(ctx) {
   window.setVirtualChessMode = function (mode) {
     const vc = getVc();
     if (vc.mode === mode) return;
+    stopOnlinePolling();
     vc.mode = mode;
+    vc.onlineRoomCode = '';
+    vc.onlineRoomData = null;
+    vc.onlineError = '';
+    if (mode === 'daily') {
+      const todayObj = getTodayDailyPuzzle();
+      loadDailyPuzzleIntoBoard(todayObj.index);
+      rerenderBoardOnly();
+      return;
+    }
     window.startNewVirtualGame();
   };
 
   window.setVirtualAiLevel = function (level) {
     const vc = getVc();
-    vc.aiLevel = level;
+    const bot = resolveBotProfile(level);
+    vc.aiLevel = bot.id;
+    vc.botQuip = bot.quips.start;
     if (vc.moveLog.length === 0) {
       window.startNewVirtualGame();
     } else {
       rerenderBoardOnly();
-      ctx.showChessToast(`Computer Coach set to ${level.toUpperCase()}`, 'info');
+      ctx.showChessToast(`${bot.icon} Opponent set to ${bot.name} (${bot.elo} ELO)`, 'info');
     }
   };
 
@@ -2080,6 +3340,7 @@ export function registerVirtualChessHandlers(ctx) {
 
   window.setVirtualTimeControl = function (mins) {
     const vc = getVc();
+    if (vc.mode === 'online' && vc.onlineRoomCode) return;
     vc.timeControlMins = Number(mins) || 0;
     vc.whiteTimeSecs = vc.timeControlMins * 60;
     vc.blackTimeSecs = vc.timeControlMins * 60;
@@ -2119,7 +3380,7 @@ export function registerVirtualChessHandlers(ctx) {
   window.undoVirtualMove = function () {
     if (aiMoveTimeout) clearTimeout(aiMoveTimeout);
     const vc = getVc();
-    if (vc.history.length === 0) return;
+    if (vc.mode === 'online' || vc.history.length === 0) return;
 
     const restoreSnap = (snap) => {
       vc.board = snap.board;
@@ -2139,7 +3400,6 @@ export function registerVirtualChessHandlers(ctx) {
       vc.blackTimeSecs = snap.blackTimeSecs;
     };
 
-    // In AI mode, undo both the AI reply and the pupil's previous move so it's the pupil's turn again
     let snap = vc.history.pop();
     if (vc.mode === 'ai' && snap.turn !== vc.humanSide && vc.history.length > 0) {
       snap = vc.history.pop();
@@ -2150,6 +3410,8 @@ export function registerVirtualChessHandlers(ctx) {
     vc.pendingPromotion = null;
     vc.confirmAction = null;
     vc.aiThinking = false;
+    vc.gameReview = null;
+    vc.replayPlyIndex = null;
     vc.loggedToLadder = false;
     if (!vc.xpGrantedThisGame) {
       vc.xpEvaluated = false;
@@ -2166,13 +3428,21 @@ export function registerVirtualChessHandlers(ctx) {
     rerenderBoardOnly();
     if (vc.tappedInPlayerId) {
       const p = (ctx.getState().players || []).find((x) => x.id === vc.tappedInPlayerId);
-      if (p) ctx.showChessToast(`👤 Tapped in as ${p.name}! Beat the Computer Coach to earn XP.`, 'success');
+      if (p)
+        ctx.showChessToast(
+          `👤 Tapped in as ${p.name}! Earn XP & House Points across Bots, Puzzles & Live Duels.`,
+          'success',
+        );
     }
   };
 
   window.requestVirtualHint = function () {
     const vc = getVc();
-    if (vc.status !== 'playing' || vc.aiThinking) return;
+    if (vc.mode === 'online' || vc.status !== 'playing' || vc.aiThinking) return;
+    if (vc.mode === 'daily') {
+      window.showDailyPuzzleHint();
+      return;
+    }
     vc.hintsUsedCount = (vc.hintsUsedCount || 0) + 1;
     vc.hintMove = computeCoachHint(vc);
     rerenderBoardOnly();
@@ -2190,20 +3460,47 @@ export function registerVirtualChessHandlers(ctx) {
     rerenderBoardOnly();
   };
 
-  window.confirmVirtualEndAction = function () {
+  window.confirmVirtualEndAction = async function () {
     const vc = getVc();
-    if (vc.confirmAction === 'resign') {
+    const act = vc.confirmAction;
+    vc.confirmAction = null;
+
+    if (vc.mode === 'online' && vc.onlineRoomCode) {
+      if (act === 'resign') {
+        vc.status = 'resigned';
+        vc.winner = vc.onlineSide === 'w' ? 'b' : 'w';
+        vc.clockActive = false;
+        playClubSound('win');
+        await broadcastLocalMoveToOnlineRoom();
+        evaluateGameEndPracticeXp();
+      } else if (act === 'draw') {
+        await pushOnlineDuelMove({
+          roomCode: vc.onlineRoomCode,
+          expectedSeq: vc.onlineSeq,
+          drawOfferBy: vc.onlineSide,
+        }).then((r) => {
+          if (r.ok && r.room) {
+            vc.onlineSeq = r.room.seq;
+            vc.onlineRoomData = r.room;
+          }
+        });
+        ctx.showChessToast('🤝 Draw offer sent to your opponent!', 'info');
+      }
+      rerenderBoardOnly();
+      return;
+    }
+
+    if (act === 'resign') {
       vc.status = 'resigned';
       vc.winner = vc.turn === 'w' ? 'b' : 'w';
       vc.clockActive = false;
       playClubSound('win');
-    } else if (vc.confirmAction === 'draw') {
+    } else if (act === 'draw') {
       vc.status = 'draw_agreed';
       vc.winner = 'draw';
       vc.clockActive = false;
       playClubSound('bounty');
     }
-    vc.confirmAction = null;
     const unlocked = evaluateGameEndPracticeXp();
     if (unlocked) ctx.renderChessHubView();
     else rerenderBoardOnly();
@@ -2234,7 +3531,7 @@ export function registerVirtualChessHandlers(ctx) {
       whiteHouse: p1.house,
       blackHouse: p2.house,
       result: resultStr,
-      opening: 'App Virtual Chess',
+      opening: detectOpeningName(vc.moveLog) || 'App Virtual Chess',
     });
 
     vc.loggedToLadder = true;
@@ -2242,6 +3539,9 @@ export function registerVirtualChessHandlers(ctx) {
     ctx.renderChessHubView();
     const hW = HOUSES[p1.house]?.name || p1.house;
     const hB = HOUSES[p2.house]?.name || p2.house;
-    ctx.showChessToast(`🏆 Logged ${p1.name} (${hW}) ${resultStr} ${p2.name} (${hB}) to Club Ladder!`, 'success');
+    ctx.showChessToast(
+      `🏆 Logged ${p1.name} (${hW}) ${resultStr} ${p2.name} (${hB}) to Club Ladder!`,
+      'success',
+    );
   };
 }
