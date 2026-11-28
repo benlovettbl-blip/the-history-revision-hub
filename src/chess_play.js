@@ -113,7 +113,48 @@ const PIECE_VALUES = { p: 1, n: 3, b: 3, r: 5, q: 9, k: 0 };
 const TAPPED_IN_STORAGE_KEY = 'chess_active_pupil_id';
 const PENDING_JOIN_STORAGE_KEY = 'chess_pending_join_v1';
 const LOCAL_XP_LEDGER_KEY = 'chess_pupil_xp_ledger_v1';
+const SAVED_DUEL_ROOM_KEY = 'chess_active_online_room_v1';
+const GUEST_DEVICE_ID_KEY = 'chess_guest_device_id_v1';
 const DAILY_XP_CAP = 150;
+
+function getOrCreateGuestDeviceId() {
+  if (typeof window === 'undefined') return 'guest_local';
+  try {
+    let id = localStorage.getItem(GUEST_DEVICE_ID_KEY);
+    if (!id) {
+      id = `guest_${Date.now()}_${Math.floor(Math.random() * 10000)}`;
+      localStorage.setItem(GUEST_DEVICE_ID_KEY, id);
+    }
+    return id;
+  } catch {
+    return `guest_${Date.now()}`;
+  }
+}
+
+function readSavedOnlineDuelCode() {
+  if (typeof window === 'undefined') return '';
+  try {
+    const raw = JSON.parse(localStorage.getItem(SAVED_DUEL_ROOM_KEY) || 'null');
+    if (raw && raw.roomCode && Date.now() - Number(raw.savedAt || 0) < 86400000) {
+      return String(raw.roomCode);
+    }
+  } catch {}
+  return '';
+}
+
+function writeSavedOnlineDuelCode(roomCode) {
+  if (typeof window === 'undefined') return;
+  try {
+    if (roomCode) {
+      localStorage.setItem(
+        SAVED_DUEL_ROOM_KEY,
+        JSON.stringify({ roomCode, savedAt: Date.now() }),
+      );
+    } else {
+      localStorage.removeItem(SAVED_DUEL_ROOM_KEY);
+    }
+  } catch {}
+}
 
 function getPendingJoinLocal() {
   if (typeof window === 'undefined') return null;
@@ -1974,6 +2015,15 @@ function renderVirtualChessInner(chessState) {
                   </button>
 
                   <div style="border-top: 1px dashed #cbd5e1; padding-top: 8px;">
+                    ${
+                      readSavedOnlineDuelCode()
+                        ? `
+                      <button id="btn-rejoin-saved-duel" type="button" onclick="window.joinLiveOnlineDuel('${readSavedOnlineDuelCode()}')" style="width: 100%; margin-bottom: 8px; background: #fef3c7; color: #92400e; border: 1.5px solid #f59e0b; border-radius: 8px; padding: 8px 10px; font-size: 0.78rem; font-weight: 900; cursor: pointer;">
+                        ⚡ Rejoin Unfinished Duel (${readSavedOnlineDuelCode()}) →
+                      </button>
+                    `
+                        : ''
+                    }
                     <label style="display: block; font-size: 0.74rem; font-weight: 800; color: #0f172a; margin-bottom: 4px;">2. Or Join a Classmate's Code:</label>
                     <div style="display: flex; gap: 6px;">
                       <input id="vc-join-code-input" type="text" placeholder="e.g. CASTLE-48" maxlength="12" style="flex: 1; padding: 7px 10px; border-radius: 7px; border: 1.5px solid #94a3b8; font-family: monospace; font-size: 16px; font-weight: 900; text-transform: uppercase; color: #0f172a;" />
@@ -2355,6 +2405,7 @@ export function registerVirtualChessHandlers(ctx) {
 
     // 1. LIVE 2-LAPTOP ONLINE DUEL REWARDS (+1 EXTRA HOUSE POINT!)
     if (vc.mode === 'online') {
+      writeSavedOnlineDuelCode('');
       if (plies < 6) return false;
       const myWon = vc.winner === vc.onlineSide;
       const isDraw = vc.winner === 'draw';
@@ -3092,8 +3143,8 @@ export function registerVirtualChessHandlers(ctx) {
     const hostSide = vc.onlineHostPrefSide === 'b' ? 'b' : 'w';
     const res = await createOnlineDuelRoom({
       roomCode: code,
-      hostPlayerId: pupil ? pupil.id : `guest_${Date.now()}`,
-      hostCallsign: pupil ? pupil.name : 'Guest Challenger',
+      hostPlayerId: pupil ? pupil.id : getOrCreateGuestDeviceId(),
+      hostCallsign: pupil ? pupil.name : 'White Challenger',
       hostHouse: pupil ? pupil.house : 'warrior',
       hostSide,
       timeControlMins: vc.timeControlMins || 5,
@@ -3119,6 +3170,7 @@ export function registerVirtualChessHandlers(ctx) {
     fresh.blackTimeSecs = res.room.blackTimeSecs;
     fresh.flipped = hostSide === 'b';
     st.virtualChess = fresh;
+    writeSavedOnlineDuelCode(res.room.roomCode);
 
     startOnlinePolling();
     rerenderBoardOnly();
@@ -3150,8 +3202,8 @@ export function registerVirtualChessHandlers(ctx) {
 
     const res = await joinOnlineDuelRoom({
       roomCode: rawCode,
-      guestPlayerId: pupil ? pupil.id : `guest_${Date.now()}`,
-      guestCallsign: pupil ? pupil.name : 'Guest Challenger',
+      guestPlayerId: pupil ? pupil.id : getOrCreateGuestDeviceId(),
+      guestCallsign: pupil ? pupil.name : 'Black Challenger',
       guestHouse: pupil ? pupil.house : 'invincible',
     });
 
@@ -3172,22 +3224,40 @@ export function registerVirtualChessHandlers(ctx) {
     fresh.onlineRoomData = res.room;
     fresh.board = cloneBoard(res.room.board);
     fresh.turn = res.room.turn;
+    fresh.castling = { ...(res.room.castling || { K: true, Q: true, k: true, q: true }) };
+    fresh.enPassant = res.room.enPassant || null;
+    fresh.halfMoveClock = res.room.halfMoveClock || 0;
+    fresh.fullMoveNumber = res.room.fullMoveNumber || 1;
+    fresh.lastMove = res.room.lastMove || null;
     fresh.moveLog = [...(res.room.moveLog || [])];
+    fresh.capturedByWhite = [...(res.room.capturedByWhite || [])];
+    fresh.capturedByBlack = [...(res.room.capturedByBlack || [])];
     fresh.status = res.room.status === 'waiting' ? 'playing' : res.room.status;
+    fresh.winner = res.room.winner || null;
     fresh.timeControlMins = res.room.timeControlMins;
     fresh.whiteTimeSecs = res.room.whiteTimeSecs;
     fresh.blackTimeSecs = res.room.blackTimeSecs;
+    fresh.clockActive =
+      res.room.timeControlMins > 0 && fresh.status === 'playing' && fresh.moveLog.length > 0;
     fresh.flipped = side === 'b';
     st.virtualChess = fresh;
+    writeSavedOnlineDuelCode(fresh.status === 'playing' ? res.room.roomCode : '');
 
     playClubSound('bounty');
     startOnlinePolling();
     rerenderBoardOnly();
-    ctx.showChessToast(`⚔️ Joined Room ${res.room.roomCode} as ${side === 'w' ? 'White' : 'Black'}!`, 'success');
+    const isResume = (res.room.moveLog || []).length > 0;
+    ctx.showChessToast(
+      isResume
+        ? `⚡ Resumed Room ${res.room.roomCode} at Move ${Math.ceil(res.room.moveLog.length / 2)} (${side === 'w' ? 'White' : 'Black'})!`
+        : `⚔️ Joined Room ${res.room.roomCode} as ${side === 'w' ? 'White' : 'Black'}!`,
+      'success',
+    );
   };
 
   window.leaveLiveOnlineDuel = function () {
     stopOnlinePolling();
+    writeSavedOnlineDuelCode('');
     const vc = getVc();
     vc.onlineRoomCode = '';
     vc.onlineRoomData = null;

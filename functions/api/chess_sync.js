@@ -408,14 +408,25 @@ export async function handleChessSyncRequest(request, env) {
         );
       }
 
-      // Allow seamless reconnect if same player refreshes
-      if (guestPlayerId && room.white?.playerId === guestPlayerId) {
+      // Allow seamless reconnect after laptop restart OR switching to a spare classroom laptop with same Callsign!
+      const isNamedCallsign =
+        guestCallsign &&
+        !['White Challenger', 'Black Challenger', 'Guest Challenger'].includes(guestCallsign);
+      if (
+        (guestPlayerId && room.white?.playerId === guestPlayerId) ||
+        (isNamedCallsign &&
+          String(room.white?.callsign || '').toLowerCase() === guestCallsign.toLowerCase())
+      ) {
         return new Response(JSON.stringify({ ok: true, room, assignedSide: 'w' }), {
           status: 200,
           headers: secHeaders,
         });
       }
-      if (guestPlayerId && room.black?.playerId === guestPlayerId) {
+      if (
+        (guestPlayerId && room.black?.playerId === guestPlayerId) ||
+        (isNamedCallsign &&
+          String(room.black?.callsign || '').toLowerCase() === guestCallsign.toLowerCase())
+      ) {
         return new Response(JSON.stringify({ ok: true, room, assignedSide: 'b' }), {
           status: 200,
           headers: secHeaders,
