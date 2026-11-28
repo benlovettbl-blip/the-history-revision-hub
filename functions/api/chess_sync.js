@@ -238,6 +238,53 @@ export async function handleChessSyncRequest(request, env) {
   const joinBlobKey = scopedKey('join_inbox', roomParam);
   const feedBlobKey = scopedKey('club_feed', roomParam);
   const botBlobKey = scopedKey('bot_stats', roomParam);
+  const activeDuelsKey = scopedKey('active_duels', roomParam);
+
+  async function pruneAndReadActiveDuels() {
+    const box = await readStoreOrMemory(kv, activeDuelsKey, { rooms: [] });
+    const now = Date.now();
+    const list = (Array.isArray(box?.rooms) ? box.rooms : []).filter((r) => {
+      if (!r || !r.roomCode) return false;
+      const age = now - Number(r.updatedAt || 0);
+      if (r.status === 'playing') return age < 25 * 60 * 1000;
+      if (r.status === 'waiting') return age < 12 * 60 * 1000;
+      return age < 3 * 60 * 1000; // Finished games linger 3 mins for spectator climax
+    });
+    return list;
+  }
+
+  async function upsertActiveDuelSummary(roomObj) {
+    const list = await pruneAndReadActiveDuels();
+    const summary = {
+      roomCode: roomObj.roomCode,
+      seq: roomObj.seq || 1,
+      status: roomObj.status,
+      winner: roomObj.winner || null,
+      white: roomObj.white || null,
+      black: roomObj.black || null,
+      board: roomObj.board,
+      turn: roomObj.turn,
+      lastMove: roomObj.lastMove || null,
+      moveCount: Array.isArray(roomObj.moveLog) ? roomObj.moveLog.length : 0,
+      lastSan:
+        Array.isArray(roomObj.moveLog) && roomObj.moveLog.length > 0
+          ? roomObj.moveLog[roomObj.moveLog.length - 1]?.san || ''
+          : '',
+      timeControlMins: roomObj.timeControlMins || 0,
+      whiteTimeSecs: roomObj.whiteTimeSecs || 0,
+      blackTimeSecs: roomObj.blackTimeSecs || 0,
+      updatedAt: Date.now(),
+    };
+    const filtered = list.filter((x) => x.roomCode !== summary.roomCode);
+    filtered.unshift(summary);
+    filtered.sort((a, b) => {
+      const aLive = a.status === 'playing' ? 1 : 0;
+      const bLive = b.status === 'playing' ? 1 : 0;
+      if (bLive !== aLive) return bLive - aLive;
+      return (b.updatedAt || 0) - (a.updatedAt || 0);
+    });
+    await writeStoreAndMemory(kv, activeDuelsKey, { rooms: filtered.slice(0, 12) }, 3600);
+  }
 
   if (request.method === 'GET') {
     // Fast-path polling for a Live 2-Device Online Duel Room
@@ -263,12 +310,13 @@ export async function handleChessSyncRequest(request, env) {
       });
     }
 
-    const [data, xpInbox, joinInbox, feedBox, botBox] = await Promise.all([
+    const [data, xpInbox, joinInbox, feedBox, botBox, activeDuels] = await Promise.all([
       readStoreOrMemory(kv, blobKey, null),
       readStoreOrMemory(kv, xpBlobKey, { claims: [], dailyTotals: {} }),
       readStoreOrMemory(kv, joinBlobKey, { requests: [] }),
       readStoreOrMemory(kv, feedBlobKey, { items: [] }),
       readStoreOrMemory(kv, botBlobKey, { bots: {} }),
+      pruneAndReadActiveDuels(),
     ]);
 
     if (data && Array.isArray(data.players)) {
@@ -289,19 +337,29 @@ export async function handleChessSyncRequest(request, env) {
           joinRequests: pendingJoinRequests,
           clubFeed,
           botStats,
+          activeDuels,
         }),
         { status: 200, headers: secHeaders },
       );
     }
 
     const merged = data
-      ? { ...data, pendingXpClaims, pendingJoinRequests, clubFeed, botStats, kvReady: Boolean(kv) }
+      ? {
+          ...data,
+          pendingXpClaims,
+          pendingJoinRequests,
+          clubFeed,
+          botStats,
+          activeDuels,
+          kvReady: Boolean(kv),
+        }
       : {
           syncedAt: 0,
           pendingXpClaims,
           pendingJoinRequests,
           clubFeed,
           botStats,
+          activeDuels,
           kvReady: Boolean(kv),
         };
 
@@ -378,6 +436,7 @@ export async function handleChessSyncRequest(request, env) {
 
       const duelKey = scopedKey(`duel_room_${duelCode}`, roomParam);
       await writeStoreAndMemory(kv, duelKey, room, 86400);
+      await upsertActiveDuelSummary(room);
       return new Response(JSON.stringify({ ok: true, room }), {
         status: 200,
         headers: secHeaders,
@@ -475,6 +534,7 @@ export async function handleChessSyncRequest(request, env) {
       room.updatedAt = Date.now();
 
       await writeStoreAndMemory(kv, duelKey, room, 86400);
+      await upsertActiveDuelSummary(room);
       return new Response(JSON.stringify({ ok: true, room, assignedSide }), {
         status: 200,
         headers: secHeaders,
@@ -556,6 +616,7 @@ export async function handleChessSyncRequest(request, env) {
       room.seq = (room.seq || 1) + 1;
       room.updatedAt = Date.now();
       await writeStoreAndMemory(kv, duelKey, room, 86400);
+      await upsertActiveDuelSummary(room);
       return new Response(JSON.stringify({ ok: true, room }), {
         status: 200,
         headers: secHeaders,

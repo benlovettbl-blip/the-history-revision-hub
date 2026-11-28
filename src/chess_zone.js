@@ -46,6 +46,7 @@ import {
   renderClubHighlightsFeedTab,
   renderBotRankingsAndConquestsTab,
   renderPlayerProfileModalHtml,
+  renderMiniLiveBoardCard,
 } from './chess_community.js';
 
 export function isChessViewActive() {
@@ -1299,6 +1300,17 @@ function initChessState(forceClean = false) {
       if (remoteData && remoteData.botStats && typeof remoteData.botStats === 'object') {
         chessState.botStats = remoteData.botStats;
       }
+      let liveDuelsChanged = false;
+      if (remoteData && Array.isArray(remoteData.activeDuels)) {
+        const prevSig = JSON.stringify(
+          (chessState.activeDuels || []).map((d) => `${d.roomCode}:${d.seq}:${d.status}`),
+        );
+        const nextSig = JSON.stringify(
+          remoteData.activeDuels.map((d) => `${d.roomCode}:${d.seq}:${d.status}`),
+        );
+        chessState.activeDuels = remoteData.activeDuels;
+        if (prevSig !== nextSig) liveDuelsChanged = true;
+      }
 
       // Apply remote data updates ONLY when cloud actually has newer standings/matches
       const hasRemoteStandings =
@@ -1347,6 +1359,31 @@ function initChessState(forceClean = false) {
         }
       } else if (xpInboxChanged && chessState.userRole === 'teacher' && isChessViewActive()) {
         renderChessHubView();
+      } else if (liveDuelsChanged && isChessViewActive()) {
+        const inOnlineLobby =
+          (chessState.activeTab || 'play') === 'play' &&
+          chessState.virtualChess?.mode === 'online' &&
+          !chessState.virtualChess?.onlineRoomCode &&
+          document.activeElement?.id !== 'vc-join-code-input';
+        if (
+          chessState.activeTab === 'feed' ||
+          inOnlineLobby ||
+          (chessState.whiteboardMode && chessState.whiteboardTvMode)
+        ) {
+          renderChessHubView();
+        } else {
+          const feedBtn = document.getElementById('tab-btn-feed');
+          const liveCnt = (chessState.activeDuels || []).filter(
+            (d) => d && d.status === 'playing',
+          ).length;
+          if (feedBtn) {
+            feedBtn.innerHTML = `<span>📺</span> <span>Live &amp; Feed</span>${
+              liveCnt > 0
+                ? `<span style="background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; padding: 1px 6px; border-radius: 999px; font-size: 0.66rem; font-weight: 900;">🔴 ${liveCnt} Live</span>`
+                : ''
+            }`;
+          }
+        }
       }
     });
   }
@@ -1583,6 +1620,9 @@ export function renderChessHubView() {
     currentTab === 'drills';
   const isPlayGroup = !isFeedGroup && !isLadderGroup && !isModesGroup;
   const activePairingsCount = (chessState.activePairings || []).filter((p) => !p.isBye).length;
+  const livePlayingDuelsCount = (chessState.activeDuels || []).filter(
+    (d) => d && d.status === 'playing',
+  ).length;
 
   const isFirstChessMount = !document.getElementById('chess-hub-root');
 
@@ -1703,8 +1743,14 @@ export function renderChessHubView() {
         </button>
 
         <button id="tab-btn-feed" type="button" onclick="window.switchChessTab('feed')" style="padding: 9px 10px; border-radius: 8px; border: ${isFeedGroup ? '1px solid #cbd5e1' : '1px solid transparent'}; background: ${isFeedGroup ? '#ffffff' : 'transparent'}; color: ${isFeedGroup ? '#0f172a' : '#475569'}; font-weight: 800; font-size: 0.84rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-shadow: ${isFeedGroup ? '0 2px 6px rgba(15,23,42,0.06)' : 'none'};">
-          <span>📣</span> <span>Club Feed</span>
-          ${(chessState.clubFeed || []).length > 0 ? `<span style="background: #e0f2fe; color: #0369a1; padding: 1px 6px; border-radius: 999px; font-size: 0.66rem; font-weight: 800;">Live</span>` : ''}
+          <span>📺</span> <span>Live &amp; Feed</span>
+          ${
+            livePlayingDuelsCount > 0
+              ? `<span style="background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; padding: 1px 6px; border-radius: 999px; font-size: 0.66rem; font-weight: 900;">🔴 ${livePlayingDuelsCount} Live</span>`
+              : (chessState.clubFeed || []).length > 0
+                ? `<span style="background: #e0f2fe; color: #0369a1; padding: 1px 6px; border-radius: 999px; font-size: 0.66rem; font-weight: 800;">New</span>`
+                : ''
+          }
         </button>
 
         <button id="tab-btn-ladder" type="button" onclick="window.switchChessTab('ladder')" style="padding: 9px 10px; border-radius: 8px; border: ${isLadderGroup ? '1px solid #cbd5e1' : '1px solid transparent'}; background: ${isLadderGroup ? '#ffffff' : 'transparent'}; color: ${isLadderGroup ? '#0f172a' : '#475569'}; font-weight: 800; font-size: 0.84rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-shadow: ${isLadderGroup ? '0 2px 6px rgba(15,23,42,0.06)' : 'none'};">
@@ -1757,17 +1803,14 @@ function renderActiveTabContent(filteredPlayers) {
     const subNavHtml = `
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 7px 10px;">
         <div style="display: inline-flex; gap: 4px; background: #f1f5f9; padding: 3px; border-radius: 8px; flex-wrap: wrap;">
-          <button type="button" onclick="window.switchChessTab('ladder')" style="background: ${tab === 'ladder' ? '#ffffff' : 'transparent'}; color: ${tab === 'ladder' ? '#0f172a' : '#475569'}; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: ${tab === 'ladder' ? '0 1px 2px rgba(0,0,0,0.08)' : 'none'};">
-            🏆 Member Standings (${chessState.players.length})
+          <button type="button" onclick="window.switchChessTab('ladder')" style="background: ${tab === 'ladder' || tab === 'table' ? '#ffffff' : 'transparent'}; color: ${tab === 'ladder' || tab === 'table' ? '#0f172a' : '#475569'}; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: ${tab === 'ladder' || tab === 'table' ? '0 1px 2px rgba(0,0,0,0.08)' : 'none'};">
+            🏆 Club Ladder (${chessState.players.length})
           </button>
           <button type="button" onclick="window.switchChessTab('bots')" style="background: ${tab === 'bots' ? '#ffffff' : 'transparent'}; color: ${tab === 'bots' ? '#0f172a' : '#475569'}; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: ${tab === 'bots' ? '0 1px 2px rgba(0,0,0,0.08)' : 'none'};">
-            🤖 Bot Rankings &amp; Matrix (6)
+            🤖 Bot Rankings (6)
           </button>
           <button type="button" onclick="window.switchChessTab('pairings')" style="background: ${tab === 'pairings' ? '#ffffff' : 'transparent'}; color: ${tab === 'pairings' ? '#0f172a' : '#475569'}; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: ${tab === 'pairings' ? '0 1px 2px rgba(0,0,0,0.08)' : 'none'};">
-            ⚔️ Board Pairings ${activePairingsCount > 0 ? `(${activePairingsCount})` : ''}
-          </button>
-          <button type="button" onclick="window.switchChessTab('table')" style="background: ${tab === 'table' ? '#ffffff' : 'transparent'}; color: ${tab === 'table' ? '#0f172a' : '#475569'}; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: ${tab === 'table' ? '0 1px 2px rgba(0,0,0,0.08)' : 'none'};">
-            📊 Cross-Table
+            ⚔️ Pairings ${activePairingsCount > 0 ? `(${activePairingsCount})` : ''}
           </button>
         </div>
 
@@ -1775,6 +1818,9 @@ function renderActiveTabContent(filteredPlayers) {
           ${
             tab === 'ladder' || tab === 'table'
               ? `
+            <button type="button" onclick="window.switchChessTab('${tab === 'table' ? 'ladder' : 'table'}')" style="background: ${tab === 'table' ? '#0f172a' : '#f8fafc'}; color: ${tab === 'table' ? '#ffffff' : '#334155'}; border: 1px solid #cbd5e1; border-radius: 7px; padding: 5px 9px; font-size: 0.74rem; font-weight: 800; cursor: pointer;" title="Toggle Head-to-Head Cross-Table Matrix">
+              ${tab === 'table' ? '📋 Standings List' : '📊 Cross-Table'}
+            </button>
             <select onchange="window.setChessHouseFilter(this.value)" style="background: #f8fafc; border: 1px solid #cbd5e1; color: #334155; border-radius: 7px; padding: 5px 9px; font-size: 16px; font-weight: 700; cursor: pointer;">
               <option value="all" ${chessState.filterHouse === 'all' ? 'selected' : ''}>All Houses (${chessState.players.length})</option>
               ${Object.values(HOUSES)
@@ -9155,6 +9201,18 @@ window.toggleWhiteboardFitMode = function () {
   );
 };
 
+window.toggleWhiteboardTvMode = function (forceVal) {
+  chessState.whiteboardTvMode =
+    typeof forceVal === 'boolean' ? forceVal : !chessState.whiteboardTvMode;
+  renderChessHubView();
+  showChessToast(
+    chessState.whiteboardTvMode
+      ? '📺 Live Laptop TV Active — Streaming live pupil duels (Fair-Play: Hints Locked)!'
+      : '⚔️ Switched back to Classroom Over-the-Board Pairings Grid',
+    'info',
+  );
+};
+
 window.toggleAutoRePair = function () {
   chessState.autoRePairEnabled = !chessState.autoRePairEnabled;
   saveChessState();
@@ -9174,6 +9232,10 @@ window.toggleAutoRePair = function () {
 export function renderWhiteboardModeView(sortedHouses) {
   const activeMatches = getActiveMatches();
   const idlePupils = getIdlePupils();
+  const liveDuels = (chessState.activeDuels || []).filter(
+    (d) => d && d.roomCode && Array.isArray(d.board),
+  );
+  const isTvMode = Boolean(chessState.whiteboardTvMode);
   const mins = Math.floor((chessState.sessionTimeRemaining || 0) / 60);
   const secs = (chessState.sessionTimeRemaining || 0) % 60;
   const formattedTime = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
@@ -9275,8 +9337,12 @@ export function renderWhiteboardModeView(sortedHouses) {
           </div>
         </div>
 
-        <!-- Right: Adjudication & Exit Button -->
+        <!-- Right: Live Laptop TV, Adjudication & Exit Button -->
         <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+          <button id="btn-whiteboard-live-tv" onclick="window.toggleWhiteboardTvMode()" style="background: ${isTvMode ? 'linear-gradient(135deg, #dc2626 0%, #991b1b 100%)' : 'linear-gradient(135deg, #0284c7 0%, #0369a1 100%)'}; color: #ffffff; border: 1.5px solid ${isTvMode ? '#f87171' : '#38bdf8'}; font-weight: 800; font-size: 0.8rem; padding: 8px 14px; border-radius: 7px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);" title="Project live 2-laptop online chess duels onto the classroom big screen">
+            <span>📺</span> ${isTvMode ? 'Back to Pairings' : `Live Laptop TV (${liveDuels.length})`}
+          </button>
+
           <button onclick="window.openAdjudicationModal()" style="background: linear-gradient(135deg, #78350f 0%, #451a03 100%); color: #fde68a; border: 1.5px solid #d97706; font-weight: 800; font-size: 0.8rem; padding: 8px 14px; border-radius: 7px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(217, 119, 6, 0.35); transition: transform 0.15s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" title="Show Piece Values & Material Count Instructions for 5-Minute Rapid Adjudication">
             <span style="font-size: 1rem;">⚖️</span> Piece Values & Rules
           </button>
@@ -9301,9 +9367,13 @@ export function renderWhiteboardModeView(sortedHouses) {
       <!-- Placard Subheader: Piece Values Quick Reference & Fit Toggle -->
       <div style="flex-shrink: 0; display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; padding-bottom: 4px; border-bottom: 1px solid rgba(255,255,255,0.08); font-size: 0.76rem;">
         <div style="display: flex; align-items: center; gap: 10px;">
-          <span style="font-size: 1rem; color: #38bdf8;">⚔️</span>
+          <span style="font-size: 1rem; color: ${isTvMode ? '#f87171' : '#38bdf8'};">${isTvMode ? '📺' : '⚔️'}</span>
           <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; color: #ffffff; font-weight: 800;">
-            Active Board Matchups (${activeMatches.length} Boards In Play)
+            ${
+              isTvMode
+                ? `Classroom Live Broadcast Arena (${liveDuels.length} Laptop ${liveDuels.length === 1 ? 'Duel' : 'Duels'} Live · 🔒 Fair-Play No Hints)`
+                : `Active Board Matchups (${activeMatches.length} Boards In Play)`
+            }
           </span>
         </div>
 
@@ -9321,9 +9391,30 @@ export function renderWhiteboardModeView(sortedHouses) {
       </div>
 
       <!-- MAIN BOARDS GRID: Auto-Sized Zero-Scroll Container -->
-      <div style="flex: 1; min-height: 0; display: flex; flex-direction: column; overflow: ${isFitMode ? 'hidden' : 'auto'};">
+      <div style="flex: 1; min-height: 0; display: flex; flex-direction: column; overflow: ${isFitMode && !isTvMode ? 'hidden' : 'auto'};">
         ${
-          activeMatches.length > 0
+          isTvMode
+            ? liveDuels.length > 0
+              ? `
+          <div id="whiteboard-tv-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 330px)); gap: 14px; justify-content: center; padding: 6px 0;">
+            ${liveDuels.map((d) => renderMiniLiveBoardCard(d, true)).join('')}
+          </div>
+        `
+              : `
+          <div style="background: rgba(15, 23, 42, 0.75); border: 2px dashed rgba(56, 189, 248, 0.35); border-radius: 16px; padding: 40px 24px; text-align: center; margin: auto; max-width: 620px;">
+            <div style="font-size: 2.8rem; margin-bottom: 10px;">📺</div>
+            <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.65rem; color: #ffffff; font-weight: 800; margin: 0 0 8px 0;">
+              Ready for Live Windows Laptop Duels
+            </h2>
+            <p style="font-size: 0.94rem; color: #cbd5e1; line-height: 1.45; margin: 0 auto 16px auto; max-width: 490px;">
+              As soon as any two pupils open <strong>♟️ Play &amp; Live Duel → 🌐 Live Duel</strong> on their school laptops, their live chessboard streams onto this classroom screen automatically with Coach Hints &amp; Eval Bars locked!
+            </p>
+            <button onclick="window.toggleWhiteboardTvMode(false)" style="background: #1e293b; color: #f8fafc; border: 1px solid #475569; font-weight: 800; font-size: 0.84rem; padding: 9px 16px; border-radius: 7px; cursor: pointer;">
+              ⚔️ Switch to Over-the-Board Pairings
+            </button>
+          </div>
+        `
+            : activeMatches.length > 0
             ? `
           <div style="flex: 1; min-height: 0; display: grid; grid-template-columns: ${gridCols}; grid-template-rows: ${gridRows}; gap: 8px;">
             ${activeMatches

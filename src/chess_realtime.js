@@ -23,6 +23,7 @@ let lastKnownClaimsSig = '';
 let lastKnownJoinSig = '';
 let lastKnownFeedSig = '';
 let lastKnownBotSig = '';
+let lastKnownDuelsSig = '';
 let pollingIntervalId = null;
 let isPushing = false;
 let pushDebounceTimer = null;
@@ -276,6 +277,7 @@ export function startPupilRealtimeSync(onUpdateReceived) {
           !Array.isArray(remoteData.pendingXpClaims) &&
           !Array.isArray(remoteData.pendingJoinRequests) &&
           !Array.isArray(remoteData.clubFeed) &&
+          !Array.isArray(remoteData.activeDuels) &&
           !remoteData.botStats)
       ) {
         currentSyncStatus = 'idle';
@@ -302,11 +304,17 @@ export function startPupilRealtimeSync(onUpdateReceived) {
               .map((b) => `${b.botId}:${b.games || 0}:${b.pupilWins || 0}`)
               .join('|')
           : '';
+      const duelsSig = Array.isArray(remoteData.activeDuels)
+        ? remoteData.activeDuels
+            .map((d) => `${d.roomCode}:${d.seq || 0}:${d.status}`)
+            .join('|')
+        : '';
       const hasChangedInbox =
         claimsSig !== lastKnownClaimsSig ||
         joinSig !== lastKnownJoinSig ||
         feedSig !== lastKnownFeedSig ||
-        botSig !== lastKnownBotSig;
+        botSig !== lastKnownBotSig ||
+        duelsSig !== lastKnownDuelsSig;
 
       if (hasNewSync || hasChangedInbox) {
         if (hasNewSync) {
@@ -316,6 +324,7 @@ export function startPupilRealtimeSync(onUpdateReceived) {
         lastKnownJoinSig = joinSig;
         lastKnownFeedSig = feedSig;
         lastKnownBotSig = botSig;
+        lastKnownDuelsSig = duelsSig;
         if (typeof onUpdateReceived === 'function') {
           onUpdateReceived(remoteData);
         }

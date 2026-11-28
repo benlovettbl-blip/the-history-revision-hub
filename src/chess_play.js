@@ -35,7 +35,7 @@ import {
 // ============================================================================
 // 1. CRISP STAUNTON INLINE SVG PIECE SET (Zero external requests or emoji bugs)
 // ============================================================================
-function renderStauntonSvg(pieceChar) {
+export function renderStauntonSvg(pieceChar) {
   if (!pieceChar || pieceChar === '.') return '';
   const isWhite = pieceChar >= 'A' && pieceChar <= 'Z';
   const type = pieceChar.toLowerCase();
@@ -752,6 +752,7 @@ export function applyVirtualChessMove(game, mv, silent = false) {
   game.turn = nextTurn;
   game.enPassant = nextEp;
   game.lastMove = { from: [mv.fromR, mv.fromC], to: [mv.toR, mv.toC] };
+  game.slideAnimAt = silent ? 0 : Date.now();
   game.selected = null;
   game.hintMove = null;
   game.pendingPromotion = null;
@@ -1295,6 +1296,30 @@ function renderCapturedRow(capturedList, advantagePts, isWhiteRow) {
 }
 
 function getStatusBannerInfo(vc, whiteLabel, blackLabel, botProfile) {
+  if (vc.mode === 'spectate') {
+    if (vc.status === 'playing') {
+      const mover = vc.turn === 'w' ? `♔ ${whiteLabel}` : `♚ ${blackLabel}`;
+      return {
+        bg: '#0f172a',
+        border: '#38bdf8',
+        color: '#f8fafc',
+        text: `📺 LIVE SPECTATOR TV · ${mover} to move (Fair-Play: Hints Locked)`,
+      };
+    }
+    const winTxt =
+      vc.winner === 'w'
+        ? `${whiteLabel} wins!`
+        : vc.winner === 'b'
+          ? `${blackLabel} wins!`
+          : 'Game Drawn!';
+    return {
+      bg: '#ecfdf5',
+      border: '#6ee7b7',
+      color: '#065f46',
+      text: `📺 Broadcast Complete (${vc.onlineRoomCode}) — ${winTxt}`,
+    };
+  }
+
   if (vc.mode === 'daily') {
     const puz = DAILY_TACTICAL_PUZZLES[vc.dailyPuzzleIdx % DAILY_TACTICAL_PUZZLES.length];
     if (vc.status === 'checkmate') {
@@ -1464,9 +1489,9 @@ function renderVirtualChessInner(chessState) {
       ? vc.humanSide === 'w'
         ? `${humanDisplayLabel} (White)`
         : `${botProfile.icon} ${botProfile.name} (${botProfile.elo})`
-      : vc.mode === 'online'
+      : vc.mode === 'online' || vc.mode === 'spectate'
         ? vc.onlineRoomData?.white?.callsign
-          ? `${vc.onlineRoomData.white.callsign}${vc.onlineSide === 'w' ? ' (You)' : ''}`
+          ? `${vc.onlineRoomData.white.callsign}${vc.mode === 'online' && vc.onlineSide === 'w' ? ' (You)' : ''}`
           : 'Waiting for White...'
         : vc.mode === 'daily'
           ? `${humanDisplayLabel} (Tactician)`
@@ -1479,9 +1504,9 @@ function renderVirtualChessInner(chessState) {
       ? vc.humanSide === 'b'
         ? `${humanDisplayLabel} (Black)`
         : `${botProfile.icon} ${botProfile.name} (${botProfile.elo})`
-      : vc.mode === 'online'
+      : vc.mode === 'online' || vc.mode === 'spectate'
         ? vc.onlineRoomData?.black?.callsign
-          ? `${vc.onlineRoomData.black.callsign}${vc.onlineSide === 'b' ? ' (You)' : ''}`
+          ? `${vc.onlineRoomData.black.callsign}${vc.mode === 'online' && vc.onlineSide === 'b' ? ' (You)' : ''}`
           : 'Waiting for Classmate...'
         : vc.mode === 'daily'
           ? '🧩 Puzzle Defence'
@@ -1532,11 +1557,22 @@ function renderVirtualChessInner(chessState) {
       : null;
   const checkKingSq = checkSide ? findKingSquare(displayBoard, checkSide) : null;
 
-  const lightSq = vc.boardTheme === 'slate' ? '#e2e8f0' : '#f0d9b5';
-  const darkSq = vc.boardTheme === 'slate' ? '#64748b' : '#b58863';
-  const lastLight = vc.boardTheme === 'slate' ? '#bae6fd' : '#f7ec6e';
-  const lastDark = vc.boardTheme === 'slate' ? '#38bdf8' : '#dac34b';
+  const BOARD_PALETTES = {
+    green: { light: '#ebecd0', dark: '#739552', lastLight: '#f5f682', lastDark: '#b9ca43', label: 'Green' },
+    wood: { light: '#f0d9b5', dark: '#b58863', lastLight: '#f7ec6e', lastDark: '#dac34b', label: 'Wood' },
+    slate: { light: '#e2e8f0', dark: '#64748b', lastLight: '#bae6fd', lastDark: '#38bdf8', label: 'Slate' },
+    walnut: { light: '#ede0d4', dark: '#7f5539', lastLight: '#fde68a', lastDark: '#d97706', label: 'Walnut' },
+  };
+  const pal = BOARD_PALETTES[vc.boardTheme] || BOARD_PALETTES.wood;
+  const lightSq = pal.light;
+  const darkSq = pal.dark;
+  const lastLight = pal.lastLight;
+  const lastDark = pal.lastDark;
   const hiSet = new Set(vc.highlightedSquares || []);
+  const shouldSlide =
+    !isReplaying &&
+    displayLastMove &&
+    Date.now() - Number(vc.slideAnimAt || 0) < 280;
 
   // Render 64 squares respecting board orientation
   let squaresHtml = '';
@@ -1567,6 +1603,20 @@ function renderVirtualChessInner(chessState) {
 
       const canDrag = isMyInteractiveTurn && piece !== '.' && sideOf(piece) === vc.turn;
 
+      let slideStyle = '';
+      if (
+        shouldSlide &&
+        piece !== '.' &&
+        displayLastMove.to[0] === r &&
+        displayLastMove.to[1] === c
+      ) {
+        const fromViewR = vc.flipped ? 7 - displayLastMove.from[0] : displayLastMove.from[0];
+        const fromViewC = vc.flipped ? 7 - displayLastMove.from[1] : displayLastMove.from[1];
+        const dxPct = (fromViewC - viewC) * 100;
+        const dyPct = (fromViewR - viewR) * 100;
+        slideStyle = `--vc-dx: ${dxPct}%; --vc-dy: ${dyPct}%; animation: vcPieceSlide 0.165s cubic-bezier(0.22, 1, 0.36, 1); z-index: 8;`;
+      }
+
       const rankLabel =
         viewC === 0
           ? `<span style="position: absolute; top: 2px; left: 3px; font-size: 0.64rem; font-weight: 800; font-family: monospace; color: ${isLight ? darkSq : lightSq}; pointer-events: none; line-height: 1;">${8 - r}</span>`
@@ -1582,6 +1632,11 @@ function renderVirtualChessInner(chessState) {
           : `<span style="position: absolute; inset: 3px; border: 3.5px solid rgba(22, 163, 74, 0.78); border-radius: 50%; pointer-events: none;"></span>`
         : '';
 
+      const pieceInner =
+        piece !== '.'
+          ? `<div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; pointer-events: none; ${slideStyle}">${renderStauntonSvg(piece)}</div>`
+          : '';
+
       squaresHtml += `
         <div onclick="window.handleVirtualSquareTap(${r}, ${c})"
              onmousedown="window.handleVirtualRightDown(event, ${r}, ${c})"
@@ -1595,7 +1650,7 @@ function renderVirtualChessInner(chessState) {
              style="background: ${bg}; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; position: relative; user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent; cursor: ${canDrag || isTarget ? 'pointer' : 'default'}; touch-action: manipulation; ${isHintTo ? 'box-shadow: inset 0 0 0 3px #d97706;' : ''}">
           ${rankLabel}
           ${fileLabel}
-          ${renderStauntonSvg(piece)}
+          ${pieceInner}
           ${targetOverlay}
         </div>
       `;
@@ -1761,11 +1816,35 @@ function renderVirtualChessInner(chessState) {
   const activePuzzle = DAILY_TACTICAL_PUZZLES[vc.dailyPuzzleIdx % DAILY_TACTICAL_PUZZLES.length];
   const todayDailyObj = getTodayDailyPuzzle();
 
+  // Compute Fair-Play Evaluation Bar (STRICTLY HIDDEN during live online duels & live spectating!)
+  const showEvalBar =
+    vc.mode !== 'daily' &&
+    !((vc.mode === 'online' || vc.mode === 'spectate') && vc.status === 'playing');
+  let whiteEvalPct = 50;
+  if (showEvalBar) {
+    if (vc.status === 'checkmate') {
+      whiteEvalPct = vc.winner === 'w' ? 100 : 0;
+    } else if (vc.winner === 'draw') {
+      whiteEvalPct = 50;
+    } else {
+      const cp = evaluateBoardForWhite(displayBoard);
+      whiteEvalPct = Math.max(6, Math.min(94, Math.round(50 + Math.tanh(cp / 450) * 45)));
+    }
+  }
+
+  const liveActiveDuels = (chessState.activeDuels || []).filter(
+    (d) => d && (d.status === 'playing' || d.status === 'waiting') && d.roomCode !== vc.onlineRoomCode,
+  );
+
   const innerHtml = `
     <style>
+      @keyframes vcPieceSlide {
+        from { transform: translate(var(--vc-dx, 0%), var(--vc-dy, 0%)); }
+        to { transform: translate(0%, 0%); }
+      }
       .vc-layout-grid {
         display: grid;
-        grid-template-columns: clamp(290px, calc(100vh - 455px), 425px) minmax(280px, 380px);
+        grid-template-columns: clamp(300px, calc(100vh - 450px), 440px) minmax(285px, 385px);
         gap: 18px;
         justify-content: center;
         align-items: start;
@@ -1853,8 +1932,19 @@ function renderVirtualChessInner(chessState) {
 
           ${renderPlayerStrip(topSide)}
 
-          <!-- 8x8 Board Frame (Right-click & drag on Windows laptops draws tactical arrows!) -->
-          <div oncontextmenu="event.preventDefault()" style="position: relative; width: 100%; aspect-ratio: 1 / 1; border: 4px solid #1e293b; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 26px rgba(15, 23, 42, 0.16); display: grid; grid-template-columns: repeat(8, 1fr); grid-template-rows: repeat(8, 1fr);">
+          <!-- 8x8 Board Frame + Optional Fair-Play Eval Bar -->
+          <div style="display: flex; align-items: stretch; gap: 6px; width: 100%;">
+            ${
+              showEvalBar
+                ? `
+              <div title="Position Evaluation Bar (Hidden in Live Duels for Fair Play)" style="width: 10px; border-radius: 6px; overflow: hidden; border: 1.5px solid #1e293b; background: #1e293b; display: flex; flex-direction: column; flex-shrink: 0;">
+                <div style="height: ${vc.flipped ? whiteEvalPct : 100 - whiteEvalPct}%; background: ${vc.flipped ? '#f8fafc' : '#1e293b'}; transition: height 0.25s ease;"></div>
+                <div style="flex: 1; background: ${vc.flipped ? '#1e293b' : '#f8fafc'};"></div>
+              </div>
+            `
+                : ''
+            }
+            <div oncontextmenu="event.preventDefault()" style="position: relative; flex: 1; aspect-ratio: 1 / 1; border: 4px solid #1e293b; border-radius: 10px; overflow: hidden; box-shadow: 0 12px 28px rgba(15, 23, 42, 0.18); display: grid; grid-template-columns: repeat(8, 1fr); grid-template-rows: repeat(8, 1fr);">
             ${squaresHtml}
             ${arrowsSvgHtml}
 
@@ -1892,6 +1982,7 @@ function renderVirtualChessInner(chessState) {
             `
                 : ''
             }
+            </div>
           </div>
 
           ${renderPlayerStrip(bottomSide)}
@@ -2033,6 +2124,30 @@ function renderVirtualChessInner(chessState) {
                     </div>
                   </div>
                   ${vc.onlineError ? `<div style="font-size: 0.73rem; font-weight: 800; color: #dc2626;">⚠️ ${vc.onlineError}</div>` : ''}
+                  ${
+                    liveActiveDuels.length > 0
+                      ? `
+                    <div style="border-top: 1px solid #e2e8f0; padding-top: 7px; margin-top: 2px;">
+                      <div style="font-size: 0.68rem; font-weight: 900; color: #dc2626; text-transform: uppercase; margin-bottom: 5px;">
+                        🔴 ${liveActiveDuels.length} Live Game${liveActiveDuels.length === 1 ? '' : 's'} in Progress — Watch Live:
+                      </div>
+                      <div style="display: flex; flex-direction: column; gap: 4px;">
+                        ${liveActiveDuels
+                          .slice(0, 3)
+                          .map(
+                            (d) => `
+                          <button type="button" onclick="window.spectateLiveOnlineDuel('${d.roomCode}')" style="display: flex; justify-content: space-between; align-items: center; background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 7px; padding: 5px 8px; font-size: 0.73rem; font-weight: 800; color: #0f172a; cursor: pointer; text-align: left;">
+                            <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">♔ ${d.white?.callsign || 'Waiting'} vs ♚ ${d.black?.callsign || 'Waiting'}</span>
+                            <span style="color: #0284c7; flex-shrink: 0; margin-left: 6px;">👁️ Watch</span>
+                          </button>
+                        `,
+                          )
+                          .join('')}
+                      </div>
+                    </div>
+                  `
+                      : ''
+                  }
                 </div>
               `
                   : `
@@ -2073,6 +2188,25 @@ function renderVirtualChessInner(chessState) {
                 </div>
               `
               }
+            </div>
+          `
+                : vc.mode === 'spectate'
+                  ? `
+            <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #f8fafc; border: 1.5px solid #38bdf8; border-radius: 10px; padding: 11px 12px; display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="background: rgba(239,68,68,0.22); color: #fca5a5; border: 1px solid rgba(239,68,68,0.45); border-radius: 999px; padding: 2px 8px; font-size: 0.67rem; font-weight: 900;">
+                  🔴 LIVE SPECTATOR TV · ${vc.onlineRoomCode}
+                </span>
+                <button type="button" onclick="window.switchChessTab && window.switchChessTab('feed')" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); border-radius: 6px; padding: 3px 8px; font-size: 0.7rem; font-weight: 800; cursor: pointer;">
+                  ← All Live Games
+                </button>
+              </div>
+              <div style="font-size: 0.8rem; font-weight: 800; color: #ffffff;">
+                ♔ ${vc.onlineRoomData?.white?.callsign || 'White'} vs ♚ ${vc.onlineRoomData?.black?.callsign || 'Black'}
+              </div>
+              <div style="background: rgba(16,185,129,0.16); border: 1px solid rgba(110,231,183,0.4); border-radius: 7px; padding: 6px 9px; font-size: 0.72rem; color: #a7f3d0; font-weight: 700; line-height: 1.35;">
+                🔒 <strong>Fair-Play Spectator Mode:</strong> Coach Hints &amp; Evaluation Bar are strictly disabled until the match finishes so nobody can call out moves!
+              </div>
             </div>
           `
                 : vc.mode === 'daily'
@@ -2129,9 +2263,9 @@ function renderVirtualChessInner(chessState) {
           `
           }
 
-          <!-- 3. Clock Pills (Hidden in Daily Puzzle mode) -->
+          <!-- 3. Clock Pills (Hidden in Daily Puzzle & Spectator modes) -->
           ${
-            vc.mode !== 'daily'
+            vc.mode !== 'daily' && vc.mode !== 'spectate'
               ? `
             <div>
               <div style="font-size: 0.69rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">
@@ -2158,30 +2292,63 @@ function renderVirtualChessInner(chessState) {
               : ''
           }
 
-          <!-- 4. Primary Action Controls -->
+          <!-- 4. Primary Action Controls (Fair-Play Locked in Live Duels & Spectator Mode!) -->
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
-            <button type="button" onclick="window.startNewVirtualGame()" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; border: none; border-radius: 8px; padding: 8px 10px; font-size: 0.8rem; font-weight: 800; cursor: pointer; box-shadow: 0 2px 6px rgba(2,132,199,0.22);">
-              🔄 ${vc.mode === 'daily' ? 'Reset Puzzle' : 'New Game'}
-            </button>
-            <button type="button" onclick="window.undoVirtualMove()" ${vc.mode === 'online' || vc.history.length === 0 || vc.aiThinking ? 'disabled' : ''} style="background: #ffffff; color: ${vc.mode === 'online' || vc.history.length === 0 ? '#94a3b8' : '#0f172a'}; border: 1px solid #cbd5e1; border-radius: 8px; padding: 8px 10px; font-size: 0.8rem; font-weight: 800; cursor: ${vc.mode === 'online' || vc.history.length === 0 ? 'not-allowed' : 'pointer'};">
-              ↩️ Undo
-            </button>
-            <button type="button" onclick="window.requestVirtualHint()" ${vc.mode === 'online' || isFinished || vc.aiThinking ? 'disabled' : ''} style="background: #fffbeb; color: ${vc.mode === 'online' || isFinished ? '#94a3b8' : '#b45309'}; border: 1px solid #fde68a; border-radius: 8px; padding: 7px 10px; font-size: 0.78rem; font-weight: 800; cursor: ${vc.mode === 'online' || isFinished ? 'not-allowed' : 'pointer'};">
-              💡 Coach Hint
-            </button>
-            <button type="button" onclick="window.flipVirtualBoard()" style="background: #ffffff; color: #334155; border: 1px solid #cbd5e1; border-radius: 8px; padding: 7px 10px; font-size: 0.78rem; font-weight: 800; cursor: pointer;">
-              🔃 Flip Board
-            </button>
+            ${
+              vc.mode === 'spectate'
+                ? `
+              <button type="button" onclick="window.setVirtualChessMode('ai')" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; border: none; border-radius: 8px; padding: 8px 10px; font-size: 0.78rem; font-weight: 800; cursor: pointer;">
+                ♟️ Play My Own Game
+              </button>
+              <button type="button" onclick="window.flipVirtualBoard()" style="background: #ffffff; color: #334155; border: 1px solid #cbd5e1; border-radius: 8px; padding: 8px 10px; font-size: 0.78rem; font-weight: 800; cursor: pointer;">
+                🔃 Flip Camera
+              </button>
+            `
+                : `
+              <button type="button" onclick="window.startNewVirtualGame()" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; border: none; border-radius: 8px; padding: 8px 10px; font-size: 0.8rem; font-weight: 800; cursor: pointer; box-shadow: 0 2px 6px rgba(2,132,199,0.22);">
+                🔄 ${vc.mode === 'daily' ? 'Reset Puzzle' : 'New Game'}
+              </button>
+              ${
+                vc.mode === 'online'
+                  ? `<div style="background: #f1f5f9; color: #64748b; border: 1px solid #e2e8f0; border-radius: 8px; padding: 8px 10px; font-size: 0.74rem; font-weight: 800; display: flex; align-items: center; justify-content: center;">🔒 Fair-Play (No Hints)</div>`
+                  : `<button type="button" onclick="window.undoVirtualMove()" ${vc.history.length === 0 || vc.aiThinking ? 'disabled' : ''} style="background: #ffffff; color: ${vc.history.length === 0 ? '#94a3b8' : '#0f172a'}; border: 1px solid #cbd5e1; border-radius: 8px; padding: 8px 10px; font-size: 0.8rem; font-weight: 800; cursor: ${vc.history.length === 0 ? 'not-allowed' : 'pointer'};">
+                      ↩️ Undo
+                    </button>`
+              }
+              ${
+                vc.mode !== 'online'
+                  ? `<button type="button" onclick="window.requestVirtualHint()" ${isFinished || vc.aiThinking ? 'disabled' : ''} style="background: #fffbeb; color: ${isFinished ? '#94a3b8' : '#b45309'}; border: 1px solid #fde68a; border-radius: 8px; padding: 7px 10px; font-size: 0.78rem; font-weight: 800; cursor: ${isFinished ? 'not-allowed' : 'pointer'};">
+                      💡 Coach Hint
+                    </button>`
+                  : ''
+              }
+              <button type="button" onclick="window.flipVirtualBoard()" style="${vc.mode === 'online' ? 'grid-column: span 2;' : ''} background: #ffffff; color: #334155; border: 1px solid #cbd5e1; border-radius: 8px; padding: 7px 10px; font-size: 0.78rem; font-weight: 800; cursor: pointer;">
+                🔃 Flip Board
+              </button>
+            `
+            }
           </div>
 
-          <!-- Resign / Draw / Board Style Row -->
+          <!-- Resign / Draw / 4 Tactile Board Theme Swatches Row -->
           <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; flex-wrap: wrap;">
-            <button type="button" onclick="window.toggleVirtualBoardTheme()" style="background: transparent; border: 1px solid #cbd5e1; color: #475569; border-radius: 6px; padding: 4px 9px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">
-              🎨 ${vc.boardTheme === 'wood' ? 'Slate Board' : 'Wood Board'}
-            </button>
+            <div style="display: inline-flex; align-items: center; gap: 5px;">
+              <span style="font-size: 0.68rem; font-weight: 800; color: #64748b;">Board:</span>
+              ${[
+                { id: 'green', color: '#739552', title: 'Tournament Green' },
+                { id: 'wood', color: '#b58863', title: 'Classic Maple' },
+                { id: 'slate', color: '#64748b', title: 'Arctic Slate' },
+                { id: 'walnut', color: '#7f5539', title: 'Royal Walnut' },
+              ]
+                .map(
+                  (sw) => `
+                <button type="button" onclick="window.setVirtualBoardTheme('${sw.id}')" title="${sw.title}" style="width: 20px; height: 20px; border-radius: 50%; background: ${sw.color}; border: ${vc.boardTheme === sw.id ? '2.5px solid #0f172a' : '1.5px solid #cbd5e1'}; cursor: pointer; padding: 0; box-shadow: ${vc.boardTheme === sw.id ? '0 0 0 2px #ffffff inset' : 'none'};"></button>
+              `,
+                )
+                .join('')}
+            </div>
 
             ${
-              !isFinished && vc.moveLog.length > 0 && vc.mode !== 'daily'
+              !isFinished && vc.moveLog.length > 0 && vc.mode !== 'daily' && vc.mode !== 'spectate'
                 ? vc.confirmAction
                   ? `
                   <div style="display: inline-flex; align-items: center; gap: 5px;">
@@ -2626,13 +2793,18 @@ export function registerVirtualChessHandlers(ctx) {
       vc.replayPlyIndex = null;
 
       if (room.moveLog.length > prevMoveCount) {
+        vc.slideAnimAt = Date.now();
         if (vc.status === 'checkmate') playClubSound('win');
         else playClubSound('move');
       }
 
       if (vc.status !== 'playing') {
         vc.clockActive = false;
-        evaluateGameEndPracticeXp();
+        if (vc.mode !== 'spectate') {
+          evaluateGameEndPracticeXp();
+        } else if (!vc.gameReview && vc.moveLog.length >= 4 && vc.history.length >= 2) {
+          vc.gameReview = computePostGameCoachReview(vc, 'w');
+        }
       }
       forceRender = true;
     } else if (room.drawOfferBy !== (vc.onlineRoomData?.drawOfferBy ?? null)) {
@@ -2649,7 +2821,7 @@ export function registerVirtualChessHandlers(ctx) {
     onlinePollTimer = setInterval(async () => {
       if (!ctx.isChessViewActive()) return;
       const vc = getVc();
-      if (vc.mode !== 'online' || !vc.onlineRoomCode) {
+      if ((vc.mode !== 'online' && vc.mode !== 'spectate') || !vc.onlineRoomCode) {
         stopOnlinePolling();
         return;
       }
@@ -2957,6 +3129,10 @@ export function registerVirtualChessHandlers(ctx) {
       rerenderBoardOnly();
       return;
     }
+    if (vc.mode === 'spectate') {
+      rerenderBoardOnly();
+      return;
+    }
     if (vc.status !== 'playing' || vc.aiThinking || vc.pendingPromotion) return;
     if (vc.mode === 'ai' && vc.turn !== vc.humanSide) return;
     if (
@@ -2997,7 +3173,7 @@ export function registerVirtualChessHandlers(ctx) {
 
   window.handleVirtualDragStart = function (e, r, c) {
     const vc = getVc();
-    if (vc.status !== 'playing' || vc.aiThinking || vc.replayPlyIndex !== null) return;
+    if (vc.mode === 'spectate' || vc.status !== 'playing' || vc.aiThinking || vc.replayPlyIndex !== null) return;
     if (sideOf(vc.board[r][c]) !== vc.turn) return;
     if (vc.mode === 'online' && vc.turn !== vc.onlineSide) return;
     if (e && e.dataTransfer) {
@@ -3016,13 +3192,14 @@ export function registerVirtualChessHandlers(ctx) {
 
   window.handleVirtualDrop = function (e, toR, toC) {
     if (e && e.preventDefault) e.preventDefault();
+    const vc = getVc();
+    if (vc.mode === 'spectate') return;
     try {
       const raw = e?.dataTransfer?.getData('text/plain');
       if (!raw) return;
       const { r: fromR, c: fromC } = JSON.parse(raw);
       if (fromR === toR && fromC === toC) return;
       if (!attemptHumanMove(fromR, fromC, toR, toC)) {
-        const vc = getVc();
         vc.selected = null;
         rerenderBoardOnly();
       }
@@ -3441,16 +3618,69 @@ export function registerVirtualChessHandlers(ctx) {
     rerenderBoardOnly();
   };
 
+  window.setVirtualBoardTheme = function (theme) {
+    const vc = getVc();
+    if (['green', 'wood', 'slate', 'walnut'].includes(theme)) {
+      vc.boardTheme = theme;
+      rerenderBoardOnly();
+    }
+  };
+
   window.toggleVirtualBoardTheme = function () {
     const vc = getVc();
-    vc.boardTheme = vc.boardTheme === 'wood' ? 'slate' : 'wood';
+    const order = ['wood', 'green', 'slate', 'walnut'];
+    const idx = order.indexOf(vc.boardTheme);
+    vc.boardTheme = order[(idx + 1) % order.length];
     rerenderBoardOnly();
+  };
+
+  window.spectateLiveOnlineDuel = async function (roomCode) {
+    const code = String(roomCode || '')
+      .trim()
+      .toUpperCase();
+    if (!code) return;
+    const st = ctx.getState();
+    st.activeTab = 'play';
+    const res = await pollOnlineDuelRoom(code);
+    if (!res.ok || !res.room) {
+      ctx.showChessToast(`Room ${code} has ended or is no longer active.`, 'info');
+      return;
+    }
+    const prev = getVc();
+    const fresh = createDefaultVirtualChessState();
+    fresh.mode = 'spectate';
+    fresh.boardTheme = prev.boardTheme || 'green';
+    fresh.tappedInPlayerId = prev.tappedInPlayerId || getSavedTappedInPlayerId();
+    fresh.onlineRoomCode = res.room.roomCode;
+    fresh.onlineSeq = res.room.seq;
+    fresh.onlineRoomData = res.room;
+    fresh.board = cloneBoard(res.room.board);
+    fresh.turn = res.room.turn;
+    fresh.castling = { ...(res.room.castling || { K: true, Q: true, k: true, q: true }) };
+    fresh.enPassant = res.room.enPassant || null;
+    fresh.lastMove = res.room.lastMove || null;
+    fresh.moveLog = [...(res.room.moveLog || [])];
+    fresh.capturedByWhite = [...(res.room.capturedByWhite || [])];
+    fresh.capturedByBlack = [...(res.room.capturedByBlack || [])];
+    fresh.status = res.room.status === 'waiting' ? 'playing' : res.room.status;
+    fresh.winner = res.room.winner || null;
+    fresh.timeControlMins = res.room.timeControlMins;
+    fresh.whiteTimeSecs = res.room.whiteTimeSecs;
+    fresh.blackTimeSecs = res.room.blackTimeSecs;
+    fresh.clockActive =
+      res.room.timeControlMins > 0 && fresh.status === 'playing' && fresh.moveLog.length > 0;
+    fresh.hintMove = null;
+    st.virtualChess = fresh;
+
+    startOnlinePolling();
+    ctx.renderChessHubView();
+    ctx.showChessToast(`📺 Watching Room ${code} Live (Fair-Play: Hints Locked)`, 'info');
   };
 
   window.undoVirtualMove = function () {
     if (aiMoveTimeout) clearTimeout(aiMoveTimeout);
     const vc = getVc();
-    if (vc.mode === 'online' || vc.history.length === 0) return;
+    if (vc.mode === 'online' || vc.mode === 'spectate' || vc.history.length === 0) return;
 
     const restoreSnap = (snap) => {
       vc.board = snap.board;
@@ -3508,7 +3738,7 @@ export function registerVirtualChessHandlers(ctx) {
 
   window.requestVirtualHint = function () {
     const vc = getVc();
-    if (vc.mode === 'online' || vc.status !== 'playing' || vc.aiThinking) return;
+    if (vc.mode === 'online' || vc.mode === 'spectate' || vc.status !== 'playing' || vc.aiThinking) return;
     if (vc.mode === 'daily') {
       window.showDailyPuzzleHint();
       return;

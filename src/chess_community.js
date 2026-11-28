@@ -4,7 +4,7 @@
  */
 
 import { HOUSES } from './chess_data.js';
-import { getPupilXpProgress } from './chess_play.js';
+import { getPupilXpProgress, renderStauntonSvg } from './chess_play.js';
 import {
   HISTORICAL_BOTS,
   BOT_MAP,
@@ -120,8 +120,122 @@ export function getHumanVictoriesForPlayer(player, matches = []) {
     .sort((a, b) => b.wins - a.wins);
 }
 
+function formatMiniClock(secs) {
+  const s = Math.max(0, Math.floor(Number(secs) || 0));
+  const m = Math.floor(s / 60);
+  const rem = s % 60;
+  return `${m}:${String(rem).padStart(2, '0')}`;
+}
+
+/**
+ * Renders a Lichess-TV / Chess.com-style Live Mini-Board Card for Spectators & Classroom Projector
+ * Strictly Fair-Play: zero evaluation bar, zero engine hints.
+ */
+export function renderMiniLiveBoardCard(duel, darkTheme = false) {
+  if (!duel || !duel.roomCode) return '';
+  const board = Array.isArray(duel.board) && duel.board.length === 8 ? duel.board : null;
+  if (!board) return '';
+
+  const wCallsign = duel.white?.callsign || 'White Challenger';
+  const wHouse = HOUSES[duel.white?.house] || HOUSES.warrior;
+  const bCallsign = duel.black?.callsign || (duel.status === 'waiting' ? 'Waiting for Opponent…' : 'Black Challenger');
+  const bHouse = duel.black?.house ? HOUSES[duel.black.house] || HOUSES.invincible : null;
+
+  const isPlaying = duel.status === 'playing';
+  const isWaiting = duel.status === 'waiting';
+  const fullMove = Math.max(1, Math.ceil((duel.moveCount || 0) / 2));
+
+  let squaresHtml = '';
+  for (let r = 0; r < 8; r++) {
+    for (let c = 0; c < 8; c++) {
+      const isLight = (r + c) % 2 === 0;
+      const isLast =
+        duel.lastMove &&
+        ((duel.lastMove.from[0] === r && duel.lastMove.from[1] === c) ||
+          (duel.lastMove.to[0] === r && duel.lastMove.to[1] === c));
+      const bg = isLast
+        ? isLight
+          ? '#f6f669'
+          : '#cdd26a'
+        : isLight
+          ? '#ebecd0'
+          : '#739552';
+      const piece = board[r]?.[c] || null;
+      squaresHtml += `<div style="background:${bg};display:flex;align-items:center;justify-content:center;width:100%;height:100%;">${
+        piece
+          ? `<div style="width:86%;height:86%;display:flex;align-items:center;justify-content:center;">${renderStauntonSvg(piece)}</div>`
+          : ''
+      }</div>`;
+    }
+  }
+
+  const cardBg = darkTheme ? 'linear-gradient(145deg, #111827 0%, #0f172a 100%)' : '#ffffff';
+  const cardBorder = darkTheme
+    ? isPlaying
+      ? '1.5px solid #38bdf8'
+      : '1.5px solid #334155'
+    : isPlaying
+      ? '1.5px solid #0284c7'
+      : '1.5px solid #cbd5e1';
+  const textPrimary = darkTheme ? '#f8fafc' : '#0f172a';
+  const textSub = darkTheme ? '#94a3b8' : '#64748b';
+  const stripBg = darkTheme ? 'rgba(255,255,255,0.05)' : '#f8fafc';
+
+  const statusBadge = isPlaying
+    ? `<span style="display:inline-flex;align-items:center;gap:5px;background:#fef2f2;color:#dc2626;border:1px solid #fecaca;padding:2px 7px;border-radius:999px;font-size:0.65rem;font-weight:900;letter-spacing:0.04em;"><span style="width:6px;height:6px;border-radius:50%;background:#dc2626;display:inline-block;"></span>LIVE · Move ${fullMove}${duel.lastSan ? ` (${escapeHtml(duel.lastSan)})` : ''}</span>`
+    : isWaiting
+      ? `<span style="background:#fef3c7;color:#b45309;border:1px solid #fde68a;padding:2px 7px;border-radius:999px;font-size:0.65rem;font-weight:900;">⏳ OPEN LOBBY</span>`
+      : `<span style="background:#dcfce7;color:#166534;border:1px solid #86efac;padding:2px 7px;border-radius:999px;font-size:0.65rem;font-weight:900;">🏆 ${duel.winner === 'w' ? '1–0 White' : duel.winner === 'b' ? '0–1 Black' : '½–½ Draw'}</span>`;
+
+  const watchAction = isWaiting
+    ? `if(window.toggleChessWhiteboardMode)window.toggleChessWhiteboardMode(false);window.switchChessTab('play');window.setVirtualChessMode('online');setTimeout(()=>window.joinLiveOnlineDuel('${escapeHtml(duel.roomCode)}'),60);`
+    : `if(window.toggleChessWhiteboardMode)window.toggleChessWhiteboardMode(false);window.spectateLiveOnlineDuel('${escapeHtml(duel.roomCode)}');`;
+
+  return `
+    <div class="live-tv-miniboard-card" style="background:${cardBg};border:${cardBorder};border-radius:12px;padding:10px;display:flex;flex-direction:column;gap:7px;box-shadow:${darkTheme ? '0 8px 24px rgba(0,0,0,0.45)' : '0 4px 14px rgba(15,23,42,0.07)'};">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;">
+        ${statusBadge}
+        <span style="font-family:monospace;font-size:0.68rem;font-weight:800;color:${textSub};">${escapeHtml(duel.roomCode)}</span>
+      </div>
+
+      <!-- Black Player Row -->
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;background:${stripBg};padding:4px 7px;border-radius:6px;">
+        <div style="display:flex;align-items:center;gap:5px;min-width:0;">
+          <span style="width:9px;height:9px;border-radius:2px;background:#0f172a;border:1px solid #94a3b8;flex-shrink:0;"></span>
+          <span style="font-size:0.76rem;font-weight:800;color:${textPrimary};white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${escapeHtml(bCallsign)}</span>
+          ${bHouse ? `<span style="background:${bHouse.bgLight};color:${bHouse.color};font-size:0.58rem;font-weight:800;padding:0 5px;border-radius:999px;flex-shrink:0;">${bHouse.name.slice(0, 4)}</span>` : ''}
+        </div>
+        ${duel.timeControlMins > 0 ? `<span style="font-family:monospace;font-size:0.72rem;font-weight:900;color:${duel.turn === 'b' && isPlaying ? '#0284c7' : textSub};">${formatMiniClock(duel.blackTimeSecs)}</span>` : ''}
+      </div>
+
+      <!-- Crisp 8x8 Mini Staunton Board -->
+      <div onclick="${watchAction}" title="Click to watch live in Fair-Play Spectator Mode" style="width:100%;aspect-ratio:1/1;display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat(8,1fr);border-radius:6px;overflow:hidden;border:2px solid #1e293b;cursor:pointer;">
+        ${squaresHtml}
+      </div>
+
+      <!-- White Player Row -->
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;background:${stripBg};padding:4px 7px;border-radius:6px;">
+        <div style="display:flex;align-items:center;gap:5px;min-width:0;">
+          <span style="width:9px;height:9px;border-radius:2px;background:#ffffff;border:1px solid #475569;flex-shrink:0;"></span>
+          <span style="font-size:0.76rem;font-weight:800;color:${textPrimary};white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${escapeHtml(wCallsign)}</span>
+          <span style="background:${wHouse.bgLight};color:${wHouse.color};font-size:0.58rem;font-weight:800;padding:0 5px;border-radius:999px;flex-shrink:0;">${wHouse.name.slice(0, 4)}</span>
+        </div>
+        ${duel.timeControlMins > 0 ? `<span style="font-family:monospace;font-size:0.72rem;font-weight:900;color:${duel.turn === 'w' && isPlaying ? '#0284c7' : textSub};">${formatMiniClock(duel.whiteTimeSecs)}</span>` : ''}
+      </div>
+
+      <!-- Fair-Play Footer + Action -->
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;padding-top:2px;">
+        <span style="font-size:0.63rem;font-weight:800;color:${textSub};">🔒 No Spectator Hints</span>
+        <button type="button" onclick="${watchAction}" style="background:${isWaiting ? '#059669' : '#0284c7'};color:#ffffff;border:none;border-radius:6px;padding:4px 10px;font-size:0.72rem;font-weight:800;cursor:pointer;">
+          ${isWaiting ? '⚔️ Join Duel' : '👁️ Watch Live'}
+        </button>
+      </div>
+    </div>
+  `;
+}
+
 // ============================================================================
-// 1. CLUB HIGHLIGHTS FEED ("TWITTER/X-STYLE CLUB DISPATCH" + WEEKLY HONOURS)
+// 1. CLUB HIGHLIGHTS FEED ("TWITTER/X-STYLE CLUB DISPATCH" + LIVE CLUB TV)
 // ============================================================================
 export function renderClubHighlightsFeedTab(chessState, helpers) {
   const players = chessState.players || [];
@@ -337,9 +451,41 @@ export function renderClubHighlightsFeedTab(chessState, helpers) {
     `;
   };
 
+  const liveDuels = (chessState.activeDuels || []).filter(
+    (d) => d && d.roomCode && Array.isArray(d.board),
+  );
+
   return `
     <div style="display: flex; flex-direction: column; gap: 14px; max-width: 940px; margin: 0 auto;">
       
+      ${
+        liveDuels.length > 0
+          ? `
+      <!-- Auto-Expanding Live Club TV Arena (Collapses to 0px when 0 games are active) -->
+      <div id="live-club-tv-arena" style="background: linear-gradient(135deg, #090d16 0%, #1e293b 100%); border: 1.5px solid #0284c7; border-radius: 14px; padding: 14px 16px; color: #ffffff; box-shadow: 0 10px 26px rgba(2,132,199,0.18);">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.68rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.08em; color: #f87171;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background: #ef4444; box-shadow: 0 0 8px #ef4444; display: inline-block;"></span>
+              📺 Live Club TV · ${liveDuels.length} Windows Laptop ${liveDuels.length === 1 ? 'Duel' : 'Duels'} on Air
+            </div>
+            <h3 style="margin: 2px 0 0 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.12rem; color: #ffffff;">
+              Watch Classmates Battle Live Across the School Network
+            </h3>
+          </div>
+          <span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); color: #bae6fd; padding: 4px 10px; border-radius: 999px; font-size: 0.7rem; font-weight: 800;">
+            🔒 Fair-Play Spectator Lock: Coach Hints &amp; Eval Disabled
+          </span>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(225px, 275px)); gap: 12px;">
+          ${liveDuels.map((d) => renderMiniLiveBoardCard(d, true)).join('')}
+        </div>
+      </div>
+      `
+          : ''
+      }
+
       <!-- Pinned Weekly / Daily Club Highlights Digest -->
       <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 14px; padding: 14px 16px; color: #ffffff; box-shadow: 0 8px 22px rgba(15,23,42,0.16);">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
