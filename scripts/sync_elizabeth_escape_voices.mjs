@@ -10,7 +10,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import { loadVoiceCache, resolveGeminiApiKey } from './studio_voice_registry.mjs';
+import { ensureHouseVoiceId, resolveGeminiApiKey } from './studio_voice_registry.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -38,32 +38,32 @@ const CLIPS = [
   },
   {
     id: 'prologue_4',
-    voiceKey: 'female_historian',
-    style: 'urgent, atmospheric British historical film narrator inviting the listener into an escape room mission',
-    text: "May, fifteen sixty-eight. Lochleven Castle. Tonight, you are Mary, Queen of Scots. Escape this island tower, navigate four dangerous Catholic plots through secret letters, and outwit Walsingham—before his net closes forever.",
+    voiceKey: 'mary_queen_of_scots',
+    style: 'urgent, atmospheric educated Scottish royal woman speaking in first person inside a stone island tower at dusk',
+    text: "May, fifteen sixty-eight. Lochleven Castle. Tonight, you are Mary, Queen of Scots. Help me escape this island tower, navigate four dangerous Catholic plots through secret letters, and outwit Walsingham—before his net closes forever.",
   },
   {
     id: 'room1_entry',
-    voiceKey: 'female_historian',
-    style: 'hushed, urgent Scottish-toned British royal narrator whispering inside a stone tower at dusk',
+    voiceKey: 'mary_queen_of_scots',
+    style: 'hushed, urgent educated Scottish royal woman whispering inside Lochleven tower at dusk',
     text: "Room One: Lochleven Castle, May fifteen sixty-eight. Look closely at the island fortress surrounding us—deep loch water cuts off every road. Inspect the visual evidence, then arrange our exact three-step escape plan before the guard changes.",
   },
   {
     id: 'room2_entry',
-    voiceKey: 'female_historian',
-    style: 'tense, conspiratorial British royal narrator under English house arrest',
+    voiceKey: 'mary_queen_of_scots',
+    style: 'tense, conspiratorial educated Scottish royal woman under English house arrest',
     text: "Room Two: Bolton and Tutbury Castles. Elizabeth has locked me under guard, yet Catholic nobles and the Duke of Norfolk are sending secret letters. Inspect Norfolk's portrait and the chronicle clue to deduce the three consecutive years that open this conspiracy vault.",
   },
   {
     id: 'room3_entry',
-    voiceKey: 'female_historian',
-    style: 'anxious, watchful British royal narrator as Walsinghams spymaster net tightens',
+    voiceKey: 'mary_queen_of_scots',
+    style: 'anxious, watchful educated Scottish royal woman as Walsinghams spymaster net tightens',
     text: "Room Three: Sheffield Manor, fifteen eighty-three. Walsingham's spies are closing in after Francis Throckmorton's arrest. Study Christopher Saxton's fifteen seventy-nine map to spot the coast facing France, unmask the forged dispatch, and identify Parliament's deadly new law.",
   },
   {
     id: 'room4_entry',
-    voiceKey: 'female_historian',
-    style: 'breathless, hopeful British royal narrator believing freedom is finally within reach at Chartley Hall',
+    voiceKey: 'mary_queen_of_scots',
+    style: 'breathless, hopeful educated Scottish royal woman believing freedom is finally within reach at Chartley Hall',
     text: "Room Four: Chartley Hall, July fifteen eighty-six. At last—a sympathetic brewer is smuggling Anthony Babington's coded letters inside our beer barrels! Watch out for the two meaningless Null symbols hidden in the code, crack the six real letters, and seal our reply to ride to freedom!",
   },
   {
@@ -142,7 +142,6 @@ async function synthesizeClip(apiKey, clip, voiceId) {
 async function main() {
   const apiKey = resolveGeminiApiKey();
   if (!apiKey) throw new Error('Missing GEMINI_API_KEY');
-  const voiceCache = loadVoiceCache();
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
   let hashes = { clips: {} };
@@ -154,8 +153,7 @@ async function main() {
 
   const pending = [];
   for (const clip of CLIPS) {
-    const voiceId = voiceCache[clip.voiceKey];
-    if (!voiceId) throw new Error(`Missing voiceId for ${clip.voiceKey}`);
+    const voiceId = await ensureHouseVoiceId(apiKey, clip.voiceKey);
     const digest = sha256(`${voiceId}|${clip.style}|${clip.text}`);
     const mp3Path = path.join(OUT_DIR, `${clip.id}.mp3`);
     if (hashes.clips?.[clip.id] === digest && fs.existsSync(mp3Path) && fs.statSync(mp3Path).size > 1500) {

@@ -159,10 +159,24 @@ export const DOMESDAY_CHARACTER_VOICES = {
   },
 };
 
+export const TUDOR_CHARACTER_VOICES = {
+  mary_queen_of_scots: {
+    key: 'mary_queen_of_scots',
+    display_name: 'HRH Mary Queen of Scots (Scottish Royal)',
+    label: 'Mary, Queen of Scots (Scottish Accent)',
+    gender: 'female',
+    language_code: 'en-GB',
+    prompt:
+      'A poised, expressive Scottish royal woman in her late 20s with an authentic, warm educated Scottish accent, dignified, regal, and quietly determined, speaking with clear period-drama theatrical gravitas.',
+    style: 'regal, expressive educated Scottish royal woman in a dramatic historical film',
+  },
+};
+
 export const ALL_STUDIO_VOICES = {
   ...HOUSE_VOICES,
   ...WW1_CHARACTER_VOICES,
   ...DOMESDAY_CHARACTER_VOICES,
+  ...TUDOR_CHARACTER_VOICES,
 };
 
 /**

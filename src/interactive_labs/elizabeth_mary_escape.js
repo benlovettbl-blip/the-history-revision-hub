@@ -474,6 +474,8 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
   function renderPrologueHTML() {
     const slide = PROLOGUE_SLIDES[state.prologueIdx] || PROLOGUE_SLIDES[0];
     const isLast = state.prologueIdx >= PROLOGUE_SLIDES.length - 1;
+    const camClasses = ['cam-push', 'cam-pan-right', 'cam-pull', 'cam-pan-left'];
+    const camCls = camClasses[state.prologueIdx % camClasses.length];
     return `
       <div class="elz-prologue-stage">
         <div class="elz-letterbox-bar">
@@ -482,8 +484,12 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
         </div>
 
         <div class="elz-cinema-canvas">
+          <div class="elz-cinema-bg-blur" style="background-image:url('${slide.img}')" aria-hidden="true"></div>
+          <div class="elz-cinema-vignette" aria-hidden="true"></div>
+          <div class="elz-cinema-embers" aria-hidden="true"></div>
+
           <div class="elz-cinema-plate-box">
-            <img src="${slide.img}" alt="${slide.alt}" class="elz-cinema-img" />
+            <img src="${slide.img}" alt="${slide.alt}" class="elz-cinema-img ${camCls}" />
             <div class="elz-plate-caption">${slide.caption}</div>
           </div>
 
@@ -957,10 +963,14 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
             <span>AUGUST 1586 • 🎙️ STUDIO VOICEOVER</span>
           </div>
           <div class="elz-cinema-canvas">
+            <div class="elz-cinema-bg-blur" style="background-image:url('/images/eee/kt2/sir_francis_walsingham_npg.jpg')" aria-hidden="true"></div>
+            <div class="elz-cinema-vignette is-crimson" aria-hidden="true"></div>
+            <div class="elz-cinema-embers" aria-hidden="true"></div>
+
             <div class="elz-cinema-plate-box">
               <img src="/images/eee/kt2/sir_francis_walsingham_npg.jpg"
                    alt="Sir Francis Walsingham holding an intercepted letter"
-                   class="elz-cinema-img" />
+                   class="elz-cinema-img cam-push" />
               <div class="elz-plate-caption">Sir Francis Walsingham • Master of the Double-Agent Beer-Barrel Trap</div>
             </div>
             <div class="elz-cinema-copy">
@@ -991,10 +1001,14 @@ export function mountElizabethMaryEscape(stageEl, _pools = {}, ctx = {}) {
             <span>8 FEBRUARY 1587 • 🎙️ STUDIO VOICEOVER</span>
           </div>
           <div class="elz-cinema-canvas">
+            <div class="elz-cinema-bg-blur" style="background-image:url('/images/mary_queen_of_scots_execution_fotheringhay_1587.jpg')" aria-hidden="true"></div>
+            <div class="elz-cinema-vignette is-crimson" aria-hidden="true"></div>
+            <div class="elz-cinema-embers" aria-hidden="true"></div>
+
             <div class="elz-cinema-plate-box">
               <img src="/images/mary_queen_of_scots_execution_fotheringhay_1587.jpg"
                    alt="Contemporary 1587 engraving of the execution of Mary, Queen of Scots in the Great Hall of Fotheringhay Castle"
-                   class="elz-cinema-img" />
+                   class="elz-cinema-img cam-pull" />
               <div class="elz-plate-caption">
                 🏛️ Contemporary 1587 Dutch Engraving • The Great Hall at Fotheringhay (left: Mary’s bloodstained clothes being burned in the hearth so Catholics could not keep relics).
               </div>

@@ -419,44 +419,143 @@
   flex: 1;
   min-height: 430px;
   display: grid;
-  grid-template-columns: minmax(240px, 0.95fr) minmax(300px, 1.25fr);
+  grid-template-columns: minmax(260px, 1.02fr) minmax(300px, 1.18fr);
   align-items: center;
-  gap: 24px;
-  padding: 24px 28px;
-  background: radial-gradient(circle at 30% 45%, rgba(127, 29, 29, 0.35), #04060c 72%);
+  gap: 28px;
+  padding: 28px 34px;
+  background: #04060c;
+  overflow: hidden;
+}
+
+/* Full-bleed blurred atmospheric archival backdrop with slow cinematic drift */
+.elz-cinema-bg-blur {
+  position: absolute;
+  inset: -12%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(22px) brightness(0.32) saturate(1.15);
+  opacity: 0.78;
+  transform: scale(1.1);
+  animation: elzBackdropDrift 18s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes elzBackdropDrift {
+  0% { transform: scale(1.08) translate3d(-1.5%, -1%, 0); }
+  100% { transform: scale(1.16) translate3d(1.5%, 1.2%, 0); }
+}
+
+/* Warm Tudor candlelight breathing vignette + floating gold dust motes */
+.elz-cinema-vignette {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 28% 45%, rgba(245, 158, 11, 0.14) 0%, rgba(127, 29, 29, 0.18) 42%, rgba(2, 4, 10, 0.92) 86%),
+    radial-gradient(circle at 75% 22%, rgba(251, 191, 36, 0.08), transparent 45%);
+  animation: elzCandleBreathe 5.5s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.elz-cinema-vignette.is-crimson {
+  background:
+    radial-gradient(ellipse at 32% 45%, rgba(220, 38, 38, 0.28) 0%, rgba(127, 29, 29, 0.34) 45%, rgba(2, 4, 10, 0.94) 86%);
+}
+
+@keyframes elzCandleBreathe {
+  0% { opacity: 0.86; }
+  50% { opacity: 1; }
+  100% { opacity: 0.9; }
+}
+
+.elz-cinema-embers {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(2px 2px at 14% 78%, rgba(253, 224, 71, 0.65), transparent),
+    radial-gradient(2.5px 2.5px at 38% 62%, rgba(251, 191, 36, 0.55), transparent),
+    radial-gradient(1.8px 1.8px at 64% 84%, rgba(253, 224, 71, 0.5), transparent),
+    radial-gradient(2px 2px at 82% 46%, rgba(248, 113, 113, 0.5), transparent),
+    radial-gradient(1.6px 1.6px at 52% 28%, rgba(254, 240, 138, 0.55), transparent),
+    radial-gradient(2.2px 2.2px at 24% 34%, rgba(251, 191, 36, 0.45), transparent);
+  animation: elzEmberFloat 12s linear infinite;
+  pointer-events: none;
+  z-index: 2;
+}
+
+@keyframes elzEmberFloat {
+  0% { transform: translateY(14px); opacity: 0.35; }
+  50% { opacity: 0.85; }
+  100% { transform: translateY(-28px); opacity: 0.25; }
 }
 
 .elz-cinema-plate-box {
   position: relative;
-  border-radius: 12px;
+  z-index: 3;
+  border-radius: 14px;
   overflow: hidden;
-  border: 1.5px solid rgba(245, 158, 11, 0.5);
-  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.75);
+  border: 1.5px solid rgba(245, 158, 11, 0.55);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.82), 0 0 36px rgba(245, 158, 11, 0.14);
   background: #02040a;
 }
 
 .elz-cinema-img {
   width: 100%;
-  max-height: 350px;
+  max-height: 380px;
   object-fit: contain;
   display: block;
-  animation: elzKenBurns 11s ease-in-out infinite alternate;
+  will-change: transform;
 }
 
-@keyframes elzKenBurns {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.06);
-  }
+.elz-cinema-img.cam-push { animation: elzCamPush 13s ease-in-out infinite alternate; }
+.elz-cinema-img.cam-pan-right { animation: elzCamPanRight 14s ease-in-out infinite alternate; }
+.elz-cinema-img.cam-pan-left { animation: elzCamPanLeft 14s ease-in-out infinite alternate; }
+.elz-cinema-img.cam-pull { animation: elzCamPull 13s ease-in-out infinite alternate; }
+
+@keyframes elzCamPush {
+  0% { transform: scale(1) translate3d(0, 0, 0); }
+  100% { transform: scale(1.09) translate3d(0, -1.5%, 0); }
+}
+
+@keyframes elzCamPanRight {
+  0% { transform: scale(1.05) translate3d(-2%, 0, 0); }
+  100% { transform: scale(1.1) translate3d(2%, -1%, 0); }
+}
+
+@keyframes elzCamPanLeft {
+  0% { transform: scale(1.05) translate3d(2%, 0, 0); }
+  100% { transform: scale(1.1) translate3d(-2%, 1%, 0); }
+}
+
+@keyframes elzCamPull {
+  0% { transform: scale(1.1) translate3d(0, -1.5%, 0); }
+  100% { transform: scale(1.01) translate3d(0, 0.5%, 0); }
 }
 
 .elz-cinema-copy {
+  position: relative;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  animation: elzFadeUp 0.65s ease both;
+  animation: elzFadeUp 0.7s ease both;
+}
+
+.elz-trap-banner {
+  background: linear-gradient(135deg, rgba(127, 29, 29, 0.95), rgba(69, 10, 10, 0.98));
+  border: 2px solid #f87171;
+  border-radius: 12px;
+  padding: 14px 16px;
+  text-align: center;
+  box-shadow: 0 0 34px rgba(220, 38, 38, 0.52);
+  animation: elzWaxSlam 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes elzWaxSlam {
+  0% { opacity: 0; transform: scale(1.22); }
+  70% { opacity: 1; transform: scale(0.97); }
+  100% { opacity: 1; transform: scale(1); }
 }
 
 @keyframes elzFadeUp {
